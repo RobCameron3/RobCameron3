@@ -21,8 +21,6 @@ Building real-world analytics & predictive models
   🔗 https://github.com/RobCameron3/Telco_Churn_Prediction
 
 ## Skills
-
-## Skills
 SQL (PostgreSQL: joins, aggregations, cross-database queries, data investigation)  
 Python (pandas, automation, regression & classification models)  
 Excel (advanced formulas, data modeling, dashboards)  
