@@ -20,7 +20,7 @@ I build data-driven solutions using SQL, Python, and Excel, focusing on predicti
   Developed a classification model to predict customer churn
 
 ## Skills
-SQL (PostgreSQL: joins, aggregations, cross-database queries, data investigation)  
-Python (pandas, automation, regression & classification models)  
-Excel (advanced formulas, data modeling, dashboards)  
-Analytics (data cleaning, EDA, statistics)
+- **SQL (PostgreSQL)** — joins, aggregations, cross-database queries, data investigation  
+- **Python** — pandas, automation, regression & classification models  
+- **Excel** — advanced formulas, data modeling, dashboards  
+- **Analytics** — data cleaning, EDA, statistics
