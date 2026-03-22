@@ -3,9 +3,10 @@
 Data Analyst | SQL • Python • Advanced Excel • Power BI • Statistics  
 Building real-world analytics & predictive models  
 
-> *'Difficulties mastered are opportunities won.' — Winston Churchill*
-
 Data Analyst advancing into Data Science, with a Master’s in Business Analytics. Building data-driven solutions using SQL, Python, and Excel, focusing on predictive modeling, statistical analysis, and uncovering patterns in complex datasets.
+
+>> *'Difficulties mastered are opportunities won.' — Winston Churchill*
+
 
 ## Projects
 - [SQL Data Breach Investigation](https://github.com/RobCameron3/sql-data-breach-investigation)  
