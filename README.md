@@ -1,11 +1,11 @@
 # Hi, I'm Rob 👋
 
 Data Analyst | SQL • Python • Excel  
-Building real-world analytics & predictive models
-      *'Difficulties mastered are opportunities won' - WC*
+Building real-world analytics & predictive models  
 
-Data Analyst advancing into Data Science, with a Master’s in Business Analytics.
-I build data-driven solutions using SQL, Python, and Excel, focusing on predictive modeling, statistical analysis, and uncovering patterns in complex datasets.
+          *“Difficulties mastered are opportunities won.” -WC*
+
+Data Analyst advancing into Data Science, with a Master’s in Business Analytics. Building data-driven solutions using SQL, Python, and Excel, focusing on predictive modeling, statistical analysis, and uncovering patterns in complex datasets.
 
 ## Projects
 - [SQL Data Breach Investigation](https://github.com/RobCameron3/sql-data-breach-investigation)  
