@@ -3,9 +3,9 @@
 Data Analyst | SQL • Python • Advanced Excel • Power BI • Statistics  
 Building real-world analytics & predictive models  
 
-Data Analyst advancing into Data Science, with a Master’s in Business Analytics. Building data-driven solutions using SQL, Python, and Excel, focusing on predictive modeling, statistical analysis, and uncovering patterns in complex datasets.
+Data Analyst advancing into Data Science, with a Master’s in Business Analytics. Building data-driven solutions using SQL, Python, Advanced Excel, and Power BI, with a focus on predictive modeling, statistical analysis, and uncovering patterns in complex datasets.
 
->> *'Difficulties mastered are opportunities won.' — Winston Churchill*
+> *'Difficulties mastered are opportunities won.' — Winston Churchill*
 
 
 ## Projects
