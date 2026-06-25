@@ -10,6 +10,8 @@ Data Analyst advancing into Data Science, with a Master’s in Business Analytic
 ## Projects
 - [SQL Data Breach Investigation](https://github.com/RobCameron3/sql-data-breach-investigation)  
   Investigated a data breach using joins and cross-database queries
+- [Power BI – Geographic Density & Trend Analytics](https://github.com/RobCameron3/power-bi-geographic-density-analytics)
+  Built an interactive Power BI dashboard to analyze geographic density, regional hotspots, and chronological trends.
 - [NBA Four Factor Modeling](https://github.com/RobCameron3/nba-four-factor-modeling)  
   Built a predictive model using advanced team metrics to analyze matchups
 - [Fuzzy Matching Automation](https://github.com/RobCameron3/fuzzy-matching-automation)  
