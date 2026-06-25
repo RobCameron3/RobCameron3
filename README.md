@@ -12,7 +12,7 @@ Data Analyst advancing into Data Science, with a Master’s in Business Analytic
 - [SQL Data Breach Investigation](https://github.com/RobCameron3/sql-data-breach-investigation)                          
   Investigated a data breach using joins and cross-database queries.
 
-- [Power BI – Geographic Density & Trend Analytics](https://github.com/RobCameron3/power-bi-geographic-density-analytics)                      
+- [Power BI – Geographic Density & Trend Analytics](https://github.com/RobCameron3/power-bi-geographic-density-analytics)
   Built an interactive Power BI dashboard to analyze geographic density, regional hotspots, and chronological trends.
 
 - [Power BI – Operational Performance & Logistics KPI Case Study](https://github.com/RobCameron3/power-bi-operational-logistics-dashboard)                      
