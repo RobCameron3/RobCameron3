@@ -14,8 +14,6 @@ Data Analyst advancing into Data Science, with a Master’s in Business Analytic
   Built an interactive Power BI dashboard to analyze geographic density, regional hotspots, and chronological trends.
 - [NBA Four Factor Modeling](https://github.com/RobCameron3/nba-four-factor-modeling)  
   Built a predictive model using advanced team metrics to analyze matchups
-- [Fuzzy Matching Automation](https://github.com/RobCameron3/fuzzy-matching-automation)  
-  Automated account matching using Python and Excel validation
 - [Used Car Price Prediction](https://github.com/RobCameron3/Used_Car_Price_Prediction)  
   Built a regression model to predict vehicle prices based on key features
 - [Telco Churn Prediction](https://github.com/RobCameron3/Telco_Churn_Prediction)  
