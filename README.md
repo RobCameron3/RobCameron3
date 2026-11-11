@@ -2,7 +2,7 @@
 
 **Business Intelligence & Operations Data Analyst | SQL • Python • Power BI • Advanced Excel**
 
-Business Intelligence & Operations Data Analyst with over 2.5+ years of professional experience in customer data intelligence, data integration, workflow automation, and operational analytics. Experienced in developing Python-based automation, improving data accuracy, and using analytical findings to support business decisions and operational efficiency.
+Business Intelligence & Operations Data Analyst with 3 years of professional experience in customer data intelligence, data integration, workflow automation, and operational analytics. Experienced in developing Python-based automation, improving data accuracy, and using analytical findings to support business decisions and operational efficiency.
 
 I hold a Master of Science in Business Analytics from the University of Massachusetts Amherst's Isenberg School of Management, complementing my professional experience with a foundation in statistical analysis, data visualization, and predictive modeling.
 
