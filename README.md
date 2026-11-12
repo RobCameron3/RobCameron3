@@ -1,33 +1,36 @@
 
 <div align="center">
-
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:071525,50:123C57,100:087F8C&height=150&section=header&text=Hello,%20I'm%20Robert%20J.%20Cameron%20%F0%9F%91%8B&fontColor=FFFFFF&fontSize=29&fontAlignY=40&animation=fadeIn" width="100%" alt="Robert J. Cameron"/>
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=17&duration=2600&pause=1200&color=20B8C3&center=true&vCenter=true&width=800&height=50&lines=I+build+business+intelligence+solutions.;I+improve+data+quality+and+efficiency.;I+turn+data+into+better+business+decisions.;I+transform+analytics+into+business+value." alt="Animated professional introduction"/>
-
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=17&duration=2600&pause=1200&color=20B8C3&center=true&vCenter=true&width=800&height=30&lines=I+build+business+intelligence+solutions.;I+improve+data+quality+and+efficiency.;I+turn+data+into+better+business+decisions.;I+transform+analytics+into+business+value." alt="Animated professional introduction"/>
 </div>
 
 <table>
 <tr>
-<td width="28%" align="center" valign="top">
+<td width="28%" align="center" valign="middle">
 
-🎓 **UMASS AMHERST**
+<h2>🎓</h2>
 
-**M.S. Business Analytics**
+<img src="https://img.shields.io/badge/UMASS-AMHERST-881C1C?style=for-the-badge" alt="UMass Amherst"/>
 
-Isenberg School of Management
+<p><strong>MASTER OF SCIENCE</strong></p>
 
-Class of 2023
+<p><strong>BUSINESS ANALYTICS</strong></p>
+
+<p>Isenberg School of Management</p>
+
+<p>Class of 2023</p>
 
 </td>
-<td width="72%" valign="top">
+<td width="72%" valign="middle">
 
-### Robert J. Cameron
-**Business Intelligence & Data Analyst**
+<h2>Robert J. Cameron</h2>
 
-Business intelligence professional with nearly three years of experience in data integration, reporting, operational analytics, and workflow automation.
+<h3>Business Intelligence &amp; Data Analyst</h3>
 
-I transform fragmented datasets into reliable insights that improve efficiency, strengthen decision-making, and generate measurable business value.
+<p>Business intelligence professional with nearly three years of experience in data integration, reporting, operational analytics, and workflow automation.</p>
+
+<p>I transform fragmented datasets into reliable insights that improve efficiency, strengthen decision-making, and generate measurable business value.</p>
 
 <a href="https://www.linkedin.com/in/robertjcameron-">
 <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"/>
@@ -64,17 +67,15 @@ Improved customer identification, data quality, and operational reporting throug
 
 **Analyzing the statistical factors that influence basketball performance.**
 
-<img src="assets/nba_three_point_split.svg" width="100%" alt="Animated NBA Four Factors dashboard comparing Team A and Team B across shooting efficiency, turnovers, offensive rebounding, and free-throw rate"/>
+<img src="assets/nba_three_point_split.svg" width="100%" alt="Animated NBA Four Factors comparison showing shooting efficiency, turnovers, offensive rebounding, free-throw rate, and the overall team result"/>
 
-An animated team comparison illustrating **Dean Oliver's Four Factors**: effective field goal percentage, turnover percentage, offensive rebound percentage, and free-throw rate.
-
-The visualization demonstrates how shooting efficiency, ball security, second-chance opportunities, and free-throw production contribute to overall team performance.
+Analyzed shooting efficiency, turnovers, offensive rebounding, and free-throw production to evaluate team performance using Dean Oliver's Four Factors framework.
 
 **Tools:** Python · Pandas · Statistical Analysis · Predictive Modeling
 
 **[Explore NBA Four-Factor Modeling](https://github.com/RobCameron3/nba-four-factor-modeling)**
 
-<sub>Team statistics are illustrative. The overall result counts factors won, not predicted game outcomes.</sub>
+<sub>Team statistics shown in the animation are illustrative.</sub>
 
 ---
 
@@ -82,7 +83,7 @@ The visualization demonstrates how shooting efficiency, ball security, second-ch
 
 **Transforming fragmented customer records into reliable business intelligence.**
 
-<img src="assets/customer-matching.svg" width="100%" alt="Animated Python customer matching workflow showing data cleaning, fuzzy matching, and CRM validation"/>
+<img src="assets/customer-matching.svg" width="100%" alt="Animated Python customer matching workflow showing record cleaning, fuzzy matching, and CRM validation"/>
 
 Developed Python workflows to standardize customer records, identify potential CRM matches, and reduce manual investigation.
 
