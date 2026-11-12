@@ -1,0 +1,468 @@
+
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="1100" height="500"
+     viewBox="0 0 1100 500">
+
+<title>The Rise of the Three-Point Shot</title>
+<desc>
+Animated NBA three-point shot visualization.
+Historical attempts per team per game from 2000-01
+through 2025-26, with provisional 2026-27 data.
+Shot locations are illustrative.
+</desc>
+
+<defs>
+  <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#091321"/>
+    <stop offset="100%" stop-color="#14283d"/>
+  </linearGradient>
+
+  <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#192b40"/>
+    <stop offset="100%" stop-color="#101c2e"/>
+  </linearGradient>
+
+  <clipPath id="chartReveal">
+    <rect x="520" y="115" width="0" height="300">
+      <animate
+        attributeName="width"
+        values="0;340;340;0"
+        keyTimes="0;0.88;0.96;1"
+        dur="8s"
+        repeatCount="indefinite"/>
+    </rect>
+  </clipPath>
+</defs>
+
+<style>
+  text {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .heading {
+    fill: #ffffff;
+    font-size: 26px;
+    font-weight: 700;
+  }
+
+  .subtitle {
+    fill: #9fb1c6;
+    font-size: 13px;
+  }
+
+  .paneltitle {
+    fill: #eaf2fb;
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  .courtline {
+    fill: none;
+    stroke: #8296ad;
+    stroke-width: 2;
+  }
+
+  .arc {
+    fill: none;
+    stroke: #fbbf24;
+    stroke-width: 3;
+  }
+
+  .grid {
+    stroke: #64748b;
+    stroke-width: 1;
+    stroke-dasharray: 5 6;
+    opacity: 0.55;
+  }
+
+  .shot {
+    fill: #fbbf24;
+    stroke: #fff0b3;
+    stroke-width: 0.7;
+    opacity: 0;
+    animation: shotAppear 8s linear infinite;
+  }
+
+  @keyframes shotAppear {
+    0% { opacity: 0; }
+    1% { opacity: 1; }
+    95% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+
+  .initial {
+    fill: #fbbf24;
+    stroke: #fff0b3;
+    stroke-width: 0.7;
+    opacity: 1;
+  }
+
+  .trend {
+    fill: none;
+    stroke: #fbbf24;
+    stroke-width: 3;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  .point {
+    fill: #fbbf24;
+    stroke: #ffe8a3;
+    stroke-width: 1;
+  }
+
+  .axislabel {
+    fill: #fbbf24;
+    font-size: 13px;
+  }
+
+  .season {
+    fill: #cbd5e1;
+    font-size: 11px;
+  }
+</style>
+
+<!-- BACKGROUND -->
+<rect width="1100" height="500"
+      rx="16" fill="url(#background)"/>
+
+<!-- HEADER -->
+<text x="30" y="43" class="heading">
+  THE RISE OF THE THREE-POINT SHOT
+</text>
+
+<text x="30" y="67" class="subtitle">
+  NBA three-point shooting evolution | 2000-01 to 2026-27
+</text>
+
+<!-- PANELS -->
+<rect x="20" y="85" width="480" height="370"
+      rx="12" fill="url(#panel)" stroke="#344860"/>
+
+<rect x="510" y="85" width="570" height="370"
+      rx="12" fill="url(#panel)" stroke="#344860"/>
+
+<!-- ===================================== -->
+<!-- LEFT: BASKETBALL SHOT DISTRIBUTION     -->
+<!-- ===================================== -->
+
+<text x="40" y="115" class="paneltitle">
+  Three-Point Shot Distribution
+</text>
+
+<!-- Half court -->
+<g class="courtline">
+
+  <rect x="70" y="140" width="380" height="285"/>
+
+  <!-- Painted area -->
+  <rect x="210" y="140" width="100" height="105"/>
+
+  <!-- Free throw circle -->
+  <circle cx="260" cy="245" r="50"
+          stroke-dasharray="5 5"/>
+
+  <!-- Backboard -->
+  <line x1="235" y1="155" x2="285" y2="155"
+        stroke="#fb923c" stroke-width="3"/>
+
+  <!-- Basket -->
+  <circle cx="260" cy="168" r="7"
+          stroke="#fb923c" stroke-width="2.5"/>
+
+</g>
+
+<!-- Three-point boundary:
+     Basket centered at (260,168).
+     Curved boundary radius 151.
+     Shots must be beyond this boundary. -->
+
+<path
+  d="M109 140
+     L109 168
+     A151 151 0 0 0 411 168
+     L411 140"
+  class="arc"/>
+
+<!-- Corner three-point locations -->
+<g class="initial">
+  <circle cx="94" cy="151" r="3.1"/>
+  <circle cx="95" cy="163" r="3.1"/>
+  <circle cx="426" cy="151" r="3.1"/>
+  <circle cx="425" cy="163" r="3.1"/>
+</g>
+
+<!-- Initial six perimeter shots -->
+<g class="initial">
+  <circle cx="106" cy="219" r="3.1"/>
+  <circle cx="143" cy="288" r="3.1"/>
+  <circle cx="220" cy="331" r="3.1"/>
+  <circle cx="300" cy="331" r="3.1"/>
+  <circle cx="377" cy="288" r="3.1"/>
+  <circle cx="414" cy="219" r="3.1"/>
+</g>
+
+<!--
+Additional shots appear individually.
+All positions are beyond the 151-unit
+three-point radius from the basket.
+Each shot has its own animation delay.
+-->
+
+<g>
+  <circle class="shot" cx="96" cy="180" r="3" style="animation-delay:.15s"/>
+  <circle class="shot" cx="101" cy="200" r="3" style="animation-delay:.25s"/>
+  <circle class="shot" cx="111" cy="237" r="3" style="animation-delay:.35s"/>
+  <circle class="shot" cx="126" cy="265" r="3" style="animation-delay:.45s"/>
+  <circle class="shot" cx="154" cy="300" r="3" style="animation-delay:.55s"/>
+  <circle class="shot" cx="186" cy="321" r="3" style="animation-delay:.65s"/>
+  <circle class="shot" cx="235" cy="334" r="3" style="animation-delay:.75s"/>
+  <circle class="shot" cx="282" cy="334" r="3" style="animation-delay:.85s"/>
+  <circle class="shot" cx="330" cy="323" r="3" style="animation-delay:.95s"/>
+  <circle class="shot" cx="367" cy="304" r="3" style="animation-delay:1.05s"/>
+
+  <circle class="shot" cx="394" cy="277" r="3" style="animation-delay:1.15s"/>
+  <circle class="shot" cx="409" cy="242" r="3" style="animation-delay:1.25s"/>
+  <circle class="shot" cx="422" cy="205" r="3" style="animation-delay:1.35s"/>
+  <circle class="shot" cx="426" cy="182" r="3" style="animation-delay:1.45s"/>
+  <circle class="shot" cx="92" cy="146" r="3" style="animation-delay:1.55s"/>
+  <circle class="shot" cx="97" cy="192" r="3" style="animation-delay:1.65s"/>
+  <circle class="shot" cx="108" cy="228" r="3" style="animation-delay:1.75s"/>
+  <circle class="shot" cx="134" cy="281" r="3" style="animation-delay:1.85s"/>
+  <circle class="shot" cx="167" cy="312" r="3" style="animation-delay:1.95s"/>
+  <circle class="shot" cx="202" cy="327" r="3" style="animation-delay:2.05s"/>
+
+  <circle class="shot" cx="249" cy="336" r="3" style="animation-delay:2.15s"/>
+  <circle class="shot" cx="296" cy="335" r="3" style="animation-delay:2.25s"/>
+  <circle class="shot" cx="344" cy="318" r="3" style="animation-delay:2.35s"/>
+  <circle class="shot" cx="381" cy="293" r="3" style="animation-delay:2.45s"/>
+  <circle class="shot" cx="403" cy="260" r="3" style="animation-delay:2.55s"/>
+  <circle class="shot" cx="417" cy="227" r="3" style="animation-delay:2.65s"/>
+  <circle class="shot" cx="425" cy="192" r="3" style="animation-delay:2.75s"/>
+  <circle class="shot" cx="427" cy="155" r="3" style="animation-delay:2.85s"/>
+  <circle class="shot" cx="93" cy="157" r="3" style="animation-delay:2.95s"/>
+  <circle class="shot" cx="99" cy="209" r="3" style="animation-delay:3.05s"/>
+
+  <circle class="shot" cx="116" cy="250" r="3" style="animation-delay:3.15s"/>
+  <circle class="shot" cx="146" cy="296" r="3" style="animation-delay:3.25s"/>
+  <circle class="shot" cx="177" cy="316" r="3" style="animation-delay:3.35s"/>
+  <circle class="shot" cx="216" cy="331" r="3" style="animation-delay:3.45s"/>
+  <circle class="shot" cx="263" cy="338" r="3" style="animation-delay:3.55s"/>
+  <circle class="shot" cx="313" cy="331" r="3" style="animation-delay:3.65s"/>
+  <circle class="shot" cx="355" cy="311" r="3" style="animation-delay:3.75s"/>
+  <circle class="shot" cx="387" cy="286" r="3" style="animation-delay:3.85s"/>
+  <circle class="shot" cx="412" cy="248" r="3" style="animation-delay:3.95s"/>
+  <circle class="shot" cx="421" cy="216" r="3" style="animation-delay:4.05s"/>
+
+  <circle class="shot" cx="94" cy="174" r="3" style="animation-delay:4.15s"/>
+  <circle class="shot" cx="103" cy="216" r="3" style="animation-delay:4.25s"/>
+  <circle class="shot" cx="120" cy="258" r="3" style="animation-delay:4.35s"/>
+  <circle class="shot" cx="158" cy="307" r="3" style="animation-delay:4.45s"/>
+  <circle class="shot" cx="194" cy="325" r="3" style="animation-delay:4.55s"/>
+  <circle class="shot" cx="230" cy="335" r="3" style="animation-delay:4.65s"/>
+  <circle class="shot" cx="277" cy="337" r="3" style="animation-delay:4.75s"/>
+  <circle class="shot" cx="323" cy="327" r="3" style="animation-delay:4.85s"/>
+  <circle class="shot" cx="362" cy="307" r="3" style="animation-delay:4.95s"/>
+  <circle class="shot" cx="396" cy="274" r="3" style="animation-delay:5.05s"/>
+
+  <circle class="shot" cx="415" cy="235" r="3" style="animation-delay:5.15s"/>
+  <circle class="shot" cx="424" cy="198" r="3" style="animation-delay:5.25s"/>
+  <circle class="shot" cx="428" cy="145" r="3" style="animation-delay:5.35s"/>
+  <circle class="shot" cx="92" cy="185" r="3" style="animation-delay:5.45s"/>
+  <circle class="shot" cx="107" cy="243" r="3" style="animation-delay:5.55s"/>
+  <circle class="shot" cx="140" cy="288" r="3" style="animation-delay:5.65s"/>
+  <circle class="shot" cx="172" cy="314" r="3" style="animation-delay:5.75s"/>
+  <circle class="shot" cx="211" cy="333" r="3" style="animation-delay:5.85s"/>
+  <circle class="shot" cx="257" cy="341" r="3" style="animation-delay:5.95s"/>
+  <circle class="shot" cx="306" cy="335" r="3" style="animation-delay:6.05s"/>
+
+  <circle class="shot" cx="349" cy="316" r="3" style="animation-delay:6.15s"/>
+  <circle class="shot" cx="383" cy="295" r="3" style="animation-delay:6.25s"/>
+  <circle class="shot" cx="408" cy="256" r="3" style="animation-delay:6.35s"/>
+  <circle class="shot" cx="420" cy="224" r="3" style="animation-delay:6.45s"/>
+  <circle class="shot" cx="427" cy="170" r="3" style="animation-delay:6.55s"/>
+</g>
+
+<text x="260" y="447"
+      text-anchor="middle"
+      fill="#8fa5ba"
+      font-size="11">
+  Illustrative shot locations outside the 3PT arc
+</text>
+
+<!-- ===================================== -->
+<!-- RIGHT: HISTORICAL THREE-POINT ATTEMPTS -->
+<!-- ===================================== -->
+
+<text x="530" y="115" class="paneltitle">
+  Three-Point Attempts Per Game
+</text>
+
+<!--
+Chart coordinates:
+X = 530 + season_index * 12.5
+Y = 395 - 6.25 * attempts
+
+Y-axis: 0 to 40 attempts.
+Data supplied by user.
+-->
+
+<!-- Grid -->
+<g class="grid">
+  <line x1="530" y1="395" x2="855" y2="395"/>
+  <line x1="530" y1="363.75" x2="855" y2="363.75"/>
+  <line x1="530" y1="332.5" x2="855" y2="332.5"/>
+  <line x1="530" y1="301.25" x2="855" y2="301.25"/>
+  <line x1="530" y1="270" x2="855" y2="270"/>
+  <line x1="530" y1="238.75" x2="855" y2="238.75"/>
+  <line x1="530" y1="207.5" x2="855" y2="207.5"/>
+  <line x1="530" y1="176.25" x2="855" y2="176.25"/>
+  <line x1="530" y1="145" x2="855" y2="145"/>
+</g>
+
+<!-- Right-side Y axis -->
+<line x1="855" y1="145" x2="855" y2="395"
+      stroke="#aab4c2" stroke-width="1.5"/>
+
+<!-- Right-side values -->
+<g class="axislabel">
+  <text x="865" y="399">0</text>
+  <text x="865" y="368">5</text>
+  <text x="865" y="337">10</text>
+  <text x="865" y="306">15</text>
+  <text x="865" y="275">20</text>
+  <text x="865" y="244">25</text>
+  <text x="865" y="212">30</text>
+  <text x="865" y="181">35</text>
+  <text x="865" y="150">40</text>
+</g>
+
+<!-- Axis title to the right of values -->
+<text x="905" y="257"
+      fill="#fbbf24"
+      font-size="16"
+      font-weight="bold">
+  <tspan x="905">3PT shots</tspan>
+  <tspan x="905" dy="23">attempted</tspan>
+  <tspan x="905" dy="23">per game</tspan>
+</text>
+
+<!-- X axis seasons -->
+<g class="season" text-anchor="middle">
+  <text x="530" y="416">2000-01</text>
+  <text x="592.5" y="416">2005-06</text>
+  <text x="655" y="416">2010-11</text>
+  <text x="717.5" y="416">2015-16</text>
+  <text x="780" y="416">2020-21</text>
+  <text x="842.5" y="416">2025-26</text>
+</g>
+
+<!-- Actual supplied season values -->
+<!-- 2000-01 through 2025-26 -->
+<g clip-path="url(#chartReveal)">
+
+  <polyline class="trend"
+    points="
+    530,309.375
+    542.5,303.125
+    555,303.125
+    567.5,301.875
+    580,296.25
+    592.5,295
+    605,289.375
+    617.5,281.875
+    630,281.875
+    642.5,281.875
+    655,282.5
+    667.5,280
+    680,270
+    692.5,260.625
+    705,255
+    717.5,244.375
+    730,226.25
+    742.5,213.75
+    755,195
+    767.5,181.875
+    780,178.75
+    792.5,175
+    805,181.25
+    817.5,175.625
+    830,160
+    842.5,163.75
+    "/>
+
+  <!-- Individual season markers -->
+  <g class="point">
+    <circle cx="530" cy="309.375" r="3.3"/>
+    <circle cx="542.5" cy="303.125" r="3.3"/>
+    <circle cx="555" cy="303.125" r="3.3"/>
+    <circle cx="567.5" cy="301.875" r="3.3"/>
+    <circle cx="580" cy="296.25" r="3.3"/>
+    <circle cx="592.5" cy="295" r="3.3"/>
+    <circle cx="605" cy="289.375" r="3.3"/>
+    <circle cx="617.5" cy="281.875" r="3.3"/>
+    <circle cx="630" cy="281.875" r="3.3"/>
+    <circle cx="642.5" cy="281.875" r="3.3"/>
+    <circle cx="655" cy="282.5" r="3.3"/>
+    <circle cx="667.5" cy="280" r="3.3"/>
+    <circle cx="680" cy="270" r="3.3"/>
+    <circle cx="692.5" cy="260.625" r="3.3"/>
+    <circle cx="705" cy="255" r="3.3"/>
+    <circle cx="717.5" cy="244.375" r="3.3"/>
+    <circle cx="730" cy="226.25" r="3.3"/>
+    <circle cx="742.5" cy="213.75" r="3.3"/>
+    <circle cx="755" cy="195" r="3.3"/>
+    <circle cx="767.5" cy="181.875" r="3.3"/>
+    <circle cx="780" cy="178.75" r="3.3"/>
+    <circle cx="792.5" cy="175" r="3.3"/>
+    <circle cx="805" cy="181.25" r="3.3"/>
+    <circle cx="817.5" cy="175.625" r="3.3"/>
+    <circle cx="830" cy="160" r="3.3"/>
+    <circle cx="842.5" cy="163.75" r="3.3"/>
+  </g>
+
+  <!-- Provisional 2026-27 -->
+  <line x1="842.5" y1="163.75"
+        x2="855" y2="158.125"
+        stroke="#fbbf24"
+        stroke-width="3"
+        stroke-dasharray="4 4"/>
+
+  <circle cx="855" cy="158.125" r="5"
+          fill="#fbbf24"
+          stroke="#ffffff"
+          stroke-width="1.5"/>
+
+</g>
+
+<!-- Final label -->
+<text x="855" y="136"
+      text-anchor="end"
+      fill="#fbbf24"
+      font-size="13"
+      font-weight="bold">
+  37.9*
+  <animate
+    attributeName="opacity"
+    values="0;0;1;1;0"
+    keyTimes="0;.83;.88;.96;1"
+    dur="8s"
+    repeatCount="indefinite"/>
+</text>
+
+<!-- Provisional season note -->
+<text x="530" y="447"
+      fill="#8fa5ba"
+      font-size="11">
+  *2026-27 provisional | 3PA per team per game
+</text>
+
+<!-- FOOTER -->
+<text x="30" y="481"
+      fill="#64748b"
+      font-size="11">
+  NBA season averages supplied for this visualization.
+  Shot locations are illustrative, not recorded shot coordinates.
+</text>
+
+</svg>
