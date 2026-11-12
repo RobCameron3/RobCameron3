@@ -76,24 +76,81 @@ Worked with distributor, customer, and CRM datasets to improve data quality, cus
 
 ## 🚀 Featured Analytics Projects
 
-### 🏀 01 | NBA Four-Factor Modeling & Three-Point Analytics
+### 🏀 01 | NBA Four-Factor Modeling & Team Performance Analytics
 
-**Understanding how basketball strategy evolves through data.**
+**Understanding what drives winning in basketball through statistical analysis.**
 
-<img src="assets/nba_three_point_split.svg" width="100%" alt="Animated NBA basketball court with three-point shot locations and a historical three-point attempts chart"/>
+<img src="assets/nba_three_point_split.svg" width="100%" alt="Animated NBA Four Factors comparison showing shooting efficiency, turnovers, offensive rebounds, free-throw rate, and the overall Team A versus Team B result"/>
 
-The animated visualization illustrates the evolution of three-point shooting through two connected perspectives:
+The animated dashboard demonstrates how **Dean Oliver's Four Factors** can be used to compare basketball teams across four key performance measures.
 
-- **Left:** A basketball half-court showing illustrative three-point shot locations accumulating outside the arc.
-- **Right:** A season-by-season chart of NBA three-point attempts per team per game, including the provisional 2026–27 value.
+Each metric includes a basketball animation illustrating the underlying action, its statistical formula, and a head-to-head comparison between Team A and Team B.
 
-The underlying project explores shooting efficiency, turnovers, rebounding, free-throw rate, and their relationships with team performance.
+#### The Four Factors Explained
+
+**1. Effective Field Goal Percentage (eFG%) — Shooting Efficiency**
+
+Measures shooting efficiency while accounting for the additional value of three-point field goals.
+
+- The animation illustrates a three-point shot entering the basket.
+- A made three-pointer receives an additional 0.5 field-goal credit in the calculation.
+- **Higher eFG% indicates better shooting efficiency.**
+
+`eFG% = (FGM + 0.5 × 3PM) / FGA`
+
+**2. Turnover Percentage (TOV%) — Ball Security**
+
+Estimates the percentage of possessions ending in turnovers.
+
+- The animation illustrates a defender taking possession of the basketball.
+- Turnovers represent lost scoring opportunities.
+- **Lower TOV% indicates better ball security.**
+
+`TOV% = TOV / (FGA + 0.44 × FTA + TOV)`
+
+**3. Offensive Rebound Percentage (ORB%) — Second-Chance Opportunities**
+
+Measures the proportion of available offensive rebounds secured by a team.
+
+- The animation illustrates a missed shot followed by an offensive rebound.
+- Recovering missed shots creates additional scoring opportunities.
+- **Higher ORB% indicates stronger offensive rebounding performance.**
+
+`ORB% = ORB / (ORB + Opponent DRB)`
+
+**4. Free Throw Rate (FT/FGA) — Free-Throw Production**
+
+Measures made free throws relative to field-goal attempts.
+
+- The animation illustrates a successful free throw.
+- The metric captures free-throw scoring production relative to field-goal volume.
+- **Higher FT/FGA indicates greater made free-throw production per field-goal attempt.**
+
+`FT/FGA = FTM / FGA`
+
+#### Team A vs. Team B — Overall Comparison
+
+The visualization compares the two teams across all four factors and highlights which team performs better in each category.
+
+| Four Factor | Team A | Team B | Advantage |
+|:---|---:|---:|:---|
+| Effective FG% | 55.2% | 52.1% | Team A |
+| Turnover % | 12.4% | 14.1% | Team A |
+| Offensive Rebound % | 28.6% | 31.2% | Team B |
+| Free Throw Rate | 19.8% | 17.5% | Team A |
+| **Factors Won** | **3 of 4** | **1 of 4** | **Team A** |
+
+**Overall illustrative result:** Team A leads in three of the four statistical categories.
+
+This comparison demonstrates how different dimensions of basketball performance can be evaluated together rather than relying on points scored alone.
+
+The factor count is a descriptive comparison, **not a predicted win probability or a weighted model score**. A predictive model would require historical game data, fitted coefficients, and performance validation.
 
 **Tools:** Python · Pandas · Statistical Analysis · Predictive Modeling
 
 **[Explore NBA Four-Factor Modeling](https://github.com/RobCameron3/nba-four-factor-modeling)**
 
-<sub>Three-point attempt averages shown for 2000–01 through 2026–27 (provisional). Shot locations are illustrative.</sub>
+<sub>Team A and Team B statistics are illustrative examples, not actual NBA team results. Basketball animations conceptually demonstrate the statistical formulas.</sub>
 
 ---
 
