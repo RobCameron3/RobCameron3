@@ -1,4 +1,41 @@
 
+<table>
+<tr>
+<td width="28%" align="center">
+
+📊
+
+### BUSINESS
+### INTELLIGENCE
+
+**SQL • Power BI • Python**
+
+</td>
+<td width="72%">
+
+<h2>Robert J. Cameron</h2>
+
+<a href="https://git.io/typing-svg">
+<img src="https://readme-typing-svg.demolab.com?font=Roboto+Mono&weight=600&size=20&duration=3000&pause=1000&color=F5A623&width=480&lines=Business+Intelligence+Analyst;Data+Analyst;Power+BI+Analyst;Data+Integration+Analyst" alt="Animated Job Titles"/>
+</a>
+
+Business Intelligence & Operations Data Analyst with nearly three years of experience in data integration, reporting, automation, and operational analytics. Passionate about transforming complex data into actionable insights that drive measurable business impact.
+
+<p>
+<a href="https://www.linkedin.com/in/robertjcameron-">
+<img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white"/>
+</a>
+<a href="https://github.com/RobCameron3">
+<img src="https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white"/>
+</a>
+</p>
+
+<img src="https://komarev.com/ghpvc/?username=RobCameron3&label=Profile+views&color=F5A623&style=flat" alt="Profile views"/>
+
+</td>
+</tr>
+</table>
+
 <div align="center">
 
 # Hi, I'm Robert J. Cameron 👋
