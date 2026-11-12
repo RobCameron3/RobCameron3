@@ -1,15 +1,15 @@
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:071525,50:123C57,100:087F8C&height=145&section=header&text=Hello,%20I'm%20Robert%20Cameron%20%F0%9F%91%8B&fontColor=FFFFFF&fontSize=29&fontAlignY=40&animation=fadeIn" width="100%" alt="Robert Cameron"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:071525,50:123C57,100:087F8C&height=150&section=header&text=Hello,%20I'm%20Robert%20Cameron%20%F0%9F%91%8B&fontColor=FFFFFF&fontSize=29&fontAlignY=40&animation=fadeIn" width="100%" alt="Robert Cameron"/>
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=17&duration=2600&pause=1200&color=20B8C3&center=true&vCenter=true&width=800&height=48&lines=I+build+business+intelligence+solutions.;I+improve+data+quality+and+efficiency.;I+turn+data+into+better+business+decisions.;I+transform+analytics+into+business+value." alt="Animated introduction"/>
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=17&duration=2600&pause=1200&color=20B8C3&center=true&vCenter=true&width=800&height=50&lines=I+build+business+intelligence+solutions.;I+improve+data+quality+and+efficiency.;I+turn+data+into+better+business+decisions.;I+transform+analytics+into+business+value." alt="Animated professional introduction"/>
 
 </div>
 
 <table>
 <tr>
-<td width="27%" align="center" valign="middle">
+<td width="28%" align="center" valign="middle">
 
 <h1>🎓</h1>
 
@@ -32,7 +32,7 @@ Isenberg School of Management
 Class of 2023
 
 </td>
-<td width="73%" valign="middle">
+<td width="72%" valign="middle">
 
 <h2>Robert J. Cameron</h2>
 
@@ -47,6 +47,7 @@ I transform fragmented datasets into reliable insights that help businesses impr
 <a href="https://www.linkedin.com/in/robertjcameron-">
 <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"/>
 </a>
+
 <a href="https://github.com/RobCameron3">
 <img src="https://img.shields.io/badge/GitHub-Portfolio-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub"/>
 </a>
@@ -55,71 +56,167 @@ I transform fragmented datasets into reliable insights that help businesses impr
 </tr>
 </table>
 
-## 📊 Professional Impact
+---
 
-| Achievement | Results |
-|:---|:---|
-| 🎯 Customer Identification | **60% → 80–90%** identification accuracy |
-| 🔎 Data Resolution | **648 of 877 records resolved (73.9%)** |
-| 📁 Data Consolidation | **17 distributor workbooks** consolidated |
-| ⚙️ Automation | Python fuzzy matching and data standardization workflows |
-| 📈 Business Value | Improved data reliability, reporting, and operational efficiency |
+## 💼 Professional Experience & Business Impact
+
+### Financial / Data Analyst | Solmetex
+**April 2024 – October 2026**
+
+Worked with distributor, customer, and CRM datasets to improve data quality, customer identification, and operational reporting.
+
+| Business Challenge | Solution | Business Impact |
+|:---|:---|:---|
+| Customer records could not consistently be matched to existing CRM accounts | Developed Python fuzzy-matching and data-standardization workflows | Improved customer identification from approximately **60% to 80–90%** |
+| Large volumes of customer records required manual investigation | Analyzed unmatched records and validated customer relationships | Resolved **648 of 877 records (73.9%)** in a targeted review |
+| Distributor data was fragmented across separate spreadsheets | Consolidated and standardized **17 distributor workbooks** | Improved cross-distributor analysis and data-quality review |
+| Inconsistent customer information complicated reporting | Standardized customer names, addresses, and account relationships | Improved data reliability and reduced manual matching effort |
 
 ---
 
 ## 🚀 Featured Analytics Projects
 
-### 🏀 NBA Four Factors & Basketball Analytics
+### 🏀 01 | NBA Four-Factor Modeling & Three-Point Analytics
 
-**Understanding the numbers behind winning basketball.**
+**Understanding how basketball strategy evolves through data.**
 
-<img src="https://raw.githubusercontent.com/RobCameron3/RobCameron3/main/assets/nba-three-point.gif" width="100%" alt="Animated rise of the three-point shot"/>
+<img src="assets/nba_three_point_split.svg" width="100%" alt="Animated basketball court with accumulating three-point shot locations and a synchronized three-point attempts chart"/>
 
-Exploring how basketball strategy has evolved through shooting efficiency, possessions, turnovers, rebounding, and the Four Factors of winning.
+The animated visualization illustrates the growth of three-point shooting through two connected perspectives:
+
+- **Left:** A basketball half-court showing shot locations accumulating around the three-point arc as seasons advance.
+- **Right:** A synchronized trend chart showing increasing three-point attempts over time.
+
+The underlying project explores shooting efficiency, turnovers, rebounding, free-throw rate, and their relationships with team performance.
 
 **Tools:** Python · Pandas · Statistical Analysis · Predictive Modeling
 
-[View NBA Four Factors Project](https://github.com/RobCameron3/nba-four-factor-modeling)
+**[Explore NBA Four-Factor Modeling](https://github.com/RobCameron3/nba-four-factor-modeling)**
+
+<sub>Animation uses illustrative shot locations and attempt values rather than verified NBA season data.</sub>
 
 ---
 
-### 🎯 Customer Identification & Python Automation
+### ⚙️ 02 | Python Customer Identification & Automation
 
-**Turning fragmented customer data into reliable business intelligence.**
+**Transforming fragmented customer records into reliable business intelligence.**
 
-<img src="https://raw.githubusercontent.com/RobCameron3/RobCameron3/main/assets/customer-identification.gif" width="100%" alt="Animated improvement in customer identification"/>
+<img src="assets/customer-matching.svg" width="100%" alt="Animated Python workflow showing record cleaning, fuzzy matching, confidence scoring, and CRM validation"/>
 
-Developed Python-based fuzzy matching and data standardization workflows that increased customer identification rates from approximately **60% to 80–90%**, reducing the need for manual investigation.
+Developed Python-based matching workflows to identify customer accounts across distributor datasets and CRM records.
 
-**Tools:** Python · Pandas · Fuzzy Matching · Data Integration · Data Quality
+The workflow demonstrates how incoming customer data moves through several stages:
+
+1. **Data ingestion:** Read incoming distributor records.
+2. **Standardization:** Clean and normalize names, addresses, and other identifying fields.
+3. **Candidate matching:** Compare records against potential CRM accounts using fuzzy matching.
+4. **Validation:** Review similarity scores and verify candidate relationships.
+5. **Business outcome:** Improve customer identification and reduce manual investigation.
+
+**Measured professional result:** Increased customer identification from approximately **60% to 80–90%**.
+
+**Tools:** Python · Pandas · Fuzzy Matching · Data Cleaning · CRM Integration
+
+<sub>Professional work example. Animation is a conceptual representation of the matching workflow.</sub>
 
 ---
 
-### 📈 Power BI — Operational Performance & KPI Analytics
+### 🕵️ 03 | SQL Data Breach Investigation
 
-**Turning operational data into actionable business decisions.**
+**Connecting fragmented evidence to identify the responsible record.**
 
-<img src="https://raw.githubusercontent.com/RobCameron3/RobCameron3/main/assets/power-bi-performance.gif" width="100%" alt="Animated operational performance dashboard"/>
+<img src="assets/sql-investigation.svg" width="100%" alt="Animated investigation with three cards flipping to reveal incorrect matches and the final identified record"/>
 
-Built an interactive Power BI dashboard analyzing revenue, operational KPIs, shipment trends, regional performance, and subscription analytics to support business performance monitoring.
+Investigated a simulated data breach using SQL queries to examine records and uncover relationships across datasets.
+
+The animation represents the investigation as a sequence of candidate checks: two incorrect matches are ruled out before the matching record is revealed.
+
+**Analytical methods:**
+- SQL joins to connect related records.
+- Filtering to narrow potential matches.
+- Relational analysis to investigate suspicious activity.
+- Query validation to establish the matching relationship.
+
+**Tools:** PostgreSQL · SQL · Joins · Data Investigation
+
+**[Explore SQL Investigation](https://github.com/RobCameron3/sql-data-breach-investigation)**
+
+---
+
+### 📊 04 | Power BI Operational Performance & Logistics
+
+**Turning operational data into actionable KPIs.**
+
+<img src="assets/power-bi-performance.gif" width="100%" alt="Animated operational KPI dashboard showing changes in business performance metrics"/>
+
+Developed an interactive business intelligence dashboard analyzing operational and commercial performance.
+
+**Analytical focus:**
+- Revenue and operational KPI monitoring.
+- Shipment and logistics trends.
+- Regional performance comparisons.
+- Subscription and business activity analysis.
+- Interactive filtering and reporting.
 
 **Tools:** Power BI · Power Query · DAX · Data Visualization
 
-[View Power BI Dashboard](https://github.com/RobCameron3/power-bi-operational-logistics-dashboard)
+**[Explore Operational Logistics Dashboard](https://github.com/RobCameron3/power-bi-operational-logistics-dashboard)**
 
 ---
 
-### 🕵️ SQL Data Breach Investigation
+### 🌎 05 | Geographic Density & Trend Analytics
 
-**Connecting the evidence. Finding the responsible record.**
+**Understanding where business activity is concentrated.**
 
-<img src="https://raw.githubusercontent.com/RobCameron3/RobCameron3/main/assets/sql-investigation.gif" width="100%" alt="Animated SQL detective investigation with shuffled suspect cards"/>
+<img src="assets/geographic-density.gif" width="100%" alt="Animated geographic density visualization illustrating regional activity patterns"/>
 
-A simulated investigation where SQL joins and cross-database queries connect fragmented evidence, trace suspicious activity, and help identify the responsible user.
+Built a Power BI analytics project examining geographic density and trends over time.
 
-**Tools:** PostgreSQL · SQL Joins · Cross-Database Queries · Data Investigation
+The visualization illustrates how regional activity can be compared to identify geographic concentrations and changing patterns.
 
-[View SQL Investigation](https://github.com/RobCameron3/sql-data-breach-investigation)
+**Tools:** Power BI · Power Query · DAX · Geographic Analytics
+
+**[Explore Geographic Density Analytics](https://github.com/RobCameron3/power-bi-geographic-density-analytics)**
+
+---
+
+### 📉 06 | Telecommunications Customer Churn Prediction
+
+**Identifying customers who may be at risk of leaving.**
+
+<img src="assets/customer-churn.gif" width="100%" alt="Animated customer churn risk segmentation visualization"/>
+
+Developed a predictive classification model to analyze customer characteristics and identify potential churn risk.
+
+**Analytical focus:**
+- Customer behavior and retention patterns.
+- Data preparation and feature analysis.
+- Classification modeling.
+- Risk segmentation and model evaluation.
+
+**Tools:** Python · Pandas · Classification · Predictive Analytics
+
+**[Explore Telecom Churn Prediction](https://github.com/RobCameron3/telco-churn-prediction)**
+
+---
+
+### 🚗 07 | Used Car Price Prediction
+
+**Estimating vehicle prices using statistical modeling.**
+
+<img src="assets/used-car-regression.gif" width="100%" alt="Animated regression visualization showing predicted used-car prices"/>
+
+Developed a regression-based analytics project examining the relationship between vehicle characteristics and used-car prices.
+
+**Analytical focus:**
+- Data cleaning and exploratory analysis.
+- Feature relationships and pricing trends.
+- Regression modeling.
+- Predicted versus actual price evaluation.
+
+**Tools:** Python · Pandas · Regression · Predictive Modeling
+
+**[Explore Used Car Price Prediction](https://github.com/RobCameron3/used-car-price-prediction)**
 
 ---
 
@@ -147,7 +244,7 @@ A simulated investigation where SQL joins and cross-database queries connect fra
 ![Requests](https://img.shields.io/badge/Requests-3776AB?style=flat-square)
 ![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white)
 
-### Enterprise Systems & Databases
+### Databases & Enterprise Systems
 
 ![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat-square)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
@@ -158,7 +255,7 @@ A simulated investigation where SQL joins and cross-database queries connect fra
 ![SAP BusinessObjects](https://img.shields.io/badge/SAP_BusinessObjects-0FA6D4?style=flat-square)
 ![NetSuite](https://img.shields.io/badge/NetSuite-1B365D?style=flat-square)
 
-### Analytics & Automation
+### Data Integration, Analytics & Automation
 
 ![Data Integration](https://img.shields.io/badge/Data_Integration-5865F2?style=flat-square)
 ![ETL](https://img.shields.io/badge/ETL-5865F2?style=flat-square)
@@ -170,16 +267,6 @@ A simulated investigation where SQL joins and cross-database queries connect fra
 ![Regression](https://img.shields.io/badge/Regression-008B8B?style=flat-square)
 ![Classification](https://img.shields.io/badge/Classification-008B8B?style=flat-square)
 ![Predictive Modeling](https://img.shields.io/badge/Predictive_Modeling-008B8B?style=flat-square)
-
----
-
-## 📂 Additional Projects
-
-| Project | Focus |
-|:---|:---|
-| [Geographic Density & Trend Analytics](https://github.com/RobCameron3/power-bi-geographic-density-analytics) | Power BI, geographic patterns, time intelligence |
-| [Used Car Price Prediction](https://github.com/RobCameron3/used-car-price-prediction) | Regression and predictive analytics |
-| [Telecom Customer Churn](https://github.com/RobCameron3/telco-churn-prediction) | Classification and customer retention |
 
 ---
 
