@@ -19,7 +19,7 @@
 
 <strong>MASTER OF SCIENCE</strong>
 
-<br/>
+<br/><br/>
 
 <strong>BUSINESS ANALYTICS</strong>
 
@@ -27,7 +27,7 @@
 
 Isenberg School of Management
 
-<br/>
+<br/><br/>
 
 Class of 2023
 
@@ -80,12 +80,12 @@ Worked with distributor, customer, and CRM datasets to improve data quality, cus
 
 **Understanding how basketball strategy evolves through data.**
 
-<img src="assets/nba_three_point_split.svg" width="100%" alt="Animated basketball court with accumulating three-point shot locations and a synchronized three-point attempts chart"/>
+<img src="assets/nba_three_point_split.svg" width="100%" alt="Animated NBA basketball court with three-point shot locations and a historical three-point attempts chart"/>
 
-The animated visualization illustrates the growth of three-point shooting through two connected perspectives:
+The animated visualization illustrates the evolution of three-point shooting through two connected perspectives:
 
-- **Left:** A basketball half-court showing shot locations accumulating around the three-point arc as seasons advance.
-- **Right:** A synchronized trend chart showing increasing three-point attempts over time.
+- **Left:** A basketball half-court showing illustrative three-point shot locations accumulating outside the arc.
+- **Right:** A season-by-season chart of NBA three-point attempts per team per game, including the provisional 2026–27 value.
 
 The underlying project explores shooting efficiency, turnovers, rebounding, free-throw rate, and their relationships with team performance.
 
@@ -93,7 +93,7 @@ The underlying project explores shooting efficiency, turnovers, rebounding, free
 
 **[Explore NBA Four-Factor Modeling](https://github.com/RobCameron3/nba-four-factor-modeling)**
 
-<sub>Animation uses illustrative shot locations and attempt values rather than verified NBA season data.</sub>
+<sub>Three-point attempt averages shown for 2000–01 through 2026–27 (provisional). Shot locations are illustrative.</sub>
 
 ---
 
@@ -125,7 +125,7 @@ The workflow demonstrates how incoming customer data moves through several stage
 
 **Connecting fragmented evidence to identify the responsible record.**
 
-<img src="assets/sql-investigation.svg" width="100%" alt="Animated investigation with three cards flipping to reveal incorrect matches and the final identified record"/>
+<img src="assets/sql-investigation.svg" width="100%" alt="Animated SQL investigation with three cards flipping to reveal incorrect matches and the identified record"/>
 
 Investigated a simulated data breach using SQL queries to examine records and uncover relationships across datasets.
 
@@ -147,7 +147,7 @@ The animation represents the investigation as a sequence of candidate checks: tw
 
 **Turning operational data into actionable KPIs.**
 
-<img src="assets/power-bi-performance.gif" width="100%" alt="Animated operational KPI dashboard showing changes in business performance metrics"/>
+<img src="assets/power-bi-performance.gif" width="100%" alt="Animated operational KPI dashboard showing business performance metrics"/>
 
 Developed an interactive business intelligence dashboard analyzing operational and commercial performance.
 
@@ -168,7 +168,7 @@ Developed an interactive business intelligence dashboard analyzing operational a
 
 **Understanding where business activity is concentrated.**
 
-<img src="assets/geographic-density.gif" width="100%" alt="Animated geographic density visualization illustrating regional activity patterns"/>
+<img src="assets/geographic-density.gif" width="100%" alt="Animated geographic density visualization showing regional activity patterns"/>
 
 Built a Power BI analytics project examining geographic density and trends over time.
 
@@ -196,7 +196,7 @@ Developed a predictive classification model to analyze customer characteristics 
 
 **Tools:** Python · Pandas · Classification · Predictive Analytics
 
-**[Explore Telecom Churn Prediction](https://github.com/RobCameron3/telco-churn-prediction)**
+**[Explore Telecom Churn Prediction](https://github.com/RobCameron3/Telco_Churn_Prediction)**
 
 ---
 
@@ -216,7 +216,7 @@ Developed a regression-based analytics project examining the relationship betwee
 
 **Tools:** Python · Pandas · Regression · Predictive Modeling
 
-**[Explore Used Car Price Prediction](https://github.com/RobCameron3/used-car-price-prediction)**
+**[Explore Used Car Price Prediction](https://github.com/RobCameron3/Used_Car_Price_Prediction)**
 
 ---
 
