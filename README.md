@@ -1,7 +1,7 @@
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:071525,50:123C57,100:087F8C&height=150&section=header&text=Hello,%20I'm%20Robert%20Cameron%20%F0%9F%91%8B&fontColor=FFFFFF&fontSize=29&fontAlignY=40&animation=fadeIn" width="100%" alt="Robert Cameron"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:071525,50:123C57,100:087F8C&height=150&section=header&text=Hello,%20I'm%20Robert%20J.%20Cameron%20%F0%9F%91%8B&fontColor=FFFFFF&fontSize=29&fontAlignY=40&animation=fadeIn" width="100%" alt="Robert J. Cameron"/>
 
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=17&duration=2600&pause=1200&color=20B8C3&center=true&vCenter=true&width=800&height=50&lines=I+build+business+intelligence+solutions.;I+improve+data+quality+and+efficiency.;I+turn+data+into+better+business+decisions.;I+transform+analytics+into+business+value." alt="Animated professional introduction"/>
 
@@ -9,45 +9,29 @@
 
 <table>
 <tr>
-<td width="28%" align="center" valign="middle">
+<td width="28%" align="center" valign="top">
 
-<h1>🎓</h1>
+🎓 **UMASS AMHERST**
 
-<img src="https://img.shields.io/badge/UMASS-AMHERST-881C1C?style=for-the-badge" alt="UMass Amherst"/>
-
-<br/><br/>
-
-<strong>MASTER OF SCIENCE</strong>
-
-<br/><br/>
-
-<strong>BUSINESS ANALYTICS</strong>
-
-<br/><br/>
+**M.S. Business Analytics**
 
 Isenberg School of Management
-
-<br/><br/>
 
 Class of 2023
 
 </td>
-<td width="72%" valign="middle">
+<td width="72%" valign="top">
 
-<h2>Robert J. Cameron</h2>
-
-<h3>Business Intelligence & Data Analyst</h3>
+### Robert J. Cameron
+**Business Intelligence & Data Analyst**
 
 Business intelligence professional with nearly three years of experience in data integration, reporting, operational analytics, and workflow automation.
 
-I transform fragmented datasets into reliable insights that help businesses improve efficiency, strengthen decision-making, and generate measurable value.
-
-<br/><br/>
+I transform fragmented datasets into reliable insights that improve efficiency, strengthen decision-making, and generate measurable business value.
 
 <a href="https://www.linkedin.com/in/robertjcameron-">
 <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"/>
 </a>
-
 <a href="https://github.com/RobCameron3">
 <img src="https://img.shields.io/badge/GitHub-Portfolio-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub"/>
 </a>
@@ -63,14 +47,14 @@ I transform fragmented datasets into reliable insights that help businesses impr
 ### Financial / Data Analyst | Solmetex
 **April 2024 – October 2026**
 
-Worked with distributor, customer, and CRM datasets to improve data quality, customer identification, and operational reporting.
+Improved customer identification, data quality, and operational reporting through Python automation, CRM analysis, and data integration.
 
-| Business Challenge | Solution | Business Impact |
-|:---|:---|:---|
-| Customer records could not consistently be matched to existing CRM accounts | Developed Python fuzzy-matching and data-standardization workflows | Improved customer identification from approximately **60% to 80–90%** |
-| Large volumes of customer records required manual investigation | Analyzed unmatched records and validated customer relationships | Resolved **648 of 877 records (73.9%)** in a targeted review |
-| Distributor data was fragmented across separate spreadsheets | Consolidated and standardized **17 distributor workbooks** | Improved cross-distributor analysis and data-quality review |
-| Inconsistent customer information complicated reporting | Standardized customer names, addresses, and account relationships | Improved data reliability and reduced manual matching effort |
+| Key Achievement | Business Impact |
+|:---|:---|
+| Python fuzzy matching and data standardization | Improved customer identification from **60% to 80–90%** |
+| Targeted unmatched-record investigation | Resolved **648 of 877 records (73.9%)** |
+| Distributor data consolidation | Standardized **17 distributor workbooks** |
+| CRM customer and address validation | Improved data reliability and reduced manual matching effort |
 
 ---
 
@@ -78,79 +62,19 @@ Worked with distributor, customer, and CRM datasets to improve data quality, cus
 
 ### 🏀 01 | NBA Four-Factor Modeling & Team Performance Analytics
 
-**Understanding what drives winning in basketball through statistical analysis.**
+**Analyzing the statistical factors that influence basketball performance.**
 
-<img src="assets/nba_three_point_split.svg" width="100%" alt="Animated NBA Four Factors comparison showing shooting efficiency, turnovers, offensive rebounds, free-throw rate, and the overall Team A versus Team B result"/>
+<img src="assets/nba_three_point_split.svg" width="100%" alt="Animated NBA Four Factors dashboard comparing Team A and Team B across shooting efficiency, turnovers, offensive rebounding, and free-throw rate"/>
 
-The animated dashboard demonstrates how **Dean Oliver's Four Factors** can be used to compare basketball teams across four key performance measures.
+An animated team comparison illustrating **Dean Oliver's Four Factors**: effective field goal percentage, turnover percentage, offensive rebound percentage, and free-throw rate.
 
-Each metric includes a basketball animation illustrating the underlying action, its statistical formula, and a head-to-head comparison between Team A and Team B.
-
-#### The Four Factors Explained
-
-**1. Effective Field Goal Percentage (eFG%) — Shooting Efficiency**
-
-Measures shooting efficiency while accounting for the additional value of three-point field goals.
-
-- The animation illustrates a three-point shot entering the basket.
-- A made three-pointer receives an additional 0.5 field-goal credit in the calculation.
-- **Higher eFG% indicates better shooting efficiency.**
-
-`eFG% = (FGM + 0.5 × 3PM) / FGA`
-
-**2. Turnover Percentage (TOV%) — Ball Security**
-
-Estimates the percentage of possessions ending in turnovers.
-
-- The animation illustrates a defender taking possession of the basketball.
-- Turnovers represent lost scoring opportunities.
-- **Lower TOV% indicates better ball security.**
-
-`TOV% = TOV / (FGA + 0.44 × FTA + TOV)`
-
-**3. Offensive Rebound Percentage (ORB%) — Second-Chance Opportunities**
-
-Measures the proportion of available offensive rebounds secured by a team.
-
-- The animation illustrates a missed shot followed by an offensive rebound.
-- Recovering missed shots creates additional scoring opportunities.
-- **Higher ORB% indicates stronger offensive rebounding performance.**
-
-`ORB% = ORB / (ORB + Opponent DRB)`
-
-**4. Free Throw Rate (FT/FGA) — Free-Throw Production**
-
-Measures made free throws relative to field-goal attempts.
-
-- The animation illustrates a successful free throw.
-- The metric captures free-throw scoring production relative to field-goal volume.
-- **Higher FT/FGA indicates greater made free-throw production per field-goal attempt.**
-
-`FT/FGA = FTM / FGA`
-
-#### Team A vs. Team B — Overall Comparison
-
-The visualization compares the two teams across all four factors and highlights which team performs better in each category.
-
-| Four Factor | Team A | Team B | Advantage |
-|:---|---:|---:|:---|
-| Effective FG% | 55.2% | 52.1% | Team A |
-| Turnover % | 12.4% | 14.1% | Team A |
-| Offensive Rebound % | 28.6% | 31.2% | Team B |
-| Free Throw Rate | 19.8% | 17.5% | Team A |
-| **Factors Won** | **3 of 4** | **1 of 4** | **Team A** |
-
-**Overall illustrative result:** Team A leads in three of the four statistical categories.
-
-This comparison demonstrates how different dimensions of basketball performance can be evaluated together rather than relying on points scored alone.
-
-The factor count is a descriptive comparison, **not a predicted win probability or a weighted model score**. A predictive model would require historical game data, fitted coefficients, and performance validation.
+The visualization demonstrates how shooting efficiency, ball security, second-chance opportunities, and free-throw production contribute to overall team performance.
 
 **Tools:** Python · Pandas · Statistical Analysis · Predictive Modeling
 
 **[Explore NBA Four-Factor Modeling](https://github.com/RobCameron3/nba-four-factor-modeling)**
 
-<sub>Team A and Team B statistics are illustrative examples, not actual NBA team results. Basketball animations conceptually demonstrate the statistical formulas.</sub>
+<sub>Team statistics are illustrative. The overall result counts factors won, not predicted game outcomes.</sub>
 
 ---
 
@@ -158,41 +82,25 @@ The factor count is a descriptive comparison, **not a predicted win probability 
 
 **Transforming fragmented customer records into reliable business intelligence.**
 
-<img src="assets/customer-matching.svg" width="100%" alt="Animated Python workflow showing record cleaning, fuzzy matching, confidence scoring, and CRM validation"/>
+<img src="assets/customer-matching.svg" width="100%" alt="Animated Python customer matching workflow showing data cleaning, fuzzy matching, and CRM validation"/>
 
-Developed Python-based matching workflows to identify customer accounts across distributor datasets and CRM records.
+Developed Python workflows to standardize customer records, identify potential CRM matches, and reduce manual investigation.
 
-The workflow demonstrates how incoming customer data moves through several stages:
-
-1. **Data ingestion:** Read incoming distributor records.
-2. **Standardization:** Clean and normalize names, addresses, and other identifying fields.
-3. **Candidate matching:** Compare records against potential CRM accounts using fuzzy matching.
-4. **Validation:** Review similarity scores and verify candidate relationships.
-5. **Business outcome:** Improve customer identification and reduce manual investigation.
-
-**Measured professional result:** Increased customer identification from approximately **60% to 80–90%**.
+**Measured impact:** Improved customer identification from approximately **60% to 80–90%**.
 
 **Tools:** Python · Pandas · Fuzzy Matching · Data Cleaning · CRM Integration
 
-<sub>Professional work example. Animation is a conceptual representation of the matching workflow.</sub>
+<sub>Conceptual animation based on professional workflow experience.</sub>
 
 ---
 
 ### 🕵️ 03 | SQL Data Breach Investigation
 
-**Connecting fragmented evidence to identify the responsible record.**
+**Connecting fragmented evidence through relational analysis.**
 
-<img src="assets/sql-investigation.svg" width="100%" alt="Animated SQL investigation with three cards flipping to reveal incorrect matches and the identified record"/>
+<img src="assets/sql-investigation.svg" width="100%" alt="Animated SQL investigation showing candidate records being evaluated to identify a matching record"/>
 
-Investigated a simulated data breach using SQL queries to examine records and uncover relationships across datasets.
-
-The animation represents the investigation as a sequence of candidate checks: two incorrect matches are ruled out before the matching record is revealed.
-
-**Analytical methods:**
-- SQL joins to connect related records.
-- Filtering to narrow potential matches.
-- Relational analysis to investigate suspicious activity.
-- Query validation to establish the matching relationship.
+Investigated a simulated data breach using SQL joins, filtering, and relational analysis to identify connections between records and narrow potential matches.
 
 **Tools:** PostgreSQL · SQL · Joins · Data Investigation
 
@@ -202,18 +110,11 @@ The animation represents the investigation as a sequence of candidate checks: tw
 
 ### 📊 04 | Power BI Operational Performance & Logistics
 
-**Turning operational data into actionable KPIs.**
+**Turning operational data into actionable business KPIs.**
 
-<img src="assets/power-bi-performance.gif" width="100%" alt="Animated operational KPI dashboard showing business performance metrics"/>
+<img src="assets/power-bi-performance.gif" width="100%" alt="Animated Power BI operational performance dashboard"/>
 
-Developed an interactive business intelligence dashboard analyzing operational and commercial performance.
-
-**Analytical focus:**
-- Revenue and operational KPI monitoring.
-- Shipment and logistics trends.
-- Regional performance comparisons.
-- Subscription and business activity analysis.
-- Interactive filtering and reporting.
+Developed an interactive dashboard analyzing revenue, operational KPIs, shipment trends, regional performance, and business activity.
 
 **Tools:** Power BI · Power Query · DAX · Data Visualization
 
@@ -223,13 +124,11 @@ Developed an interactive business intelligence dashboard analyzing operational a
 
 ### 🌎 05 | Geographic Density & Trend Analytics
 
-**Understanding where business activity is concentrated.**
+**Identifying geographic concentrations and changing business patterns.**
 
-<img src="assets/geographic-density.gif" width="100%" alt="Animated geographic density visualization showing regional activity patterns"/>
+<img src="assets/geographic-density.gif" width="100%" alt="Animated Power BI geographic density and regional trend visualization"/>
 
-Built a Power BI analytics project examining geographic density and trends over time.
-
-The visualization illustrates how regional activity can be compared to identify geographic concentrations and changing patterns.
+Built a geographic analytics dashboard to compare regional activity, identify geographic concentrations, and examine trends over time.
 
 **Tools:** Power BI · Power Query · DAX · Geographic Analytics
 
@@ -239,17 +138,11 @@ The visualization illustrates how regional activity can be compared to identify 
 
 ### 📉 06 | Telecommunications Customer Churn Prediction
 
-**Identifying customers who may be at risk of leaving.**
+**Identifying customers at risk of leaving.**
 
-<img src="assets/customer-churn.gif" width="100%" alt="Animated customer churn risk segmentation visualization"/>
+<img src="assets/customer-churn.gif" width="100%" alt="Animated customer churn prediction and risk segmentation visualization"/>
 
-Developed a predictive classification model to analyze customer characteristics and identify potential churn risk.
-
-**Analytical focus:**
-- Customer behavior and retention patterns.
-- Data preparation and feature analysis.
-- Classification modeling.
-- Risk segmentation and model evaluation.
+Developed a predictive classification model to analyze customer characteristics, identify churn risk, and evaluate retention-related patterns.
 
 **Tools:** Python · Pandas · Classification · Predictive Analytics
 
@@ -259,17 +152,11 @@ Developed a predictive classification model to analyze customer characteristics 
 
 ### 🚗 07 | Used Car Price Prediction
 
-**Estimating vehicle prices using statistical modeling.**
+**Estimating vehicle prices through regression analysis.**
 
-<img src="assets/used-car-regression.gif" width="100%" alt="Animated regression visualization showing predicted used-car prices"/>
+<img src="assets/used-car-regression.gif" width="100%" alt="Animated used-car price regression and prediction visualization"/>
 
-Developed a regression-based analytics project examining the relationship between vehicle characteristics and used-car prices.
-
-**Analytical focus:**
-- Data cleaning and exploratory analysis.
-- Feature relationships and pricing trends.
-- Regression modeling.
-- Predicted versus actual price evaluation.
+Developed a regression model examining how vehicle characteristics influence used-car prices, including predicted versus actual price evaluation.
 
 **Tools:** Python · Pandas · Regression · Predictive Modeling
 
@@ -291,8 +178,6 @@ Developed a regression-based analytics project examining the relationship betwee
 ### Programming & Data Analysis
 
 <img src="https://skillicons.dev/icons?i=python,r,postgres,mysql,azure,git,github,vscode" alt="Programming and development tools"/>
-
-<br/>
 
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white)
 ![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white)
