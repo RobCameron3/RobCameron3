@@ -11,9 +11,9 @@
 <tr>
 <td width="30%" align="center" valign="middle">
 
-<img src="https://img.shields.io/badge/UMASS-AMHERST-881C1C?style=for-the-badge" alt="UMass Amherst"/>
+<h2>🎓</h2>
 
-<h1>🎓</h1>
+<img src="https://img.shields.io/badge/UMASS-AMHERST-881C1C?style=for-the-badge" alt="UMass Amherst"/>
 
 <h3>MASTER OF SCIENCE</h3>
 
@@ -39,6 +39,7 @@
 <a href="https://www.linkedin.com/in/robertjcameron-">
 <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"/>
 </a>
+
 <a href="https://github.com/RobCameron3">
 <img src="https://img.shields.io/badge/GitHub-Portfolio-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub"/>
 </a>
@@ -51,7 +52,7 @@
 
 ## 💼 Professional Experience & Business Impact
 
-### Financial / Data Analyst | Solmetex
+### Business Operations Analyst | Solmetex
 **April 2024 – October 2026**
 
 Improved customer identification, data quality, and operational reporting through Python automation, CRM analysis, and data integration.
@@ -71,15 +72,11 @@ Improved customer identification, data quality, and operational reporting throug
 
 **Analyzing the statistical factors that influence basketball performance.**
 
-<img src="assets/nba_three_point_split.svg" width="100%" alt="Animated NBA Four Factors comparison showing shooting efficiency, turnovers, offensive rebounding, free-throw rate, and overall team performance"/>
-
-Analyzed shooting efficiency, turnovers, offensive rebounding, and free-throw production using Dean Oliver's Four Factors framework to evaluate team performance and identify competitive advantages.
+Applied Dean Oliver's Four Factors framework to examine shooting efficiency, turnovers, offensive rebounding, and free-throw production, identifying performance differences between teams.
 
 **Tools:** Python · Pandas · Statistical Analysis · Predictive Modeling
 
 **[Explore NBA Four-Factor Modeling](https://github.com/RobCameron3/nba-four-factor-modeling)**
-
-<sub>Team statistics in the animation are illustrative. Factor counts are not predicted game outcomes.</sub>
 
 ---
 
@@ -94,8 +91,6 @@ Developed Python-based matching workflows to clean and standardize distributor r
 **Measured impact:** Increased customer identification from approximately **60% to 80–90%**.
 
 **Tools:** Python · Pandas · Fuzzy Matching · Data Cleaning · CRM Integration
-
-<sub>Conceptual animation based on professional workflow experience.</sub>
 
 ---
 
