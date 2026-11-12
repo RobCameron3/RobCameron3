@@ -47,3 +47,7 @@ I hold a Master of Science in Business Analytics from the University of Massachu
 
 ### Analytics, Automation & Modeling
 ![ETL](https://img.shields.io/badge/ETL-5865F2?style=for-the-badge) ![Data Integration](https://img.shields.io/badge/Data_Integration-5865F2?style=for-the-badge) ![Data Cleaning](https://img.shields.io/badge/Data_Cleaning-5865F2?style=for-the-badge) ![Fuzzy Matching](https://img.shields.io/badge/Fuzzy_Matching-5865F2?style=for-the-badge) ![Automation](https://img.shields.io/badge/Workflow_Automation-5865F2?style=for-the-badge) ![Data Visualization](https://img.shields.io/badge/Data_Visualization-008080?style=for-the-badge) ![Statistical Analysis](https://img.shields.io/badge/Statistical_Analysis-008080?style=for-the-badge) ![Regression](https://img.shields.io/badge/Regression-008080?style=for-the-badge) ![Classification](https://img.shields.io/badge/Classification-008080?style=for-the-badge) ![Predictive Modeling](https://img.shields.io/badge/Predictive_Modeling-008080?style=for-the-badge) ![KPI Reporting](https://img.shields.io/badge/KPI_Reporting-008080?style=for-the-badge)
+
+## GitHub Stats 📈
+
+![GitHub Streak](https://streak-stats.demolab.com?user=RobCameron3)
