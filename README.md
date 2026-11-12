@@ -1,28 +1,32 @@
 
 <div align="center">
+
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:071525,50:123C57,100:087F8C&height=150&section=header&text=Hello,%20I'm%20Robert%20J.%20Cameron%20%F0%9F%91%8B&fontColor=FFFFFF&fontSize=29&fontAlignY=40&animation=fadeIn" width="100%" alt="Robert J. Cameron"/>
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=17&duration=2600&pause=1200&color=20B8C3&center=true&vCenter=true&width=800&height=30&lines=I+build+business+intelligence+solutions.;I+improve+data+quality+and+efficiency.;I+turn+data+into+better+business+decisions.;I+transform+analytics+into+business+value." alt="Animated professional introduction"/>
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=17&duration=2600&pause=1200&color=20B8C3&center=true&vCenter=true&width=800&height=32&lines=I+build+business+intelligence+solutions.;I+improve+data+quality+and+efficiency.;I+turn+data+into+better+business+decisions.;I+transform+analytics+into+business+value." alt="Animated professional introduction"/>
+
 </div>
 
 <table>
 <tr>
-<td width="28%" align="center" valign="middle">
-
-<h2>🎓</h2>
+<td width="30%" align="center" valign="middle">
 
 <img src="https://img.shields.io/badge/UMASS-AMHERST-881C1C?style=for-the-badge" alt="UMass Amherst"/>
 
-<p><strong>MASTER OF SCIENCE</strong></p>
+<h1>🎓</h1>
 
-<p><strong>BUSINESS ANALYTICS</strong></p>
+<h3>MASTER OF SCIENCE</h3>
 
-<p>Isenberg School of Management</p>
+<h3>BUSINESS ANALYTICS</h3>
 
-<p>Class of 2023</p>
+<strong>Isenberg School of Management</strong>
+
+<p>University of Massachusetts Amherst</p>
+
+<img src="https://img.shields.io/badge/CLASS_OF-2023-881C1C?style=for-the-badge" alt="Class of 2023"/>
 
 </td>
-<td width="72%" valign="middle">
+<td width="70%" valign="middle">
 
 <h2>Robert J. Cameron</h2>
 
@@ -52,12 +56,12 @@
 
 Improved customer identification, data quality, and operational reporting through Python automation, CRM analysis, and data integration.
 
-| Key Achievement | Business Impact |
-|:---|:---|
-| Python fuzzy matching and data standardization | Improved customer identification from **60% to 80–90%** |
-| Targeted unmatched-record investigation | Resolved **648 of 877 records (73.9%)** |
-| Distributor data consolidation | Standardized **17 distributor workbooks** |
-| CRM customer and address validation | Improved data reliability and reduced manual matching effort |
+| Business Challenge | Solution | Business Impact |
+|:---|:---|:---|
+| Customer records could not consistently be matched to existing CRM accounts | Developed Python fuzzy-matching and data-standardization workflows | Improved customer identification from approximately **60% to 80–90%** |
+| Recurring monthly datasets created large volumes of unmatched customer records | Analyzed **877 records**, identified high-yield matching opportunities, and prioritized records with the greatest potential for resolution | Resolved **648 records (73.9%)**, establishing a targeted approach to reducing monthly matching backlogs and accelerating data reconciliation |
+| Distributor data was fragmented across separate spreadsheets | Consolidated and standardized **17 distributor workbooks** | Improved cross-distributor analysis and data-quality review |
+| Inconsistent customer information complicated reporting | Standardized customer names, addresses, and account relationships | Improved data reliability and reduced manual matching effort |
 
 ---
 
@@ -67,15 +71,15 @@ Improved customer identification, data quality, and operational reporting throug
 
 **Analyzing the statistical factors that influence basketball performance.**
 
-<img src="assets/nba_three_point_split.svg" width="100%" alt="Animated NBA Four Factors comparison showing shooting efficiency, turnovers, offensive rebounding, free-throw rate, and the overall team result"/>
+<img src="assets/nba_three_point_split.svg" width="100%" alt="Animated NBA Four Factors comparison showing shooting efficiency, turnovers, offensive rebounding, free-throw rate, and overall team performance"/>
 
-Analyzed shooting efficiency, turnovers, offensive rebounding, and free-throw production to evaluate team performance using Dean Oliver's Four Factors framework.
+Analyzed shooting efficiency, turnovers, offensive rebounding, and free-throw production using Dean Oliver's Four Factors framework to evaluate team performance and identify competitive advantages.
 
 **Tools:** Python · Pandas · Statistical Analysis · Predictive Modeling
 
 **[Explore NBA Four-Factor Modeling](https://github.com/RobCameron3/nba-four-factor-modeling)**
 
-<sub>Team statistics shown in the animation are illustrative.</sub>
+<sub>Team statistics in the animation are illustrative. Factor counts are not predicted game outcomes.</sub>
 
 ---
 
@@ -83,11 +87,11 @@ Analyzed shooting efficiency, turnovers, offensive rebounding, and free-throw pr
 
 **Transforming fragmented customer records into reliable business intelligence.**
 
-<img src="assets/customer-matching.svg" width="100%" alt="Animated Python customer matching workflow showing record cleaning, fuzzy matching, and CRM validation"/>
+<img src="assets/customer-matching.svg" width="100%" alt="Animated Python customer matching workflow showing data standardization, fuzzy matching, and CRM validation"/>
 
-Developed Python workflows to standardize customer records, identify potential CRM matches, and reduce manual investigation.
+Developed Python-based matching workflows to clean and standardize distributor records, identify potential CRM accounts, and improve customer identification efficiency.
 
-**Measured impact:** Improved customer identification from approximately **60% to 80–90%**.
+**Measured impact:** Increased customer identification from approximately **60% to 80–90%**.
 
 **Tools:** Python · Pandas · Fuzzy Matching · Data Cleaning · CRM Integration
 
