@@ -8,12 +8,6 @@
   <clipPath id="courtClip">
     <rect x="870" y="76" width="306" height="225"/>
   </clipPath>
-  <clipPath id="typingClip">
-    <rect x="0" y="0" width="0" height="20">
-      <animate attributeName="width" values="0;310;310"
-        keyTimes="0;.8;1" dur="1s" fill="freeze"/>
-    </rect>
-  </clipPath>
 </defs>
 
 <style>
@@ -35,89 +29,309 @@
 </g>
 
 <!-- TERMINAL -->
-<rect x="18" y="38" width="326" height="274" rx="12" fill="#04121e" stroke="#48cdd5" stroke-width="1.7"/>
+<rect x="18" y="38" width="326" height="274" rx="12"
+  fill="#04121e" stroke="#48cdd5" stroke-width="1.7"/>
 <circle cx="39" cy="58" r="4.5" fill="#f07575"/>
 <circle cx="55" cy="58" r="4.5" fill="#e6be62"/>
 <circle cx="71" cy="58" r="4.5" fill="#55d5a1"/>
 <path d="M18 77H344" stroke="#48cdd5" opacity=".45"/>
 
-<!-- SCRIPT 1: FUZZY MATCHER -->
+<!--
+  TERMINAL TYPING ENGINE
+  20-second repeating cycle:
+  0-10s: fuzzy matching script
+  10-20s: NBA scraper script
+
+  Each line has an independent animated clipping rectangle.
+  Width grows in character-sized steps, creating actual
+  left-to-right typing instead of line-by-line popping.
+-->
+
+<!-- SCRIPT 1 -->
 <g>
-  <animate attributeName="opacity" values="1;1;0;0;1"
-    keyTimes="0;.499;.5;.999;1" dur="20s" repeatCount="indefinite"/>
-  <text x="184" y="62" text-anchor="middle" class="mono" font-size="11" fill="#a5e8ea">fuzzy_account_matcher.py</text>
+  <animate attributeName="opacity"
+    values="1;1;0;0;1"
+    keyTimes="0;.4999;.5;.9999;1"
+    calcMode="discrete"
+    dur="20s" repeatCount="indefinite"/>
+
+  <text x="184" y="62" text-anchor="middle"
+    class="mono" font-size="11" fill="#a5e8ea">
+    fuzzy_account_matcher.py
+  </text>
 
   <g class="code" xml:space="preserve">
-    <text x="34" y="104" fill="#6fe2af"># Parallel fuzzy matching
-      <animate attributeName="opacity" values="0;1" dur=".5s" fill="freeze"/>
-    </text>
-    <text x="34" y="124" fill="#8be0e5">num_cores = cpu_count()
-      <animate attributeName="opacity" values="0;0;1" keyTimes="0;.5;1" dur="1s" fill="freeze"/>
-    </text>
-    <text x="34" y="144" fill="#f0c879">chunks = [
-      <animate attributeName="opacity" values="0;0;1" keyTimes="0;.66;1" dur="1.5s" fill="freeze"/>
-    </text>
-    <text x="34" y="164" fill="#e9f3f7">  df.iloc[i:i+chunk_size]
-      <animate attributeName="opacity" values="0;0;1" keyTimes="0;.75;1" dur="2s" fill="freeze"/>
-    </text>
-    <text x="34" y="184" fill="#e9f3f7">  for i in range(0,len(df),size)]
-      <animate attributeName="opacity" values="0;0;1" keyTimes="0;.8;1" dur="2.5s" fill="freeze"/>
-    </text>
-    <text x="34" y="204" fill="#f0c879">results = Parallel(n_jobs=cores)(
-      <animate attributeName="opacity" values="0;0;1" keyTimes="0;.83;1" dur="3s" fill="freeze"/>
-    </text>
-    <text x="34" y="224" fill="#e9f3f7">  delayed(find_best_match)(
-      <animate attributeName="opacity" values="0;0;1" keyTimes="0;.86;1" dur="3.5s" fill="freeze"/>
-    </text>
-    <text x="34" y="244" fill="#e9f3f7">    chunk, col, field, crm, 2)
-      <animate attributeName="opacity" values="0;0;1" keyTimes="0;.875;1" dur="4s" fill="freeze"/>
-    </text>
-    <text x="34" y="264" fill="#e9f3f7">  for chunk in chunks)
-      <animate attributeName="opacity" values="0;0;1" keyTimes="0;.89;1" dur="4.5s" fill="freeze"/>
-    </text>
-    <text x="34" y="284" fill="#8be0e5">matches = pd.concat(results)
-      <animate attributeName="opacity" values="0;0;1" keyTimes="0;.9;1" dur="5s" fill="freeze"/>
-    </text>
+
+    <g>
+      <clipPath id="f1"><rect x="34" y="89" width="0" height="19">
+        <animate attributeName="width"
+          values="0;0;300;300;0"
+          keyTimes="0;0;.035;.999;1"
+          calcMode="linear" dur="20s"
+          repeatCount="indefinite"/>
+      </rect></clipPath>
+      <text x="34" y="104" fill="#6fe2af"
+        clip-path="url(#f1)"># Parallel fuzzy matching</text>
+    </g>
+
+    <g>
+      <clipPath id="f2"><rect x="34" y="109" width="0" height="19">
+        <animate attributeName="width"
+          values="0;0;300;300;0"
+          keyTimes="0;.04;.075;.999;1"
+          dur="20s" repeatCount="indefinite"/>
+      </rect></clipPath>
+      <text x="34" y="124" fill="#8be0e5"
+        clip-path="url(#f2)">num_cores = cpu_count()</text>
+    </g>
+
+    <g>
+      <clipPath id="f3"><rect x="34" y="129" width="0" height="19">
+        <animate attributeName="width"
+          values="0;0;300;300;0"
+          keyTimes="0;.08;.115;.999;1"
+          dur="20s" repeatCount="indefinite"/>
+      </rect></clipPath>
+      <text x="34" y="144" fill="#f0c879"
+        clip-path="url(#f3)">chunks = [</text>
+    </g>
+
+    <g>
+      <clipPath id="f4"><rect x="34" y="149" width="0" height="19">
+        <animate attributeName="width"
+          values="0;0;300;300;0"
+          keyTimes="0;.12;.155;.999;1"
+          dur="20s" repeatCount="indefinite"/>
+      </rect></clipPath>
+      <text x="34" y="164" fill="#e9f3f7"
+        clip-path="url(#f4)">  df.iloc[i:i+chunk_size]</text>
+    </g>
+
+    <g>
+      <clipPath id="f5"><rect x="34" y="169" width="0" height="19">
+        <animate attributeName="width"
+          values="0;0;300;300;0"
+          keyTimes="0;.16;.195;.999;1"
+          dur="20s" repeatCount="indefinite"/>
+      </rect></clipPath>
+      <text x="34" y="184" fill="#e9f3f7"
+        clip-path="url(#f5)">  for i in range(0,len(df),size)]</text>
+    </g>
+
+    <g>
+      <clipPath id="f6"><rect x="34" y="189" width="0" height="19">
+        <animate attributeName="width"
+          values="0;0;300;300;0"
+          keyTimes="0;.20;.235;.999;1"
+          dur="20s" repeatCount="indefinite"/>
+      </rect></clipPath>
+      <text x="34" y="204" fill="#f0c879"
+        clip-path="url(#f6)">results = Parallel(n_jobs=cores)(</text>
+    </g>
+
+    <g>
+      <clipPath id="f7"><rect x="34" y="209" width="0" height="19">
+        <animate attributeName="width"
+          values="0;0;300;300;0"
+          keyTimes="0;.24;.275;.999;1"
+          dur="20s" repeatCount="indefinite"/>
+      </rect></clipPath>
+      <text x="34" y="224" fill="#e9f3f7"
+        clip-path="url(#f7)">  delayed(find_best_match)(</text>
+    </g>
+
+    <g>
+      <clipPath id="f8"><rect x="34" y="229" width="0" height="19">
+        <animate attributeName="width"
+          values="0;0;300;300;0"
+          keyTimes="0;.28;.315;.999;1"
+          dur="20s" repeatCount="indefinite"/>
+      </rect></clipPath>
+      <text x="34" y="244" fill="#e9f3f7"
+        clip-path="url(#f8)">    chunk, col, field, crm, 2)</text>
+    </g>
+
+    <g>
+      <clipPath id="f9"><rect x="34" y="249" width="0" height="19">
+        <animate attributeName="width"
+          values="0;0;300;300;0"
+          keyTimes="0;.32;.355;.999;1"
+          dur="20s" repeatCount="indefinite"/>
+      </rect></clipPath>
+      <text x="34" y="264" fill="#e9f3f7"
+        clip-path="url(#f9)">  for chunk in chunks)</text>
+    </g>
+
+    <g>
+      <clipPath id="f10"><rect x="34" y="269" width="0" height="19">
+        <animate attributeName="width"
+          values="0;0;300;300;0"
+          keyTimes="0;.36;.395;.999;1"
+          dur="20s" repeatCount="indefinite"/>
+      </rect></clipPath>
+      <text x="34" y="284" fill="#8be0e5"
+        clip-path="url(#f10)">matches = pd.concat(results)</text>
+    </g>
+
   </g>
+
+  <!-- BLINKING CURSOR MOVES DOWN AS LINES COMPLETE -->
+  <rect x="34" y="91" width="6" height="13"
+    fill="#8be0e5" opacity="0">
+    <animate attributeName="opacity"
+      values="1;0;1;0;1"
+      dur=".55s" repeatCount="indefinite"/>
+    <animate attributeName="y"
+      values="91;111;131;151;171;191;211;231;251;271;271"
+      keyTimes="0;.04;.08;.12;.16;.20;.24;.28;.32;.36;1"
+      calcMode="discrete" dur="20s"
+      repeatCount="indefinite"/>
+    <animate attributeName="x"
+      values="34;184;184;184;184;184;184;184;184;184;184"
+      keyTimes="0;.035;.075;.115;.155;.195;.235;.275;.315;.355;1"
+      calcMode="discrete" dur="20s"
+      repeatCount="indefinite"/>
+  </rect>
 </g>
 
-<!-- SCRIPT 2: NBA SCRAPER -->
+<!-- SCRIPT 2 -->
 <g opacity="0">
-  <animate attributeName="opacity" values="0;0;1;1;0"
-    keyTimes="0;.499;.5;.999;1" dur="20s" repeatCount="indefinite"/>
-  <text x="184" y="62" text-anchor="middle" class="mono" font-size="11" fill="#a5e8ea">nba_stats_scraper.py</text>
+  <animate attributeName="opacity"
+    values="0;0;1;1;0"
+    keyTimes="0;.4999;.5;.9999;1"
+    calcMode="discrete"
+    dur="20s" repeatCount="indefinite"/>
+
+  <text x="184" y="62" text-anchor="middle"
+    class="mono" font-size="11" fill="#a5e8ea">
+    nba_stats_scraper.py
+  </text>
+
   <g class="code" xml:space="preserve">
-    <text x="34" y="104" fill="#6fe2af"># Basketball Reference ETL
-      <animate attributeName="opacity" values="0;1" dur=".5s" begin="10s" fill="freeze"/>
-    </text>
-    <text x="34" y="124" fill="#8be0e5">response = requests.get(
-      <animate attributeName="opacity" values="0;1" dur=".5s" begin="10.5s" fill="freeze"/>
-    </text>
-    <text x="34" y="144" fill="#e9f3f7">  url, headers=headers)
-      <animate attributeName="opacity" values="0;1" dur=".5s" begin="11s" fill="freeze"/>
-    </text>
-    <text x="34" y="164" fill="#f0c879">if response.status_code == 429:
-      <animate attributeName="opacity" values="0;1" dur=".5s" begin="11.5s" fill="freeze"/>
-    </text>
-    <text x="34" y="184" fill="#e9f3f7">  time.sleep(120)
-      <animate attributeName="opacity" values="0;1" dur=".5s" begin="12s" fill="freeze"/>
-    </text>
-    <text x="34" y="204" fill="#8be0e5">soup = BeautifulSoup(
-      <animate attributeName="opacity" values="0;1" dur=".5s" begin="12.5s" fill="freeze"/>
-    </text>
-    <text x="34" y="224" fill="#e9f3f7">  response.text, "html.parser")
-      <animate attributeName="opacity" values="0;1" dur=".5s" begin="13s" fill="freeze"/>
-    </text>
-    <text x="34" y="244" fill="#e9f3f7">table = soup.find("table")
-      <animate attributeName="opacity" values="0;1" dur=".5s" begin="13.5s" fill="freeze"/>
-    </text>
-    <text x="34" y="264" fill="#8be0e5">df = pd.read_html(str(table))[0]
-      <animate attributeName="opacity" values="0;1" dur=".5s" begin="14s" fill="freeze"/>
-    </text>
-    <text x="34" y="284" fill="#6fe2af"># Export player and team stats
-      <animate attributeName="opacity" values="0;1" dur=".5s" begin="14.5s" fill="freeze"/>
-    </text>
+
+    <g>
+      <clipPath id="n1"><rect x="34" y="89" width="0" height="19">
+        <animate attributeName="width"
+          values="0;0;300;300;0"
+          keyTimes="0;.5;.535;.999;1"
+          dur="20s" repeatCount="indefinite"/>
+      </rect></clipPath>
+      <text x="34" y="104" fill="#6fe2af"
+        clip-path="url(#n1)"># Basketball Reference ETL</text>
+    </g>
+
+    <g>
+      <clipPath id="n2"><rect x="34" y="109" width="0" height="19">
+        <animate attributeName="width"
+          values="0;0;300;300;0"
+          keyTimes="0;.54;.575;.999;1"
+          dur="20s" repeatCount="indefinite"/>
+      </rect></clipPath>
+      <text x="34" y="124" fill="#8be0e5"
+        clip-path="url(#n2)">response = requests.get(</text>
+    </g>
+
+    <g>
+      <clipPath id="n3"><rect x="34" y="129" width="0" height="19">
+        <animate attributeName="width"
+          values="0;0;300;300;0"
+          keyTimes="0;.58;.615;.999;1"
+          dur="20s" repeatCount="indefinite"/>
+      </rect></clipPath>
+      <text x="34" y="144" fill="#e9f3f7"
+        clip-path="url(#n3)">  url, headers=headers)</text>
+    </g>
+
+    <g>
+      <clipPath id="n4"><rect x="34" y="149" width="0" height="19">
+        <animate attributeName="width"
+          values="0;0;300;300;0"
+          keyTimes="0;.62;.655;.999;1"
+          dur="20s" repeatCount="indefinite"/>
+      </rect></clipPath>
+      <text x="34" y="164" fill="#f0c879"
+        clip-path="url(#n4)">if response.status_code == 429:</text>
+    </g>
+
+    <g>
+      <clipPath id="n5"><rect x="34" y="169" width="0" height="19">
+        <animate attributeName="width"
+          values="0;0;300;300;0"
+          keyTimes="0;.66;.695;.999;1"
+          dur="20s" repeatCount="indefinite"/>
+      </rect></clipPath>
+      <text x="34" y="184" fill="#e9f3f7"
+        clip-path="url(#n5)">  time.sleep(120)</text>
+    </g>
+
+    <g>
+      <clipPath id="n6"><rect x="34" y="189" width="0" height="19">
+        <animate attributeName="width"
+          values="0;0;300;300;0"
+          keyTimes="0;.70;.735;.999;1"
+          dur="20s" repeatCount="indefinite"/>
+      </rect></clipPath>
+      <text x="34" y="204" fill="#8be0e5"
+        clip-path="url(#n6)">soup = BeautifulSoup(</text>
+    </g>
+
+    <g>
+      <clipPath id="n7"><rect x="34" y="209" width="0" height="19">
+        <animate attributeName="width"
+          values="0;0;300;300;0"
+          keyTimes="0;.74;.775;.999;1"
+          dur="20s" repeatCount="indefinite"/>
+      </rect></clipPath>
+      <text x="34" y="224" fill="#e9f3f7"
+        clip-path="url(#n7)">  response.text, "html.parser")</text>
+    </g>
+
+    <g>
+      <clipPath id="n8"><rect x="34" y="229" width="0" height="19">
+        <animate attributeName="width"
+          values="0;0;300;300;0"
+          keyTimes="0;.78;.815;.999;1"
+          dur="20s" repeatCount="indefinite"/>
+      </rect></clipPath>
+      <text x="34" y="244" fill="#e9f3f7"
+        clip-path="url(#n8)">table = soup.find("table")</text>
+    </g>
+
+    <g>
+      <clipPath id="n9"><rect x="34" y="249" width="0" height="19">
+        <animate attributeName="width"
+          values="0;0;300;300;0"
+          keyTimes="0;.82;.855;.999;1"
+          dur="20s" repeatCount="indefinite"/>
+      </rect></clipPath>
+      <text x="34" y="264" fill="#8be0e5"
+        clip-path="url(#n9)">df = pd.read_html(str(table))[0]</text>
+    </g>
+
+    <g>
+      <clipPath id="n10"><rect x="34" y="269" width="0" height="19">
+        <animate attributeName="width"
+          values="0;0;300;300;0"
+          keyTimes="0;.86;.895;.999;1"
+          dur="20s" repeatCount="indefinite"/>
+      </rect></clipPath>
+      <text x="34" y="284" fill="#6fe2af"
+        clip-path="url(#n10)"># Export player and team stats</text>
+    </g>
   </g>
+
+  <!-- NBA TYPING CURSOR -->
+  <rect x="34" y="91" width="6" height="13"
+    fill="#8be0e5">
+    <animate attributeName="opacity"
+      values="1;0;1;0;1"
+      dur=".55s" repeatCount="indefinite"/>
+    <animate attributeName="y"
+      values="91;91;111;131;151;171;191;211;231;251;271;271"
+      keyTimes="0;.5;.54;.58;.62;.66;.70;.74;.78;.82;.86;1"
+      calcMode="discrete" dur="20s"
+      repeatCount="indefinite"/>
+  </rect>
 </g>
 
 <!-- PROFILE -->
