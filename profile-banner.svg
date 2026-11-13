@@ -1,318 +1,311 @@
 
 <svg xmlns="http://www.w3.org/2000/svg"
-     width="1200" height="260" viewBox="0 0 1200 260">
+     width="1200" height="340"
+     viewBox="0 0 1200 340"
+     role="img"
+     aria-label="Robert J. Cameron — animated analytics projects and basketball pick-and-roll">
 
 <defs>
-  <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
     <stop offset="0%" stop-color="#061421"/>
-    <stop offset="55%" stop-color="#12364F"/>
-    <stop offset="100%" stop-color="#086A78"/>
+    <stop offset="100%" stop-color="#12485b"/>
   </linearGradient>
 
-  <clipPath id="terminal">
-    <rect x="34" y="65" width="268" height="135"/>
-  </clipPath>
-
-  <clipPath id="typing">
-    <rect x="34" y="0" width="0" height="210">
-      <animate attributeName="width"
-        values="0;268;268;0"
-        keyTimes="0;0.4;0.49;0.5"
-        dur="12s" repeatCount="indefinite"/>
-    </rect>
-  </clipPath>
-
-  <clipPath id="court">
-    <rect x="931" y="49" width="240" height="153"/>
+  <clipPath id="terminalClip">
+    <rect x="37" y="90" width="358" height="210"/>
   </clipPath>
 </defs>
 
 <!-- BACKGROUND -->
-<rect width="1200" height="260" fill="url(#bg)"/>
+<rect width="1200" height="340" fill="url(#bg)"/>
 
-<g stroke="#64C8D7" stroke-width=".7" opacity=".11">
-  <path d="M0 35H1200 M0 70H1200 M0 105H1200 M0 140H1200 M0 175H1200 M0 210H1200"/>
-  <path d="M50 0V260 M100 0V260 M150 0V260 M200 0V260 M250 0V260 M300 0V260 M350 0V260 M400 0V260 M450 0V260 M500 0V260 M550 0V260 M600 0V260 M650 0V260 M700 0V260 M750 0V260 M800 0V260 M850 0V260 M900 0V260 M950 0V260 M1000 0V260 M1050 0V260 M1100 0V260 M1150 0V260"/>
+<g stroke="#61a9bd" stroke-width=".5" opacity=".12">
+  <path d="M0 50H1200 M0 100H1200 M0 150H1200 M0 200H1200 M0 250H1200 M0 300H1200"/>
+  <path d="M60 0V340 M120 0V340 M180 0V340 M240 0V340 M300 0V340 M360 0V340 M420 0V340 M480 0V340 M540 0V340 M600 0V340 M660 0V340 M720 0V340 M780 0V340 M840 0V340 M900 0V340 M960 0V340 M1020 0V340 M1080 0V340 M1140 0V340"/>
 </g>
 
 <!-- PYTHON TERMINAL -->
-<rect x="20" y="29" width="297" height="186" rx="10"
-      fill="#061421" stroke="#42C8D0"/>
+<rect x="18" y="38" width="390" height="274" rx="13"
+      fill="#04121e" stroke="#48cdd5" stroke-width="2"/>
 
-<circle cx="40" cy="47" r="4" fill="#F07575"/>
-<circle cx="54" cy="47" r="4" fill="#E6BE62"/>
-<circle cx="68" cy="47" r="4" fill="#55D5A1"/>
+<circle cx="40" cy="59" r="5" fill="#f07575"/>
+<circle cx="57" cy="59" r="5" fill="#e6be62"/>
+<circle cx="74" cy="59" r="5" fill="#55d5a1"/>
 
-<path d="M20 62H317" stroke="#42C8D0" opacity=".4"/>
+<path d="M18 78H408" stroke="#48cdd5" opacity=".5"/>
 
-<!-- SCRIPT 1: SOLMETEX -->
-<g>
+<!-- SOLMETEX CODE -->
+<g opacity="1">
   <animate attributeName="opacity"
     values="1;1;0;0;1"
-    keyTimes="0;.48;.5;.98;1"
-    dur="12s" repeatCount="indefinite"/>
+    keyTimes="0;.495;.5;.995;1"
+    dur="16s" repeatCount="indefinite"/>
 
-  <text x="168" y="51" text-anchor="middle"
-        font-family="monospace" font-size="10"
-        fill="#9ADBE0">
-    fuzzy_account_matcher.py
-  </text>
+  <text x="215" y="63" text-anchor="middle"
+        font-family="monospace" font-size="12"
+        fill="#a5e8ea">fuzzy_account_matcher.py</text>
 
-  <g clip-path="url(#terminal)">
-    <g clip-path="url(#typing)"
-       font-family="monospace" font-size="11.5">
+  <g font-family="monospace" font-size="12.3"
+     clip-path="url(#terminalClip)">
 
-      <text x="35" y="81" fill="#77D6A8">
-        # Parallel fuzzy matching
-      </text>
+    <text x="37" y="104" fill="#6fe2af">
+      # Parallel fuzzy matching
+      <animate attributeName="opacity" values="0;1;1"
+        keyTimes="0;.06;1" dur="8s" repeatCount="indefinite"/>
+    </text>
 
-      <text x="35" y="99" fill="#7DE0E5">
-        num_cores = cpu_count()
-      </text>
+    <text x="37" y="124" fill="#8be0e5" opacity="0">
+      num_cores = cpu_count()
+      <animate attributeName="opacity" values="0;0;1;1"
+        keyTimes="0;.1;.15;1" dur="8s" repeatCount="indefinite"/>
+    </text>
 
-      <text x="35" y="117" fill="#FFFFFF">
-        chunks = split(retail_df)
-      </text>
+    <text x="37" y="144" fill="#f0c879" opacity="0">
+      chunks = [
+      <animate attributeName="opacity" values="0;0;1;1"
+        keyTimes="0;.2;.25;1" dur="8s" repeatCount="indefinite"/>
+    </text>
 
-      <text x="35" y="135" fill="#E8C378">
-        results = Parallel(
-      </text>
+    <text x="37" y="164" fill="#ffffff" opacity="0">
+      &#160;&#160;df.iloc[i:i+chunk_size]
+      <animate attributeName="opacity" values="0;0;1;1"
+        keyTimes="0;.3;.35;1" dur="8s" repeatCount="indefinite"/>
+    </text>
 
-      <text x="35" y="153" fill="#E8C378">
-          n_jobs=num_cores)(
-      </text>
+    <text x="37" y="184" fill="#ffffff" opacity="0">
+      &#160;&#160;for i in range(0,len(df),chunk_size)]
+      <animate attributeName="opacity" values="0;0;1;1"
+        keyTimes="0;.4;.45;1" dur="8s" repeatCount="indefinite"/>
+    </text>
 
-      <text x="35" y="171" fill="#FFFFFF">
-          delayed(match)(chunk)
-      </text>
+    <text x="37" y="204" fill="#f0c879" opacity="0">
+      results = Parallel(n_jobs=num_cores)(
+      <animate attributeName="opacity" values="0;0;1;1"
+        keyTimes="0;.5;.55;1" dur="8s" repeatCount="indefinite"/>
+    </text>
 
-      <text x="35" y="189" fill="#7DE0E5">
-        df = pd.concat(results)
-      </text>
-    </g>
+    <text x="37" y="224" fill="#ffffff" opacity="0">
+      &#160;&#160;delayed(parallel_find_best_match)(
+      <animate attributeName="opacity" values="0;0;1;1"
+        keyTimes="0;.6;.65;1" dur="8s" repeatCount="indefinite"/>
+    </text>
+
+    <text x="37" y="244" fill="#ffffff" opacity="0">
+      &#160;&#160;&#160;&#160;chunk, col, field, crm, 2)
+      <animate attributeName="opacity" values="0;0;1;1"
+        keyTimes="0;.7;.75;1" dur="8s" repeatCount="indefinite"/>
+    </text>
+
+    <text x="37" y="264" fill="#ffffff" opacity="0">
+      &#160;&#160;for chunk in chunks)
+      <animate attributeName="opacity" values="0;0;1;1"
+        keyTimes="0;.8;.85;1" dur="8s" repeatCount="indefinite"/>
+    </text>
+
+    <text x="37" y="284" fill="#8be0e5" opacity="0">
+      matches = pd.concat(results)
+      <animate attributeName="opacity" values="0;0;1;1"
+        keyTimes="0;.9;.95;1" dur="8s" repeatCount="indefinite"/>
+    </text>
   </g>
 </g>
 
-<!-- SCRIPT 2: NBA SCRAPER -->
+<!-- NBA SCRAPER CODE -->
 <g opacity="0">
   <animate attributeName="opacity"
     values="0;0;1;1;0"
-    keyTimes="0;.49;.5;.98;1"
-    dur="12s" repeatCount="indefinite"/>
+    keyTimes="0;.495;.5;.995;1"
+    dur="16s" repeatCount="indefinite"/>
 
-  <text x="168" y="51" text-anchor="middle"
-        font-family="monospace" font-size="10"
-        fill="#9ADBE0">
-    nba_stats_scraper.py
-  </text>
+  <text x="215" y="63" text-anchor="middle"
+        font-family="monospace" font-size="12"
+        fill="#a5e8ea">nba_stats_scraper.py</text>
 
-  <g clip-path="url(#terminal)">
-    <g font-family="monospace" font-size="11.5">
+  <g font-family="monospace" font-size="12.3"
+     clip-path="url(#terminalClip)">
 
-      <g>
-        <animateTransform attributeName="transform"
-          type="translate"
-          values="0 0;0 0"
-          dur="12s" repeatCount="indefinite"/>
+    <text x="37" y="104" fill="#6fe2af">
+      # Basketball Reference scraper
+    </text>
 
-        <text x="35" y="81" fill="#77D6A8">
-          # NBA 2024-25 stats
-        </text>
+    <text x="37" y="124" fill="#8be0e5">
+      response = requests.get(url,
+    </text>
 
-        <text x="35" y="99" fill="#7DE0E5">
-          response = requests.get(
-        </text>
+    <text x="37" y="144" fill="#ffffff">
+      &#160;&#160;headers=headers)
+    </text>
 
-        <text x="35" y="117" fill="#FFFFFF">
-              url, headers=headers)
-        </text>
+    <text x="37" y="164" fill="#f0c879">
+      if response.status_code == 429:
+    </text>
 
-        <text x="35" y="135" fill="#E8C378">
-          if response.status_code==429:
-        </text>
+    <text x="37" y="184" fill="#ffffff">
+      &#160;&#160;time.sleep(120)
+    </text>
 
-        <text x="35" y="153" fill="#FFFFFF">
-              time.sleep(120)
-        </text>
+    <text x="37" y="204" fill="#ffffff">
+      &#160;&#160;response = requests.get(url)
+    </text>
 
-        <text x="35" y="171" fill="#7DE0E5">
-          soup = BeautifulSoup(...)
-        </text>
+    <text x="37" y="224" fill="#8be0e5">
+      soup = BeautifulSoup(
+    </text>
 
-        <text x="35" y="189" fill="#77D6A8">
-          df = pd.read_html(table)[0]
-        </text>
-      </g>
+    <text x="37" y="244" fill="#ffffff">
+      &#160;&#160;response.text, "html.parser")
+    </text>
 
-      <!-- NBA typing reveal -->
-      <animate attributeName="opacity"
-        values="0;0;1;1;0"
-        keyTimes="0;.49;.5;.98;1"
-        dur="12s" repeatCount="indefinite"/>
-    </g>
+    <text x="37" y="264" fill="#ffffff">
+      table = soup.find("table")
+    </text>
+
+    <text x="37" y="284" fill="#6fe2af">
+      df = pd.read_html(str(table))[0]
+    </text>
   </g>
-</g>
-
-<!-- TERMINAL ACTIVITY INDICATOR -->
-<circle cx="296" cy="47" r="3" fill="#55D5A1">
-  <animate attributeName="opacity"
-    values="1;.2;1" dur="1s"
-    repeatCount="indefinite"/>
-</circle>
-
-<!-- ANIMATED ANALYTICS TREND -->
-<path d="M335 184L363 164L390 172L417 126L443 136L468 90"
-      fill="none" stroke="#4CE3D1"
-      stroke-width="3" opacity=".65"
-      stroke-dasharray="260"
-      stroke-dashoffset="260">
-  <animate attributeName="stroke-dashoffset"
-    values="260;0;260" dur="6s"
-    repeatCount="indefinite"/>
-</path>
-
-<!-- BASKETBALL HALF-COURT PANEL -->
-<rect x="920" y="27" width="263" height="190" rx="11"
-      fill="#061421" fill-opacity=".85"
-      stroke="#55CAD2"/>
-
-<text x="1051" y="43" text-anchor="middle"
-      font-family="monospace" font-size="10"
-      letter-spacing="1.4" fill="#9ADBE0">
-  NBA HALF-COURT PLAYBOOK
-</text>
-
-<g clip-path="url(#court)">
-
-  <!-- Court markings: one basket -->
-  <g stroke="#A2DDE5" stroke-width="1.5"
-     fill="none" opacity=".8">
-
-    <rect x="931" y="49" width="240" height="153"/>
-
-    <path d="M1012 49V104H1090V49"/>
-
-    <path d="M1033 60H1069"/>
-
-    <circle cx="1051" cy="69" r="7"/>
-
-    <path d="M1030 104A21 21 0 0 0 1072 104"/>
-
-    <path d="M960 49V82A91 91 0 0 0 1142 82V49"/>
-  </g>
-
-  <!-- OFFENSIVE CUTTING ROUTES -->
-  <g fill="none" stroke="#6DEAD5"
-     stroke-width="2.2" stroke-dasharray="5 6">
-
-    <path d="M971 177Q991 145 1015 126T1045 92">
-      <animate attributeName="stroke-dashoffset"
-        values="45;0;-45"
-        dur="6s" repeatCount="indefinite"/>
-    </path>
-
-    <path d="M1131 176Q1100 160 1085 135T1061 99">
-      <animate attributeName="stroke-dashoffset"
-        values="45;0;-45"
-        dur="6s" repeatCount="indefinite"/>
-    </path>
-  </g>
-
-  <!-- PASSING ROUTE -->
-  <path d="M971 177Q1051 123 1131 176"
-        fill="none" stroke="#FFC778"
-        stroke-width="2"
-        stroke-dasharray="6 6">
-    <animate attributeName="stroke-dashoffset"
-      values="0;-60" dur="1.5s"
-      repeatCount="indefinite"/>
-  </path>
-
-  <!-- OFFENSIVE PLAYER 1 -->
-  <g font-family="Arial" font-size="24"
-     font-weight="bold" text-anchor="middle"
-     fill="#6DEAD5">
-    <text x="0" y="0">O</text>
-    <animateMotion dur="6s"
-      repeatCount="indefinite"
-      path="M971 177Q991 145 1015 126T1045 92"/>
-  </g>
-
-  <!-- OFFENSIVE PLAYER 2 -->
-  <g font-family="Arial" font-size="24"
-     font-weight="bold" text-anchor="middle"
-     fill="#6DEAD5">
-    <text x="0" y="0">O</text>
-    <animateMotion dur="6s"
-      repeatCount="indefinite"
-      path="M1131 176Q1100 160 1085 135T1061 99"/>
-  </g>
-
-  <!-- DEFENSIVE PLAYER 1 -->
-  <g font-family="Arial" font-size="24"
-     font-weight="bold" text-anchor="middle"
-     fill="#FFB17F">
-    <text x="0" y="0">X</text>
-    <animateMotion dur="6s"
-      repeatCount="indefinite"
-      path="M1008 149Q1028 126 1040 111T1008 149"/>
-  </g>
-
-  <!-- DEFENSIVE PLAYER 2 -->
-  <g font-family="Arial" font-size="24"
-     font-weight="bold" text-anchor="middle"
-     fill="#FFB17F">
-    <text x="0" y="0">X</text>
-    <animateMotion dur="6s"
-      repeatCount="indefinite"
-      path="M1096 150Q1078 129 1064 110T1096 150"/>
-  </g>
-
-  <!-- BASKETBALL PASS -->
-  <circle r="5" fill="#FFC778">
-    <animateMotion dur="6s"
-      repeatCount="indefinite"
-      path="M971 177Q1051 123 1131 176"/>
-  </circle>
-
 </g>
 
 <!-- PROFESSIONAL HEADLINE -->
-<rect x="331" y="68" width="578" height="120"
-      rx="13" fill="#061421"
-      fill-opacity=".95"
-      stroke="#55C5D0"/>
+<rect x="424" y="93" width="480" height="154"
+      rx="14" fill="#04121e"
+      stroke="#55c5d0" stroke-width="2"/>
 
-<text x="620" y="108" text-anchor="middle"
-      font-family="Arial, Helvetica, sans-serif"
+<text x="664" y="145" text-anchor="middle"
+      font-family="Arial,sans-serif"
       font-size="34" font-weight="bold"
-      fill="#FFFFFF">
-  Robert J. Cameron
-</text>
+      fill="#ffffff">Robert J. Cameron</text>
 
-<text x="620" y="140" text-anchor="middle"
-      font-family="Arial, Helvetica, sans-serif"
-      font-size="17" font-weight="bold"
-      fill="#8BE0E5">
+<text x="664" y="183" text-anchor="middle"
+      font-family="Arial,sans-serif"
+      font-size="14.5" font-weight="bold"
+      fill="#8be0e5">
   Business Intelligence | Data Analytics | Data Integration
 </text>
 
-<text x="620" y="166" text-anchor="middle"
-      font-family="monospace" font-size="14"
-      fill="#C0E4EB">
-  SQL | Python | Power BI | Advanced Excel
+<text x="664" y="219" text-anchor="middle"
+      font-family="monospace" font-size="16"
+      fill="#c0e4eb">
+  SQL | Python | Power BI | Excel
 </text>
 
-<!-- ANIMATED BOTTOM WAVE -->
-<path d="M0 226C210 250 350 212 580 232S960 250 1200 220V260H0Z"
-      fill="#55C0C9" opacity=".55">
+<!-- BASKETBALL COURT -->
+<rect x="919" y="38" width="266" height="274"
+      rx="13" fill="#04121e"
+      stroke="#55cad2" stroke-width="2"/>
 
-  <animate attributeName="d"
-    values="
-    M0 226C210 250 350 212 580 232S960 250 1200 220V260H0Z;
-    M0 235C210 210 350 248 580 228S960 215 1200 234V260H0Z;
-    M0 226C210 250 350 212 580 232S960 250 1200 220V260H0Z"
-    dur="7s" repeatCount="indefinite"/>
-</path>
+<text x="1052" y="63" text-anchor="middle"
+      font-family="monospace" font-size="12"
+      fill="#a4e8ea">NBA PICK-AND-ROLL</text>
+
+<g stroke="#a2dde5" stroke-width="1.7"
+   fill="none" opacity=".85">
+  <rect x="930" y="78" width="244" height="220"/>
+  <path d="M1012 78V146H1092V78 M1036 93H1068"/>
+  <circle cx="1052" cy="103" r="8"/>
+  <path d="M1028 146A24 24 0 0 0 1076 146"/>
+  <path d="M949 78V119A103 103 0 0 0 1155 119V78"/>
+</g>
+
+<!-- SCREEN LOCATION -->
+<circle cx="1050" cy="214" r="18"
+        fill="none" stroke="#ffc778"
+        stroke-width="1.5"
+        stroke-dasharray="4 5" opacity="0">
+  <animate attributeName="opacity"
+    values="0;0;1;1;0;0"
+    keyTimes="0;.18;.25;.39;.5;1"
+    dur="10s" repeatCount="indefinite"/>
+</circle>
+
+<!-- O1: BALL HANDLER -->
+<g fill="#6dead5" font-family="Arial"
+   font-size="27" font-weight="bold"
+   text-anchor="middle">
+  <text x="0" y="0">O</text>
+  <animateMotion dur="10s" repeatCount="indefinite"
+    calcMode="linear"
+    keyPoints="0;.1;.1;.35;.55;.65;.65;1"
+    keyTimes="0;.12;.25;.43;.6;.7;.85;1"
+    path="M1007 268 L1007 252 Q1010 225 1030 220 Q1070 218 1100 189 L1112 171"/>
+</g>
+
+<!-- O2: SCREENER, THEN ROLL -->
+<g fill="#6dead5" font-family="Arial"
+   font-size="27" font-weight="bold"
+   text-anchor="middle">
+  <text x="0" y="0">O</text>
+  <animateMotion dur="10s" repeatCount="indefinite"
+    calcMode="linear"
+    keyPoints="0;.38;.38;.38;.75;1;1"
+    keyTimes="0;.18;.25;.4;.65;.83;1"
+    path="M1108 262 Q1070 232 1050 214 L1050 194 Q1050 163 1052 128"/>
+</g>
+
+<!-- X1: GETS CAUGHT ON SCREEN -->
+<g fill="#ffb17f" font-family="Arial"
+   font-size="27" font-weight="bold"
+   text-anchor="middle">
+  <text x="0" y="0">X</text>
+  <animateMotion dur="10s" repeatCount="indefinite"
+    calcMode="linear"
+    keyPoints="0;.15;.15;.15;.5;.75;1"
+    keyTimes="0;.15;.28;.45;.65;.85;1"
+    path="M1007 244 L1027 225 Q1030 213 1040 207 Q1070 197 1090 179"/>
+</g>
+
+<!-- X2: HEDGE / HELP DEFENSE -->
+<g fill="#ffb17f" font-family="Arial"
+   font-size="27" font-weight="bold"
+   text-anchor="middle">
+  <text x="0" y="0">X</text>
+  <animateMotion dur="10s" repeatCount="indefinite"
+    calcMode="linear"
+    keyPoints="0;.15;.4;.7;1"
+    keyTimes="0;.25;.48;.75;1"
+    path="M1074 185 Q1087 196 1100 195 Q1107 174 1080 150"/>
+</g>
+
+<!-- BASKETBALL: DRIBBLE, THEN PASS TO ROLLER -->
+<circle r="5.5" fill="#ffc778">
+  <animateMotion dur="10s" repeatCount="indefinite"
+    calcMode="linear"
+    keyPoints="0;.1;.1;.35;.55;.65;.65;1"
+    keyTimes="0;.12;.25;.43;.6;.7;.85;1"
+    path="M1007 268 L1007 252 Q1010 225 1030 220 Q1070 218 1100 189 L1112 171"/>
+  <animate attributeName="opacity"
+    values="1;1;0;0;1"
+    keyTimes="0;.65;.66;.99;1"
+    dur="10s" repeatCount="indefinite"/>
+</circle>
+
+<!-- PASS FROM O1 TO O2 -->
+<circle r="5.5" fill="#ffc778" opacity="0">
+  <animate attributeName="opacity"
+    values="0;0;1;1;0;0"
+    keyTimes="0;.65;.66;.8;.81;1"
+    dur="10s" repeatCount="indefinite"/>
+  <animateMotion dur="10s" repeatCount="indefinite"
+    calcMode="linear"
+    keyPoints="0;0;1;1"
+    keyTimes="0;.65;.8;1"
+    path="M1112 171 Q1070 145 1052 128"/>
+</circle>
+
+<!-- SCREEN LABEL -->
+<text x="1050" y="190" text-anchor="middle"
+      font-family="Arial,sans-serif"
+      font-size="10" font-weight="bold"
+      fill="#ffc778" opacity="0">
+  SCREEN
+  <animate attributeName="opacity"
+    values="0;0;1;1;0;0"
+    keyTimes="0;.18;.25;.39;.5;1"
+    dur="10s" repeatCount="indefinite"/>
+</text>
+
+<!-- BOTTOM ACCENT -->
+<path d="M0 322Q300 312 600 322T1200 322V340H0Z"
+      fill="#49a9b3" opacity=".35"/>
 
 </svg>
