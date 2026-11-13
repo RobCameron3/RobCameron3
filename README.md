@@ -53,7 +53,7 @@
 **Selected Professional Contributions**
 
 - **Python Automation & Efficiency:** Developed fuzzy-matching workflows that improved customer identification from approximately **60% to 80–90%**, streamlining data reconciliation and improving processing efficiency.
-- **Large-Scale Data Reconciliation:** Analyzed **877 distributor records**, successfully resolving **648 (73.9%)** through targeted matching and data validation.
+- **Large-Scale Data Reconciliation & Analysis:** Analyzed **877 distributor records**, resolving **648 (73.9%)** to identify matching patterns, prioritize high-impact distributors, and guide automation strategies for more efficient monthly data processing.
 - **Operational Efficiency:** Optimized recurring data-processing workflows, eliminated reconciliation backlogs, and accelerated the delivery of accurate customer data for business reporting.
 - **Data Integration & Reporting:** Consolidated and standardized **17 distributor workbooks**, improving data consistency, reporting accuracy, and cross-distributor visibility.
 - **Business Impact & Cost Efficiency:** Contributed to a large-scale data reconciliation initiative that improved operational efficiency, streamlined manual workflows, and generated significant cost savings through automation and process optimization.
