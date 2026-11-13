@@ -1,7 +1,9 @@
 
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="340" viewBox="0 0 1200 340">
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="1200" height="340" viewBox="0 0 1200 340">
+
 <defs>
-  <linearGradient id="bg" x2="1" y2="1">
+  <linearGradient id="bg" x2="0" y2="1">
     <stop stop-color="#061421"/>
     <stop offset="1" stop-color="#12485b"/>
   </linearGradient>
@@ -11,350 +13,624 @@
 </defs>
 
 <style>
-.mono{font-family:Consolas,Menlo,monospace}
-.code{font:10.8px Consolas,Menlo,monospace}
-.off{fill:#061421;stroke:#6dead5;stroke-width:1.5}
-.def{fill:#061421;stroke:#ffb17f;stroke-width:1.5}
-.ot{font:bold 8px Arial;fill:#6dead5;text-anchor:middle}
-.xt{font:bold 8px Arial;fill:#ffb17f;text-anchor:middle}
-.route{fill:none;stroke:#6dead5;stroke-width:1.5;stroke-dasharray:3 5;stroke-linecap:round}
-.pass{fill:none;stroke:#ffc778;stroke-width:1.5;stroke-dasharray:4 5}
+  .mono {font-family:Consolas,Menlo,monospace}
+  .code {font:10.8px Consolas,Menlo,monospace}
+  .off {fill:#061421;stroke:#6dead5;stroke-width:1.5}
+  .def {fill:#061421;stroke:#ffb17f;stroke-width:1.5}
+  .ot {font:bold 8px Arial;fill:#6dead5;text-anchor:middle}
+  .xt {font:bold 8px Arial;fill:#ffb17f;text-anchor:middle}
+  .route {fill:none;stroke:#6dead5;stroke-width:1.5;stroke-dasharray:3 5;stroke-linecap:round}
+  .pass {fill:none;stroke:#ffc778;stroke-width:1.5;stroke-dasharray:4 5}
+
+  /* Every code line uses the same left-to-right typing animation.
+     The cursor and clipping width share the SAME animation progress. */
+  @keyframes typing {
+    from {width:0}
+    to {width:var(--line-width)}
+  }
+  @keyframes cursorMove {
+    from {transform:translateX(0)}
+    to {transform:translateX(var(--line-width))}
+  }
+  @keyframes blink {
+    0%,49% {opacity:1}
+    50%,100% {opacity:0}
+  }
+
+  .typed-line {
+    --line-width:260px;
+    position:relative;
+  }
+  .typing-window {
+    overflow:visible;
+  }
 </style>
 
 <!-- BACKGROUND -->
 <rect width="1200" height="340" fill="url(#bg)"/>
+
 <g stroke="#61a9bd" stroke-width=".5" opacity=".1">
   <path d="M0 50H1200 M0 100H1200 M0 150H1200 M0 200H1200 M0 250H1200 M0 300H1200"/>
-  <path d="M60 0V340 M120 0V340 M180 0V340 M240 0V340 M300 0V340 M360 0V340 M420 0V340 M480 0V340 M540 0V340 M600 0V340 M660 0V340 M720 0V340 M780 0V340 M840 0V340 M900 0V340 M960 0V340 M1020 0V340 M1080 0V340 M1140 0V340"/>
+  <path d="M60 0V340 M120 0V340 M180 0V340 M240 0V340 M300 0V340"/>
+  <path d="M360 0V340 M420 0V340 M480 0V340 M540 0V340 M600 0V340"/>
+  <path d="M660 0V340 M720 0V340 M780 0V340 M840 0V340 M900 0V340"/>
+  <path d="M960 0V340 M1020 0V340 M1080 0V340 M1140 0V340"/>
 </g>
 
 <!-- TERMINAL -->
 <rect x="18" y="38" width="326" height="274" rx="12"
-  fill="#04121e" stroke="#48cdd5" stroke-width="1.7"/>
+      fill="#04121e" stroke="#48cdd5" stroke-width="1.7"/>
+
 <circle cx="39" cy="58" r="4.5" fill="#f07575"/>
 <circle cx="55" cy="58" r="4.5" fill="#e6be62"/>
 <circle cx="71" cy="58" r="4.5" fill="#55d5a1"/>
+
 <path d="M18 77H344" stroke="#48cdd5" opacity=".45"/>
 
 <!--
-  TERMINAL TYPING ENGINE
-  20-second repeating cycle:
-  0-10s: fuzzy matching script
-  10-20s: NBA scraper script
+TERMINAL TIMING
+20-second cycle.
+0-10 seconds: fuzzy matcher.
+10-20 seconds: NBA scraper.
 
-  Each line has an independent animated clipping rectangle.
-  Width grows in character-sized steps, creating actual
-  left-to-right typing instead of line-by-line popping.
+Each line types for 0.55 seconds.
+The cursor travels with the typed text.
+The cursor is visible only while its line is active.
 -->
 
-<!-- SCRIPT 1 -->
+<!-- FUZZY MATCHER SCRIPT -->
 <g>
   <animate attributeName="opacity"
-    values="1;1;0;0;1"
-    keyTimes="0;.4999;.5;.9999;1"
-    calcMode="discrete"
-    dur="20s" repeatCount="indefinite"/>
+           values="1;1;0;0;1"
+           keyTimes="0;.4999;.5;.9999;1"
+           calcMode="discrete"
+           dur="20s" repeatCount="indefinite"/>
 
   <text x="184" y="62" text-anchor="middle"
-    class="mono" font-size="11" fill="#a5e8ea">
+        class="mono" font-size="11" fill="#a5e8ea">
     fuzzy_account_matcher.py
   </text>
 
-  <g class="code" xml:space="preserve">
-
-    <g>
-      <clipPath id="f1"><rect x="34" y="89" width="0" height="19">
-        <animate attributeName="width"
-          values="0;0;300;300;0"
-          keyTimes="0;0;.035;.999;1"
-          calcMode="linear" dur="20s"
-          repeatCount="indefinite"/>
-      </rect></clipPath>
-      <text x="34" y="104" fill="#6fe2af"
+  <!-- LINE 1 -->
+  <clipPath id="f1">
+    <rect x="34" y="89" width="0" height="19">
+      <animate attributeName="width"
+        values="0;0;155;155;0"
+        keyTimes="0;.005;.0325;.9999;1"
+        dur="20s" repeatCount="indefinite"/>
+    </rect>
+  </clipPath>
+  <text x="34" y="104" class="code" fill="#6fe2af"
         clip-path="url(#f1)"># Parallel fuzzy matching</text>
-    </g>
 
-    <g>
-      <clipPath id="f2"><rect x="34" y="109" width="0" height="19">
-        <animate attributeName="width"
-          values="0;0;300;300;0"
-          keyTimes="0;.04;.075;.999;1"
-          dur="20s" repeatCount="indefinite"/>
-      </rect></clipPath>
-      <text x="34" y="124" fill="#8be0e5"
+  <!-- LINE 2 -->
+  <clipPath id="f2">
+    <rect x="34" y="109" width="0" height="19">
+      <animate attributeName="width"
+        values="0;0;155;155;0"
+        keyTimes="0;.04;.0675;.9999;1"
+        dur="20s" repeatCount="indefinite"/>
+    </rect>
+  </clipPath>
+  <text x="34" y="124" class="code" fill="#8be0e5"
         clip-path="url(#f2)">num_cores = cpu_count()</text>
-    </g>
 
-    <g>
-      <clipPath id="f3"><rect x="34" y="129" width="0" height="19">
-        <animate attributeName="width"
-          values="0;0;300;300;0"
-          keyTimes="0;.08;.115;.999;1"
-          dur="20s" repeatCount="indefinite"/>
-      </rect></clipPath>
-      <text x="34" y="144" fill="#f0c879"
+  <!-- LINE 3 -->
+  <clipPath id="f3">
+    <rect x="34" y="129" width="0" height="19">
+      <animate attributeName="width"
+        values="0;0;70;70;0"
+        keyTimes="0;.075;.1025;.9999;1"
+        dur="20s" repeatCount="indefinite"/>
+    </rect>
+  </clipPath>
+  <text x="34" y="144" class="code" fill="#f0c879"
         clip-path="url(#f3)">chunks = [</text>
-    </g>
 
-    <g>
-      <clipPath id="f4"><rect x="34" y="149" width="0" height="19">
-        <animate attributeName="width"
-          values="0;0;300;300;0"
-          keyTimes="0;.12;.155;.999;1"
-          dur="20s" repeatCount="indefinite"/>
-      </rect></clipPath>
-      <text x="34" y="164" fill="#e9f3f7"
+  <!-- LINE 4 -->
+  <clipPath id="f4">
+    <rect x="34" y="149" width="0" height="19">
+      <animate attributeName="width"
+        values="0;0;170;170;0"
+        keyTimes="0;.11;.1375;.9999;1"
+        dur="20s" repeatCount="indefinite"/>
+    </rect>
+  </clipPath>
+  <text x="34" y="164" class="code" fill="#e9f3f7"
         clip-path="url(#f4)">  df.iloc[i:i+chunk_size]</text>
-    </g>
 
-    <g>
-      <clipPath id="f5"><rect x="34" y="169" width="0" height="19">
-        <animate attributeName="width"
-          values="0;0;300;300;0"
-          keyTimes="0;.16;.195;.999;1"
-          dur="20s" repeatCount="indefinite"/>
-      </rect></clipPath>
-      <text x="34" y="184" fill="#e9f3f7"
+  <!-- LINE 5 -->
+  <clipPath id="f5">
+    <rect x="34" y="169" width="0" height="19">
+      <animate attributeName="width"
+        values="0;0;225;225;0"
+        keyTimes="0;.145;.1725;.9999;1"
+        dur="20s" repeatCount="indefinite"/>
+    </rect>
+  </clipPath>
+  <text x="34" y="184" class="code" fill="#e9f3f7"
         clip-path="url(#f5)">  for i in range(0,len(df),size)]</text>
-    </g>
 
-    <g>
-      <clipPath id="f6"><rect x="34" y="189" width="0" height="19">
-        <animate attributeName="width"
-          values="0;0;300;300;0"
-          keyTimes="0;.20;.235;.999;1"
-          dur="20s" repeatCount="indefinite"/>
-      </rect></clipPath>
-      <text x="34" y="204" fill="#f0c879"
+  <!-- LINE 6 -->
+  <clipPath id="f6">
+    <rect x="34" y="189" width="0" height="19">
+      <animate attributeName="width"
+        values="0;0;205;205;0"
+        keyTimes="0;.18;.2075;.9999;1"
+        dur="20s" repeatCount="indefinite"/>
+    </rect>
+  </clipPath>
+  <text x="34" y="204" class="code" fill="#f0c879"
         clip-path="url(#f6)">results = Parallel(n_jobs=cores)(</text>
-    </g>
 
-    <g>
-      <clipPath id="f7"><rect x="34" y="209" width="0" height="19">
-        <animate attributeName="width"
-          values="0;0;300;300;0"
-          keyTimes="0;.24;.275;.999;1"
-          dur="20s" repeatCount="indefinite"/>
-      </rect></clipPath>
-      <text x="34" y="224" fill="#e9f3f7"
+  <!-- LINE 7 -->
+  <clipPath id="f7">
+    <rect x="34" y="209" width="0" height="19">
+      <animate attributeName="width"
+        values="0;0;175;175;0"
+        keyTimes="0;.215;.2425;.9999;1"
+        dur="20s" repeatCount="indefinite"/>
+    </rect>
+  </clipPath>
+  <text x="34" y="224" class="code" fill="#e9f3f7"
         clip-path="url(#f7)">  delayed(find_best_match)(</text>
-    </g>
 
-    <g>
-      <clipPath id="f8"><rect x="34" y="229" width="0" height="19">
-        <animate attributeName="width"
-          values="0;0;300;300;0"
-          keyTimes="0;.28;.315;.999;1"
-          dur="20s" repeatCount="indefinite"/>
-      </rect></clipPath>
-      <text x="34" y="244" fill="#e9f3f7"
+  <!-- LINE 8 -->
+  <clipPath id="f8">
+    <rect x="34" y="229" width="0" height="19">
+      <animate attributeName="width"
+        values="0;0;190;190;0"
+        keyTimes="0;.25;.2775;.9999;1"
+        dur="20s" repeatCount="indefinite"/>
+    </rect>
+  </clipPath>
+  <text x="34" y="244" class="code" fill="#e9f3f7"
         clip-path="url(#f8)">    chunk, col, field, crm, 2)</text>
-    </g>
 
-    <g>
-      <clipPath id="f9"><rect x="34" y="249" width="0" height="19">
-        <animate attributeName="width"
-          values="0;0;300;300;0"
-          keyTimes="0;.32;.355;.999;1"
-          dur="20s" repeatCount="indefinite"/>
-      </rect></clipPath>
-      <text x="34" y="264" fill="#e9f3f7"
+  <!-- LINE 9 -->
+  <clipPath id="f9">
+    <rect x="34" y="249" width="0" height="19">
+      <animate attributeName="width"
+        values="0;0;145;145;0"
+        keyTimes="0;.285;.3125;.9999;1"
+        dur="20s" repeatCount="indefinite"/>
+    </rect>
+  </clipPath>
+  <text x="34" y="264" class="code" fill="#e9f3f7"
         clip-path="url(#f9)">  for chunk in chunks)</text>
-    </g>
 
-    <g>
-      <clipPath id="f10"><rect x="34" y="269" width="0" height="19">
-        <animate attributeName="width"
-          values="0;0;300;300;0"
-          keyTimes="0;.36;.395;.999;1"
-          dur="20s" repeatCount="indefinite"/>
-      </rect></clipPath>
-      <text x="34" y="284" fill="#8be0e5"
+  <!-- LINE 10 -->
+  <clipPath id="f10">
+    <rect x="34" y="269" width="0" height="19">
+      <animate attributeName="width"
+        values="0;0;180;180;0"
+        keyTimes="0;.32;.3475;.9999;1"
+        dur="20s" repeatCount="indefinite"/>
+    </rect>
+  </clipPath>
+  <text x="34" y="284" class="code" fill="#8be0e5"
         clip-path="url(#f10)">matches = pd.concat(results)</text>
-    </g>
 
+  <!-- FUZZY MATCHER CURSOR:
+       each cursor segment moves exactly with its line's clip -->
+  <g fill="#8be0e5">
+
+    <rect x="34" y="91" width="5" height="13">
+      <animate attributeName="x"
+        values="34;34;189;189"
+        keyTimes="0;.005;.0325;1"
+        dur="20s" repeatCount="indefinite"/>
+      <animate attributeName="opacity"
+        values="1;1;0;0"
+        keyTimes="0;.0325;.035;1"
+        calcMode="discrete" dur="20s"
+        repeatCount="indefinite"/>
+    </rect>
+
+    <rect x="34" y="111" width="5" height="13" opacity="0">
+      <animate attributeName="x"
+        values="34;34;189;189"
+        keyTimes="0;.04;.0675;1"
+        dur="20s" repeatCount="indefinite"/>
+      <animate attributeName="opacity"
+        values="0;1;0;0"
+        keyTimes="0;.04;.0675;1"
+        calcMode="discrete" dur="20s"
+        repeatCount="indefinite"/>
+    </rect>
+
+    <rect x="34" y="131" width="5" height="13" opacity="0">
+      <animate attributeName="x"
+        values="34;34;104;104"
+        keyTimes="0;.075;.1025;1"
+        dur="20s" repeatCount="indefinite"/>
+      <animate attributeName="opacity"
+        values="0;1;0;0"
+        keyTimes="0;.075;.1025;1"
+        calcMode="discrete" dur="20s"
+        repeatCount="indefinite"/>
+    </rect>
+
+    <rect x="34" y="151" width="5" height="13" opacity="0">
+      <animate attributeName="x"
+        values="34;34;204;204"
+        keyTimes="0;.11;.1375;1"
+        dur="20s" repeatCount="indefinite"/>
+      <animate attributeName="opacity"
+        values="0;1;0;0"
+        keyTimes="0;.11;.1375;1"
+        calcMode="discrete" dur="20s"
+        repeatCount="indefinite"/>
+    </rect>
+
+    <rect x="34" y="171" width="5" height="13" opacity="0">
+      <animate attributeName="x"
+        values="34;34;259;259"
+        keyTimes="0;.145;.1725;1"
+        dur="20s" repeatCount="indefinite"/>
+      <animate attributeName="opacity"
+        values="0;1;0;0"
+        keyTimes="0;.145;.1725;1"
+        calcMode="discrete" dur="20s"
+        repeatCount="indefinite"/>
+    </rect>
+
+    <rect x="34" y="191" width="5" height="13" opacity="0">
+      <animate attributeName="x"
+        values="34;34;239;239"
+        keyTimes="0;.18;.2075;1"
+        dur="20s" repeatCount="indefinite"/>
+      <animate attributeName="opacity"
+        values="0;1;0;0"
+        keyTimes="0;.18;.2075;1"
+        calcMode="discrete" dur="20s"
+        repeatCount="indefinite"/>
+    </rect>
+
+    <rect x="34" y="211" width="5" height="13" opacity="0">
+      <animate attributeName="x"
+        values="34;34;209;209"
+        keyTimes="0;.215;.2425;1"
+        dur="20s" repeatCount="indefinite"/>
+      <animate attributeName="opacity"
+        values="0;1;0;0"
+        keyTimes="0;.215;.2425;1"
+        calcMode="discrete" dur="20s"
+        repeatCount="indefinite"/>
+    </rect>
+
+    <rect x="34" y="231" width="5" height="13" opacity="0">
+      <animate attributeName="x"
+        values="34;34;224;224"
+        keyTimes="0;.25;.2775;1"
+        dur="20s" repeatCount="indefinite"/>
+      <animate attributeName="opacity"
+        values="0;1;0;0"
+        keyTimes="0;.25;.2775;1"
+        calcMode="discrete" dur="20s"
+        repeatCount="indefinite"/>
+    </rect>
+
+    <rect x="34" y="251" width="5" height="13" opacity="0">
+      <animate attributeName="x"
+        values="34;34;179;179"
+        keyTimes="0;.285;.3125;1"
+        dur="20s" repeatCount="indefinite"/>
+      <animate attributeName="opacity"
+        values="0;1;0;0"
+        keyTimes="0;.285;.3125;1"
+        calcMode="discrete" dur="20s"
+        repeatCount="indefinite"/>
+    </rect>
+
+    <rect x="34" y="271" width="5" height="13" opacity="0">
+      <animate attributeName="x"
+        values="34;34;214;214"
+        keyTimes="0;.32;.3475;1"
+        dur="20s" repeatCount="indefinite"/>
+      <animate attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;.32;.3475;.499"
+        calcMode="discrete" dur="20s"
+        repeatCount="indefinite"/>
+    </rect>
   </g>
-
-  <!-- BLINKING CURSOR MOVES DOWN AS LINES COMPLETE -->
-  <rect x="34" y="91" width="6" height="13"
-    fill="#8be0e5" opacity="0">
-    <animate attributeName="opacity"
-      values="1;0;1;0;1"
-      dur=".55s" repeatCount="indefinite"/>
-    <animate attributeName="y"
-      values="91;111;131;151;171;191;211;231;251;271;271"
-      keyTimes="0;.04;.08;.12;.16;.20;.24;.28;.32;.36;1"
-      calcMode="discrete" dur="20s"
-      repeatCount="indefinite"/>
-    <animate attributeName="x"
-      values="34;184;184;184;184;184;184;184;184;184;184"
-      keyTimes="0;.035;.075;.115;.155;.195;.235;.275;.315;.355;1"
-      calcMode="discrete" dur="20s"
-      repeatCount="indefinite"/>
-  </rect>
 </g>
 
-<!-- SCRIPT 2 -->
+<!-- NBA SCRAPER SCRIPT -->
 <g opacity="0">
   <animate attributeName="opacity"
-    values="0;0;1;1;0"
-    keyTimes="0;.4999;.5;.9999;1"
-    calcMode="discrete"
-    dur="20s" repeatCount="indefinite"/>
+           values="0;0;1;1;0"
+           keyTimes="0;.4999;.5;.9999;1"
+           calcMode="discrete"
+           dur="20s" repeatCount="indefinite"/>
 
   <text x="184" y="62" text-anchor="middle"
-    class="mono" font-size="11" fill="#a5e8ea">
+        class="mono" font-size="11" fill="#a5e8ea">
     nba_stats_scraper.py
   </text>
 
-  <g class="code" xml:space="preserve">
-
-    <g>
-      <clipPath id="n1"><rect x="34" y="89" width="0" height="19">
-        <animate attributeName="width"
-          values="0;0;300;300;0"
-          keyTimes="0;.5;.535;.999;1"
-          dur="20s" repeatCount="indefinite"/>
-      </rect></clipPath>
-      <text x="34" y="104" fill="#6fe2af"
+  <!-- NBA LINE 1 -->
+  <clipPath id="n1">
+    <rect x="34" y="89" width="0" height="19">
+      <animate attributeName="width"
+        values="0;0;185;185;0"
+        keyTimes="0;.505;.5325;.9999;1"
+        dur="20s" repeatCount="indefinite"/>
+    </rect>
+  </clipPath>
+  <text x="34" y="104" class="code" fill="#6fe2af"
         clip-path="url(#n1)"># Basketball Reference ETL</text>
-    </g>
 
-    <g>
-      <clipPath id="n2"><rect x="34" y="109" width="0" height="19">
-        <animate attributeName="width"
-          values="0;0;300;300;0"
-          keyTimes="0;.54;.575;.999;1"
-          dur="20s" repeatCount="indefinite"/>
-      </rect></clipPath>
-      <text x="34" y="124" fill="#8be0e5"
+  <!-- NBA LINE 2 -->
+  <clipPath id="n2">
+    <rect x="34" y="109" width="0" height="19">
+      <animate attributeName="width"
+        values="0;0;165;165;0"
+        keyTimes="0;.54;.5675;.9999;1"
+        dur="20s" repeatCount="indefinite"/>
+    </rect>
+  </clipPath>
+  <text x="34" y="124" class="code" fill="#8be0e5"
         clip-path="url(#n2)">response = requests.get(</text>
-    </g>
 
-    <g>
-      <clipPath id="n3"><rect x="34" y="129" width="0" height="19">
-        <animate attributeName="width"
-          values="0;0;300;300;0"
-          keyTimes="0;.58;.615;.999;1"
-          dur="20s" repeatCount="indefinite"/>
-      </rect></clipPath>
-      <text x="34" y="144" fill="#e9f3f7"
+  <!-- NBA LINE 3 -->
+  <clipPath id="n3">
+    <rect x="34" y="129" width="0" height="19">
+      <animate attributeName="width"
+        values="0;0;150;150;0"
+        keyTimes="0;.575;.6025;.9999;1"
+        dur="20s" repeatCount="indefinite"/>
+    </rect>
+  </clipPath>
+  <text x="34" y="144" class="code" fill="#e9f3f7"
         clip-path="url(#n3)">  url, headers=headers)</text>
-    </g>
 
-    <g>
-      <clipPath id="n4"><rect x="34" y="149" width="0" height="19">
-        <animate attributeName="width"
-          values="0;0;300;300;0"
-          keyTimes="0;.62;.655;.999;1"
-          dur="20s" repeatCount="indefinite"/>
-      </rect></clipPath>
-      <text x="34" y="164" fill="#f0c879"
+  <!-- NBA LINE 4 -->
+  <clipPath id="n4">
+    <rect x="34" y="149" width="0" height="19">
+      <animate attributeName="width"
+        values="0;0;210;210;0"
+        keyTimes="0;.61;.6375;.9999;1"
+        dur="20s" repeatCount="indefinite"/>
+    </rect>
+  </clipPath>
+  <text x="34" y="164" class="code" fill="#f0c879"
         clip-path="url(#n4)">if response.status_code == 429:</text>
-    </g>
 
-    <g>
-      <clipPath id="n5"><rect x="34" y="169" width="0" height="19">
-        <animate attributeName="width"
-          values="0;0;300;300;0"
-          keyTimes="0;.66;.695;.999;1"
-          dur="20s" repeatCount="indefinite"/>
-      </rect></clipPath>
-      <text x="34" y="184" fill="#e9f3f7"
+  <!-- NBA LINE 5 -->
+  <clipPath id="n5">
+    <rect x="34" y="169" width="0" height="19">
+      <animate attributeName="width"
+        values="0;0;125;125;0"
+        keyTimes="0;.645;.6725;.9999;1"
+        dur="20s" repeatCount="indefinite"/>
+    </rect>
+  </clipPath>
+  <text x="34" y="184" class="code" fill="#e9f3f7"
         clip-path="url(#n5)">  time.sleep(120)</text>
-    </g>
 
-    <g>
-      <clipPath id="n6"><rect x="34" y="189" width="0" height="19">
-        <animate attributeName="width"
-          values="0;0;300;300;0"
-          keyTimes="0;.70;.735;.999;1"
-          dur="20s" repeatCount="indefinite"/>
-      </rect></clipPath>
-      <text x="34" y="204" fill="#8be0e5"
+  <!-- NBA LINE 6 -->
+  <clipPath id="n6">
+    <rect x="34" y="189" width="0" height="19">
+      <animate attributeName="width"
+        values="0;0;150;150;0"
+        keyTimes="0;.68;.7075;.9999;1"
+        dur="20s" repeatCount="indefinite"/>
+    </rect>
+  </clipPath>
+  <text x="34" y="204" class="code" fill="#8be0e5"
         clip-path="url(#n6)">soup = BeautifulSoup(</text>
-    </g>
 
-    <g>
-      <clipPath id="n7"><rect x="34" y="209" width="0" height="19">
-        <animate attributeName="width"
-          values="0;0;300;300;0"
-          keyTimes="0;.74;.775;.999;1"
-          dur="20s" repeatCount="indefinite"/>
-      </rect></clipPath>
-      <text x="34" y="224" fill="#e9f3f7"
+  <!-- NBA LINE 7 -->
+  <clipPath id="n7">
+    <rect x="34" y="209" width="0" height="19">
+      <animate attributeName="width"
+        values="0;0;205;205;0"
+        keyTimes="0;.715;.7425;.9999;1"
+        dur="20s" repeatCount="indefinite"/>
+    </rect>
+  </clipPath>
+  <text x="34" y="224" class="code" fill="#e9f3f7"
         clip-path="url(#n7)">  response.text, "html.parser")</text>
-    </g>
 
-    <g>
-      <clipPath id="n8"><rect x="34" y="229" width="0" height="19">
-        <animate attributeName="width"
-          values="0;0;300;300;0"
-          keyTimes="0;.78;.815;.999;1"
-          dur="20s" repeatCount="indefinite"/>
-      </rect></clipPath>
-      <text x="34" y="244" fill="#e9f3f7"
+  <!-- NBA LINE 8 -->
+  <clipPath id="n8">
+    <rect x="34" y="229" width="0" height="19">
+      <animate attributeName="width"
+        values="0;0;170;170;0"
+        keyTimes="0;.75;.7775;.9999;1"
+        dur="20s" repeatCount="indefinite"/>
+    </rect>
+  </clipPath>
+  <text x="34" y="244" class="code" fill="#e9f3f7"
         clip-path="url(#n8)">table = soup.find("table")</text>
-    </g>
 
-    <g>
-      <clipPath id="n9"><rect x="34" y="249" width="0" height="19">
-        <animate attributeName="width"
-          values="0;0;300;300;0"
-          keyTimes="0;.82;.855;.999;1"
-          dur="20s" repeatCount="indefinite"/>
-      </rect></clipPath>
-      <text x="34" y="264" fill="#8be0e5"
+  <!-- NBA LINE 9 -->
+  <clipPath id="n9">
+    <rect x="34" y="249" width="0" height="19">
+      <animate attributeName="width"
+        values="0;0;210;210;0"
+        keyTimes="0;.785;.8125;.9999;1"
+        dur="20s" repeatCount="indefinite"/>
+    </rect>
+  </clipPath>
+  <text x="34" y="264" class="code" fill="#8be0e5"
         clip-path="url(#n9)">df = pd.read_html(str(table))[0]</text>
-    </g>
 
-    <g>
-      <clipPath id="n10"><rect x="34" y="269" width="0" height="19">
-        <animate attributeName="width"
-          values="0;0;300;300;0"
-          keyTimes="0;.86;.895;.999;1"
-          dur="20s" repeatCount="indefinite"/>
-      </rect></clipPath>
-      <text x="34" y="284" fill="#6fe2af"
+  <!-- NBA LINE 10 -->
+  <clipPath id="n10">
+    <rect x="34" y="269" width="0" height="19">
+      <animate attributeName="width"
+        values="0;0;205;205;0"
+        keyTimes="0;.82;.8475;.9999;1"
+        dur="20s" repeatCount="indefinite"/>
+    </rect>
+  </clipPath>
+  <text x="34" y="284" class="code" fill="#6fe2af"
         clip-path="url(#n10)"># Export player and team stats</text>
-    </g>
-  </g>
 
-  <!-- NBA TYPING CURSOR -->
-  <rect x="34" y="91" width="6" height="13"
-    fill="#8be0e5">
-    <animate attributeName="opacity"
-      values="1;0;1;0;1"
-      dur=".55s" repeatCount="indefinite"/>
-    <animate attributeName="y"
-      values="91;91;111;131;151;171;191;211;231;251;271;271"
-      keyTimes="0;.5;.54;.58;.62;.66;.70;.74;.78;.82;.86;1"
-      calcMode="discrete" dur="20s"
-      repeatCount="indefinite"/>
-  </rect>
+  <!-- NBA CURSOR -->
+  <g fill="#8be0e5">
+
+    <rect x="34" y="91" width="5" height="13" opacity="0">
+      <animate attributeName="x"
+        values="34;34;219;219"
+        keyTimes="0;.505;.5325;1"
+        dur="20s" repeatCount="indefinite"/>
+      <animate attributeName="opacity"
+        values="0;1;0;0"
+        keyTimes="0;.505;.5325;1"
+        calcMode="discrete" dur="20s"
+        repeatCount="indefinite"/>
+    </rect>
+
+    <rect x="34" y="111" width="5" height="13" opacity="0">
+      <animate attributeName="x"
+        values="34;34;199;199"
+        keyTimes="0;.54;.5675;1"
+        dur="20s" repeatCount="indefinite"/>
+      <animate attributeName="opacity"
+        values="0;1;0;0"
+        keyTimes="0;.54;.5675;1"
+        calcMode="discrete" dur="20s"
+        repeatCount="indefinite"/>
+    </rect>
+
+    <rect x="34" y="131" width="5" height="13" opacity="0">
+      <animate attributeName="x"
+        values="34;34;184;184"
+        keyTimes="0;.575;.6025;1"
+        dur="20s" repeatCount="indefinite"/>
+      <animate attributeName="opacity"
+        values="0;1;0;0"
+        keyTimes="0;.575;.6025;1"
+        calcMode="discrete" dur="20s"
+        repeatCount="indefinite"/>
+    </rect>
+
+    <rect x="34" y="151" width="5" height="13" opacity="0">
+      <animate attributeName="x"
+        values="34;34;244;244"
+        keyTimes="0;.61;.6375;1"
+        dur="20s" repeatCount="indefinite"/>
+      <animate attributeName="opacity"
+        values="0;1;0;0"
+        keyTimes="0;.61;.6375;1"
+        calcMode="discrete" dur="20s"
+        repeatCount="indefinite"/>
+    </rect>
+
+    <rect x="34" y="171" width="5" height="13" opacity="0">
+      <animate attributeName="x"
+        values="34;34;159;159"
+        keyTimes="0;.645;.6725;1"
+        dur="20s" repeatCount="indefinite"/>
+      <animate attributeName="opacity"
+        values="0;1;0;0"
+        keyTimes="0;.645;.6725;1"
+        calcMode="discrete" dur="20s"
+        repeatCount="indefinite"/>
+    </rect>
+
+    <rect x="34" y="191" width="5" height="13" opacity="0">
+      <animate attributeName="x"
+        values="34;34;184;184"
+        keyTimes="0;.68;.7075;1"
+        dur="20s" repeatCount="indefinite"/>
+      <animate attributeName="opacity"
+        values="0;1;0;0"
+        keyTimes="0;.68;.7075;1"
+        calcMode="discrete" dur="20s"
+        repeatCount="indefinite"/>
+    </rect>
+
+    <rect x="34" y="211" width="5" height="13" opacity="0">
+      <animate attributeName="x"
+        values="34;34;239;239"
+        keyTimes="0;.715;.7425;1"
+        dur="20s" repeatCount="indefinite"/>
+      <animate attributeName="opacity"
+        values="0;1;0;0"
+        keyTimes="0;.715;.7425;1"
+        calcMode="discrete" dur="20s"
+        repeatCount="indefinite"/>
+    </rect>
+
+    <rect x="34" y="231" width="5" height="13" opacity="0">
+      <animate attributeName="x"
+        values="34;34;204;204"
+        keyTimes="0;.75;.7775;1"
+        dur="20s" repeatCount="indefinite"/>
+      <animate attributeName="opacity"
+        values="0;1;0;0"
+        keyTimes="0;.75;.7775;1"
+        calcMode="discrete" dur="20s"
+        repeatCount="indefinite"/>
+    </rect>
+
+    <rect x="34" y="251" width="5" height="13" opacity="0">
+      <animate attributeName="x"
+        values="34;34;244;244"
+        keyTimes="0;.785;.8125;1"
+        dur="20s" repeatCount="indefinite"/>
+      <animate attributeName="opacity"
+        values="0;1;0;0"
+        keyTimes="0;.785;.8125;1"
+        calcMode="discrete" dur="20s"
+        repeatCount="indefinite"/>
+    </rect>
+
+    <rect x="34" y="271" width="5" height="13" opacity="0">
+      <animate attributeName="x"
+        values="34;34;239;239"
+        keyTimes="0;.82;.8475;1"
+        dur="20s" repeatCount="indefinite"/>
+      <animate attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;.82;.8475;.999"
+        calcMode="discrete" dur="20s"
+        repeatCount="indefinite"/>
+    </rect>
+  </g>
 </g>
 
-<!-- PROFILE -->
+<!-- CENTER PROFILE -->
 <rect x="365" y="93" width="478" height="154" rx="13"
-  fill="#04121e" stroke="#55c5d0" stroke-width="1.8"/>
-<text x="604" y="145" text-anchor="middle" font-family="Arial"
-  font-size="34" font-weight="bold" fill="#fff">Robert J. Cameron</text>
-<text x="604" y="184" text-anchor="middle" font-family="Arial"
-  font-size="16.5" font-weight="bold" textLength="448"
-  lengthAdjust="spacingAndGlyphs" fill="#8be0e5">Business Intelligence | Data Analytics | Data Integration</text>
-<text x="604" y="219" text-anchor="middle" class="mono"
-  font-size="16" fill="#c0e4eb">SQL | Python | Power BI | Excel</text>
+      fill="#04121e" stroke="#55c5d0" stroke-width="1.8"/>
+
+<text x="604" y="145" text-anchor="middle"
+      font-family="Arial" font-size="34"
+      font-weight="bold" fill="#ffffff">
+  Robert J. Cameron
+</text>
+
+<text x="604" y="184" text-anchor="middle"
+      font-family="Arial" font-size="16.5"
+      font-weight="bold" textLength="448"
+      lengthAdjust="spacingAndGlyphs" fill="#8be0e5">
+  Business Intelligence | Data Analytics | Data Integration
+</text>
+
+<text x="604" y="219" text-anchor="middle"
+      class="mono" font-size="16" fill="#c0e4eb">
+  SQL | Python | Power BI | Excel
+</text>
 
 <!-- BASKETBALL PANEL -->
 <rect x="861" y="38" width="324" height="274" rx="12"
-  fill="#04121e" stroke="#55cad2" stroke-width="1.8"/>
-<text x="1023" y="61" text-anchor="middle" class="mono"
-  font-size="12" fill="#a4e8ea">Basketball Analytics</text>
+      fill="#04121e" stroke="#55cad2" stroke-width="1.8"/>
+
+<text x="1023" y="61" text-anchor="middle"
+      class="mono" font-size="12" fill="#a4e8ea">
+  Basketball Analytics
+</text>
 
 <g clip-path="url(#courtClip)">
 
 <!-- COURT -->
-<g stroke="#a2dde5" stroke-width="1.4" fill="none" opacity=".7">
+<g stroke="#a2dde5" stroke-width="1.4"
+   fill="none" opacity=".7">
   <rect x="870" y="76" width="306" height="225"/>
   <path d="M979 76V162H1067V76"/>
   <path d="M1008 88H1038"/>
@@ -363,368 +639,550 @@
   <path d="M889 76V112 A134 134 0 0 0 1157 112 V76"/>
 </g>
 
-<!-- PLAY 1: HIGH PICK AND ROLL -->
+<!-- PLAY 1: PICK AND ROLL -->
 <g>
-<animate attributeName="opacity" dur="24s" repeatCount="indefinite"
-  calcMode="discrete" keyTimes="0;.333333;1" values="1;0;0"/>
+  <animate attributeName="opacity"
+    dur="24s" repeatCount="indefinite"
+    calcMode="discrete"
+    keyTimes="0;.333333;1"
+    values="1;0;0"/>
 
-<text x="1023" y="292" text-anchor="middle" class="mono"
-  font-size="9" fill="#a4e8ea">01 / PICK &amp; ROLL LAYUP</text>
+  <text x="1023" y="292" text-anchor="middle"
+        class="mono" font-size="9" fill="#a4e8ea">
+    01 / PICK &amp; ROLL LAYUP
+  </text>
 
-<g class="route" opacity=".55">
-  <path d="M1000 271L1024 251L1060 218"/>
-  <path d="M1084 211L1040 246L1035 185L1023 132"/>
-</g>
+  <g class="route" opacity=".55">
+    <path d="M1000 271L1024 251L1060 218"/>
+    <path d="M1084 211L1040 246L1035 185L1023 132"/>
+  </g>
 
-<g>
-  <animateTransform attributeName="transform" type="translate"
-    dur="8s" repeatCount="indefinite" calcMode="linear"
-    keyTimes="0;.17;.33;.42;1"
-    values="1000 271;1024 251;1060 218;1060 218;1060 218"/>
-  <circle r="8" class="off"/>
-  <text y="3" class="ot">O1</text>
-  <circle cx="10" cy="4" r="3.5" fill="#ffc778">
-    <animate attributeName="opacity" dur="8s" repeatCount="indefinite"
-      calcMode="discrete" keyTimes="0;.42;1" values="1;0;0"/>
-  </circle>
-</g>
+  <!-- O1 -->
+  <g>
+    <animateTransform attributeName="transform"
+      type="translate" dur="8s"
+      repeatCount="indefinite" calcMode="linear"
+      keyTimes="0;.17;.33;.42;1"
+      values="1000 271;1024 251;1060 218;1060 218;1060 218"/>
+    <circle r="8" class="off"/>
+    <text y="3" class="ot">O1</text>
+    <circle cx="10" cy="4" r="3.5" fill="#ffc778">
+      <animate attributeName="opacity"
+        dur="8s" repeatCount="indefinite"
+        calcMode="discrete"
+        keyTimes="0;.42;1"
+        values="1;0;0"/>
+    </circle>
+  </g>
 
-<g transform="translate(1164 117)">
-  <circle r="8" class="off"/><text y="3" class="ot">O2</text>
-</g>
-<g transform="translate(899 119)">
-  <circle r="8" class="off"/><text y="3" class="ot">O3</text>
-</g>
-<g transform="translate(927 207)">
-  <circle r="8" class="off"/><text y="3" class="ot">O4</text>
-</g>
+  <g transform="translate(1164 117)">
+    <circle r="8" class="off"/>
+    <text y="3" class="ot">O2</text>
+  </g>
 
-<g>
-  <animateTransform attributeName="transform" type="translate"
-    dur="8s" repeatCount="indefinite" calcMode="linear"
-    keyTimes="0;.17;.33;.42;.5;.58;.75;1"
-    values="1084 211;1040 246;1040 246;1040 246;1035 185;1035 185;1023 132;1023 132"/>
-  <circle r="8" class="off"/>
-  <text y="3" class="ot">O5</text>
-  <circle cx="9" cy="4" r="3.5" fill="#ffc778" opacity="0">
-    <animate attributeName="opacity" dur="8s" repeatCount="indefinite"
+  <g transform="translate(899 119)">
+    <circle r="8" class="off"/>
+    <text y="3" class="ot">O3</text>
+  </g>
+
+  <g transform="translate(927 207)">
+    <circle r="8" class="off"/>
+    <text y="3" class="ot">O4</text>
+  </g>
+
+  <!-- O5 ROLL -->
+  <g>
+    <animateTransform attributeName="transform"
+      type="translate" dur="8s"
+      repeatCount="indefinite" calcMode="linear"
+      keyTimes="0;.17;.33;.42;.5;.58;.75;1"
+      values="1084 211;1040 246;1040 246;1040 246;1035 185;1035 185;1023 132;1023 132"/>
+    <circle r="8" class="off"/>
+    <text y="3" class="ot">O5</text>
+    <circle cx="9" cy="4" r="3.5"
+            fill="#ffc778" opacity="0">
+      <animate attributeName="opacity"
+        dur="8s" repeatCount="indefinite"
+        calcMode="discrete"
+        keyTimes="0;.583333;.75;1"
+        values="0;1;0;0"/>
+    </circle>
+  </g>
+
+  <!-- DEFENDERS -->
+  <g>
+    <animateTransform attributeName="transform"
+      type="translate" dur="8s"
+      repeatCount="indefinite" calcMode="linear"
+      keyTimes="0;.17;.33;.5;1"
+      values="997 248;1017 239;1022 236;1050 244;1050 244"/>
+    <circle r="8" class="def"/>
+    <text y="3" class="xt">X1</text>
+  </g>
+
+  <g transform="translate(1139 139)">
+    <circle r="8" class="def"/>
+    <text y="3" class="xt">X2</text>
+  </g>
+
+  <g transform="translate(920 141)">
+    <circle r="8" class="def"/>
+    <text y="3" class="xt">X3</text>
+  </g>
+
+  <g transform="translate(950 193)">
+    <circle r="8" class="def"/>
+    <text y="3" class="xt">X4</text>
+  </g>
+
+  <g>
+    <animateTransform attributeName="transform"
+      type="translate" dur="8s"
+      repeatCount="indefinite" calcMode="linear"
+      keyTimes="0;.33;.5;.75;1"
+      values="1060 169;1085 195;1085 195;1065 170;1065 170"/>
+    <circle r="8" class="def"/>
+    <text y="3" class="xt">X5</text>
+  </g>
+
+  <!-- SCREEN -->
+  <path d="M1061 226L1040 246M1031 237L1049 255"
+        fill="none" stroke="#6dead5"
+        stroke-width="2.3" opacity="0">
+    <animate attributeName="opacity"
+      dur="8s" repeatCount="indefinite"
       calcMode="discrete"
-      keyTimes="0;.583333;.75;1" values="0;1;0;0"/>
+      keyTimes="0;.17;.33;1"
+      values="0;1;0;0"/>
+  </path>
+
+  <!-- PASS -->
+  <path d="M1060 218L1035 185"
+        class="pass" opacity="0">
+    <animate attributeName="opacity"
+      dur="8s" repeatCount="indefinite"
+      calcMode="discrete"
+      keyTimes="0;.42;.583333;1"
+      values="0;1;0;0"/>
+  </path>
+
+  <circle r="3.5" fill="#ffc778" opacity="0">
+    <animate attributeName="opacity"
+      dur="8s" repeatCount="indefinite"
+      calcMode="discrete"
+      keyTimes="0;.42;.583333;1"
+      values="0;1;0;0"/>
+    <animateMotion path="M1060 218L1035 185"
+      dur="8s" repeatCount="indefinite"
+      calcMode="linear"
+      keyTimes="0;.42;.583333;1"
+      keyPoints="0;0;1;1"/>
   </circle>
-</g>
 
-<g>
-  <animateTransform attributeName="transform" type="translate"
-    dur="8s" repeatCount="indefinite" calcMode="linear"
-    keyTimes="0;.17;.33;.5;1"
-    values="997 248;1017 239;1022 236;1050 244;1050 244"/>
-  <circle r="8" class="def"/><text y="3" class="xt">X1</text>
-</g>
-<g transform="translate(1139 139)">
-  <circle r="8" class="def"/><text y="3" class="xt">X2</text>
-</g>
-<g transform="translate(920 141)">
-  <circle r="8" class="def"/><text y="3" class="xt">X3</text>
-</g>
-<g transform="translate(950 193)">
-  <circle r="8" class="def"/><text y="3" class="xt">X4</text>
-</g>
-<g>
-  <animateTransform attributeName="transform" type="translate"
-    dur="8s" repeatCount="indefinite" calcMode="linear"
-    keyTimes="0;.33;.5;.75;1"
-    values="1060 169;1085 195;1085 195;1065 170;1065 170"/>
-  <circle r="8" class="def"/><text y="3" class="xt">X5</text>
-</g>
+  <!-- LAYUP -->
+  <circle r="3.5" fill="#ffc778" opacity="0">
+    <animate attributeName="opacity"
+      dur="8s" repeatCount="indefinite"
+      calcMode="discrete"
+      keyTimes="0;.75;.85;1"
+      values="0;1;0;0"/>
+    <animateMotion
+      path="M1023 132Q1018 112 1023 101L1023 121"
+      dur="8s" repeatCount="indefinite"
+      calcMode="linear"
+      keyTimes="0;.75;.85;1"
+      keyPoints="0;0;1;1"/>
+  </circle>
 
-<path d="M1061 226L1040 246M1031 237L1049 255"
-  fill="none" stroke="#6dead5" stroke-width="2.3" opacity="0">
-  <animate attributeName="opacity" dur="8s" repeatCount="indefinite"
-    calcMode="discrete" keyTimes="0;.17;.33;1" values="0;1;0;0"/>
-</path>
-
-<path d="M1060 218L1035 185" class="pass" opacity="0">
-  <animate attributeName="opacity" dur="8s" repeatCount="indefinite"
-    calcMode="discrete" keyTimes="0;.42;.583333;1"
-    values="0;1;0;0"/>
-</path>
-<circle r="3.5" fill="#ffc778" opacity="0">
-  <animate attributeName="opacity" dur="8s" repeatCount="indefinite"
-    calcMode="discrete" keyTimes="0;.42;.583333;1"
-    values="0;1;0;0"/>
-  <animateMotion path="M1060 218L1035 185" dur="8s"
-    repeatCount="indefinite" calcMode="linear"
-    keyTimes="0;.42;.583333;1"
-    keyPoints="0;0;1;1"/>
-</circle>
-
-<circle r="3.5" fill="#ffc778" opacity="0">
-  <animate attributeName="opacity" dur="8s" repeatCount="indefinite"
-    calcMode="discrete" keyTimes="0;.75;.85;1"
-    values="0;1;0;0"/>
-  <animateMotion path="M1023 132Q1018 112 1023 101L1023 121"
-    dur="8s" repeatCount="indefinite" calcMode="linear"
-    keyTimes="0;.75;.85;1" keyPoints="0;0;1;1"/>
-</circle>
-
-<text x="1023" y="180" text-anchor="middle" font-family="Arial"
-  font-size="12" font-weight="bold" fill="#6fe2af" opacity="0">+2
-  <animate attributeName="opacity" dur="8s" repeatCount="indefinite"
-    calcMode="discrete" keyTimes="0;.85;.95;1"
-    values="0;1;0;0"/>
-</text>
+  <text x="1023" y="180" text-anchor="middle"
+        font-family="Arial" font-size="12"
+        font-weight="bold" fill="#6fe2af" opacity="0">
+    +2
+    <animate attributeName="opacity"
+      dur="8s" repeatCount="indefinite"
+      calcMode="discrete"
+      keyTimes="0;.85;.95;1"
+      values="0;1;0;0"/>
+  </text>
 </g>
 
 <!-- PLAY 2: BACKDOOR CUT -->
 <g opacity="0">
-<animate attributeName="opacity" dur="24s" repeatCount="indefinite"
-  calcMode="discrete"
-  keyTimes="0;.333333;.666667;1" values="0;1;0;0"/>
+  <animate attributeName="opacity"
+    dur="24s" repeatCount="indefinite"
+    calcMode="discrete"
+    keyTimes="0;.333333;.666667;1"
+    values="0;1;0;0"/>
 
-<text x="1023" y="292" text-anchor="middle" class="mono"
-  font-size="9" fill="#a4e8ea">02 / BACKDOOR CUT &amp; DRIVE</text>
+  <text x="1023" y="292" text-anchor="middle"
+        class="mono" font-size="9" fill="#a4e8ea">
+    02 / BACKDOOR CUT &amp; DRIVE
+  </text>
 
-<g class="route" opacity=".55">
-  <path d="M909 120L931 149L968 177L995 161L1023 132"/>
-</g>
+  <g class="route" opacity=".55">
+    <path d="M909 120L931 149L968 177L995 161L1023 132"/>
+  </g>
 
-<g transform="translate(1000 268)">
-  <circle r="8" class="off"/><text y="3" class="ot">O1</text>
-  <circle cx="9" cy="3" r="3.5" fill="#ffc778">
-    <animate attributeName="opacity" dur="8s" repeatCount="indefinite"
-      calcMode="discrete" keyTimes="0;.17;1" values="1;0;0"/>
-  </circle>
-</g>
-<g transform="translate(1164 117)">
-  <circle r="8" class="off"/><text y="3" class="ot">O2</text>
-</g>
+  <!-- O1 -->
+  <g transform="translate(1000 268)">
+    <circle r="8" class="off"/>
+    <text y="3" class="ot">O1</text>
+    <circle cx="9" cy="3" r="3.5" fill="#ffc778">
+      <animate attributeName="opacity"
+        dur="8s" repeatCount="indefinite"
+        calcMode="discrete"
+        keyTimes="0;.17;1"
+        values="1;0;0"/>
+    </circle>
+  </g>
 
-<g>
-  <animateTransform attributeName="transform" type="translate"
-    dur="8s" repeatCount="indefinite" calcMode="linear"
-    keyTimes="0;.17;.33;.5;.58;.67;.83;1"
-    values="909 120;909 120;931 149;968 177;995 161;995 161;1023 132;1023 132"/>
-  <circle r="8" class="off"/>
-  <text y="3" class="ot">O3</text>
-  <circle cx="9" cy="3" r="3.5" fill="#ffc778" opacity="0">
-    <animate attributeName="opacity" dur="8s" repeatCount="indefinite"
+  <g transform="translate(1164 117)">
+    <circle r="8" class="off"/>
+    <text y="3" class="ot">O2</text>
+  </g>
+
+  <!-- O3 CUTS -->
+  <g>
+    <animateTransform attributeName="transform"
+      type="translate" dur="8s"
+      repeatCount="indefinite" calcMode="linear"
+      keyTimes="0;.17;.33;.5;.58;.67;.83;1"
+      values="909 120;909 120;931 149;968 177;995 161;995 161;1023 132;1023 132"/>
+    <circle r="8" class="off"/>
+    <text y="3" class="ot">O3</text>
+    <circle cx="9" cy="3" r="3.5"
+            fill="#ffc778" opacity="0">
+      <animate attributeName="opacity"
+        dur="8s" repeatCount="indefinite"
+        calcMode="discrete"
+        keyTimes="0;.67;.83;1"
+        values="0;1;0;0"/>
+    </circle>
+  </g>
+
+  <!-- O4 -->
+  <g transform="translate(927 207)">
+    <circle r="8" class="off"/>
+    <text y="3" class="ot">O4</text>
+    <circle cx="9" cy="3" r="3.5"
+            fill="#ffc778" opacity="0">
+      <animate attributeName="opacity"
+        dur="8s" repeatCount="indefinite"
+        calcMode="discrete"
+        keyTimes="0;.25;.58;1"
+        values="0;1;0;0"/>
+    </circle>
+  </g>
+
+  <g transform="translate(1075 198)">
+    <circle r="8" class="off"/>
+    <text y="3" class="ot">O5</text>
+  </g>
+
+  <!-- DEFENDERS -->
+  <g transform="translate(1002 243)">
+    <circle r="8" class="def"/>
+    <text y="3" class="xt">X1</text>
+  </g>
+
+  <g transform="translate(1139 139)">
+    <circle r="8" class="def"/>
+    <text y="3" class="xt">X2</text>
+  </g>
+
+  <g>
+    <animateTransform attributeName="transform"
+      type="translate" dur="8s"
+      repeatCount="indefinite" calcMode="linear"
+      keyTimes="0;.33;.58;.83;1"
+      values="930 134;919 132;936 158;976 178;976 178"/>
+    <circle r="8" class="def"/>
+    <text y="3" class="xt">X3</text>
+  </g>
+
+  <g transform="translate(951 192)">
+    <circle r="8" class="def"/>
+    <text y="3" class="xt">X4</text>
+  </g>
+
+  <g transform="translate(1064 160)">
+    <circle r="8" class="def"/>
+    <text y="3" class="xt">X5</text>
+  </g>
+
+  <!-- PASS 1 -->
+  <path d="M1000 268L927 207"
+        class="pass" opacity="0">
+    <animate attributeName="opacity"
+      dur="8s" repeatCount="indefinite"
       calcMode="discrete"
-      keyTimes="0;.67;.83;1" values="0;1;0;0"/>
-  </circle>
-</g>
+      keyTimes="0;.17;.25;1"
+      values="0;1;0;0"/>
+  </path>
 
-<g transform="translate(927 207)">
-  <circle r="8" class="off"/><text y="3" class="ot">O4</text>
-  <circle cx="9" cy="3" r="3.5" fill="#ffc778" opacity="0">
-    <animate attributeName="opacity" dur="8s" repeatCount="indefinite"
+  <circle r="3.5" fill="#ffc778" opacity="0">
+    <animate attributeName="opacity"
+      dur="8s" repeatCount="indefinite"
       calcMode="discrete"
-      keyTimes="0;.25;.58;1" values="0;1;0;0"/>
+      keyTimes="0;.17;.25;1"
+      values="0;1;0;0"/>
+    <animateMotion path="M1000 268L927 207"
+      dur="8s" repeatCount="indefinite"
+      calcMode="linear"
+      keyTimes="0;.17;.25;1"
+      keyPoints="0;0;1;1"/>
   </circle>
-</g>
-<g transform="translate(1075 198)">
-  <circle r="8" class="off"/><text y="3" class="ot">O5</text>
+
+  <!-- PASS 2 -->
+  <path d="M927 207L995 161"
+        class="pass" opacity="0">
+    <animate attributeName="opacity"
+      dur="8s" repeatCount="indefinite"
+      calcMode="discrete"
+      keyTimes="0;.58;.67;1"
+      values="0;1;0;0"/>
+  </path>
+
+  <circle r="3.5" fill="#ffc778" opacity="0">
+    <animate attributeName="opacity"
+      dur="8s" repeatCount="indefinite"
+      calcMode="discrete"
+      keyTimes="0;.58;.67;1"
+      values="0;1;0;0"/>
+    <animateMotion path="M927 207L995 161"
+      dur="8s" repeatCount="indefinite"
+      calcMode="linear"
+      keyTimes="0;.58;.67;1"
+      keyPoints="0;0;1;1"/>
+  </circle>
+
+  <!-- SHOT -->
+  <circle r="3.5" fill="#ffc778" opacity="0">
+    <animate attributeName="opacity"
+      dur="8s" repeatCount="indefinite"
+      calcMode="discrete"
+      keyTimes="0;.83;.93;1"
+      values="0;1;0;0"/>
+    <animateMotion
+      path="M1023 132Q1017 111 1023 101L1023 122"
+      dur="8s" repeatCount="indefinite"
+      calcMode="linear"
+      keyTimes="0;.83;.93;1"
+      keyPoints="0;0;1;1"/>
+  </circle>
+
+  <text x="1023" y="180" text-anchor="middle"
+        font-family="Arial" font-size="12"
+        font-weight="bold" fill="#6fe2af" opacity="0">
+    +2
+    <animate attributeName="opacity"
+      dur="8s" repeatCount="indefinite"
+      calcMode="discrete"
+      keyTimes="0;.93;.98;1"
+      values="0;1;0;0"/>
+  </text>
 </g>
 
-<g transform="translate(1002 243)">
-  <circle r="8" class="def"/><text y="3" class="xt">X1</text>
-</g>
-<g transform="translate(1139 139)">
-  <circle r="8" class="def"/><text y="3" class="xt">X2</text>
-</g>
-<g>
-  <animateTransform attributeName="transform" type="translate"
-    dur="8s" repeatCount="indefinite" calcMode="linear"
-    keyTimes="0;.33;.58;.83;1"
-    values="930 134;919 132;936 158;976 178;976 178"/>
-  <circle r="8" class="def"/><text y="3" class="xt">X3</text>
-</g>
-<g transform="translate(951 192)">
-  <circle r="8" class="def"/><text y="3" class="xt">X4</text>
-</g>
-<g transform="translate(1064 160)">
-  <circle r="8" class="def"/><text y="3" class="xt">X5</text>
-</g>
-
-<path d="M1000 268L927 207" class="pass" opacity="0">
-  <animate attributeName="opacity" dur="8s" repeatCount="indefinite"
-    calcMode="discrete" keyTimes="0;.17;.25;1"
-    values="0;1;0;0"/>
-</path>
-<circle r="3.5" fill="#ffc778" opacity="0">
-  <animate attributeName="opacity" dur="8s" repeatCount="indefinite"
-    calcMode="discrete" keyTimes="0;.17;.25;1"
-    values="0;1;0;0"/>
-  <animateMotion path="M1000 268L927 207"
-    dur="8s" repeatCount="indefinite" calcMode="linear"
-    keyTimes="0;.17;.25;1" keyPoints="0;0;1;1"/>
-</circle>
-
-<path d="M927 207L995 161" class="pass" opacity="0">
-  <animate attributeName="opacity" dur="8s" repeatCount="indefinite"
-    calcMode="discrete"
-    keyTimes="0;.58;.67;1" values="0;1;0;0"/>
-</path>
-<circle r="3.5" fill="#ffc778" opacity="0">
-  <animate attributeName="opacity" dur="8s" repeatCount="indefinite"
-    calcMode="discrete"
-    keyTimes="0;.58;.67;1" values="0;1;0;0"/>
-  <animateMotion path="M927 207L995 161"
-    dur="8s" repeatCount="indefinite" calcMode="linear"
-    keyTimes="0;.58;.67;1" keyPoints="0;0;1;1"/>
-</circle>
-
-<circle r="3.5" fill="#ffc778" opacity="0">
-  <animate attributeName="opacity" dur="8s" repeatCount="indefinite"
-    calcMode="discrete"
-    keyTimes="0;.83;.93;1" values="0;1;0;0"/>
-  <animateMotion path="M1023 132Q1017 111 1023 101L1023 122"
-    dur="8s" repeatCount="indefinite" calcMode="linear"
-    keyTimes="0;.83;.93;1" keyPoints="0;0;1;1"/>
-</circle>
-
-<text x="1023" y="180" text-anchor="middle" font-family="Arial"
-  font-size="12" font-weight="bold" fill="#6fe2af" opacity="0">+2
-  <animate attributeName="opacity" dur="8s" repeatCount="indefinite"
-    calcMode="discrete" keyTimes="0;.93;.98;1"
-    values="0;1;0;0"/>
-</text>
-</g>
-
-<!-- PLAY 3: QUICK SCREEN AND OPEN CORNER THREE -->
+<!-- PLAY 3: SCREEN AND CORNER THREE -->
 <g opacity="0">
-<animate attributeName="opacity" dur="24s" repeatCount="indefinite"
-  calcMode="discrete"
-  keyTimes="0;.666667;1" values="0;1;0"/>
+  <animate attributeName="opacity"
+    dur="24s" repeatCount="indefinite"
+    calcMode="discrete"
+    keyTimes="0;.666667;1"
+    values="0;1;0"/>
 
-<text x="1023" y="292" text-anchor="middle" class="mono"
-  font-size="9" fill="#a4e8ea">03 / QUICK SCREEN - CORNER 3PT</text>
+  <text x="1023" y="292" text-anchor="middle"
+        class="mono" font-size="9" fill="#a4e8ea">
+    03 / QUICK SCREEN - CORNER 3PT
+  </text>
 
-<g class="route" opacity=".6">
-  <path d="M1095 203L1115 160"/>
-  <path d="M1129 179L1145 145L1168 102"/>
-</g>
+  <g class="route" opacity=".6">
+    <path d="M1095 203L1115 160"/>
+    <path d="M1129 179L1145 145L1168 102"/>
+  </g>
 
-<g transform="translate(1000 268)">
-  <circle r="8" class="off"/><text y="3" class="ot">O1</text>
-  <circle cx="9" cy="3" r="3.5" fill="#ffc778">
-    <animate attributeName="opacity" dur="8s" repeatCount="indefinite"
-      calcMode="discrete" keyTimes="0;.12;1" values="1;0;0"/>
-  </circle>
-</g>
+  <!-- O1 -->
+  <g transform="translate(1000 268)">
+    <circle r="8" class="off"/>
+    <text y="3" class="ot">O1</text>
+    <circle cx="9" cy="3" r="3.5" fill="#ffc778">
+      <animate attributeName="opacity"
+        dur="8s" repeatCount="indefinite"
+        calcMode="discrete"
+        keyTimes="0;.12;1"
+        values="1;0;0"/>
+    </circle>
+  </g>
 
-<g>
-  <animateTransform attributeName="transform" type="translate"
-    dur="8s" repeatCount="indefinite" calcMode="linear"
-    keyTimes="0;.12;.23;.34;.40;1"
-    values="1129 179;1129 179;1146 145;1168 102;1168 102;1168 102"/>
-  <circle r="8" class="off"/>
-  <text y="3" class="ot">O2</text>
-  <circle cx="-9" cy="4" r="3.5" fill="#ffc778" opacity="0">
-    <animate attributeName="opacity" dur="8s" repeatCount="indefinite"
+  <!-- O2 CUTS DEEP INTO CORNER -->
+  <g>
+    <animateTransform attributeName="transform"
+      type="translate" dur="8s"
+      repeatCount="indefinite" calcMode="linear"
+      keyTimes="0;.12;.23;.34;.40;1"
+      values="1129 179;1129 179;1146 145;1168 102;1168 102;1168 102"/>
+    <circle r="8" class="off"/>
+    <text y="3" class="ot">O2</text>
+    <circle cx="-9" cy="4" r="3.5"
+            fill="#ffc778" opacity="0">
+      <animate attributeName="opacity"
+        dur="8s" repeatCount="indefinite"
+        calcMode="discrete"
+        keyTimes="0;.43;.55;1"
+        values="0;1;0;0"/>
+    </circle>
+  </g>
+
+  <g transform="translate(900 120)">
+    <circle r="8" class="off"/>
+    <text y="3" class="ot">O3</text>
+  </g>
+
+  <!-- O4 PASSER -->
+  <g transform="translate(945 208)">
+    <circle r="8" class="off"/>
+    <text y="3" class="ot">O4</text>
+    <circle cx="9" cy="3" r="3.5"
+            fill="#ffc778" opacity="0">
+      <animate attributeName="opacity"
+        dur="8s" repeatCount="indefinite"
+        calcMode="discrete"
+        keyTimes="0;.19;.35;1"
+        values="0;1;0;0"/>
+    </circle>
+  </g>
+
+  <!-- O5 SCREEN -->
+  <g>
+    <animateTransform attributeName="transform"
+      type="translate" dur="8s"
+      repeatCount="indefinite" calcMode="linear"
+      keyTimes="0;.12;.22;.4;.65;1"
+      values="1095 203;1115 160;1115 160;1115 160;1080 189;1080 189"/>
+    <circle r="8" class="off"/>
+    <text y="3" class="ot">O5</text>
+  </g>
+
+  <!-- DEFENDERS -->
+  <g transform="translate(1002 243)">
+    <circle r="8" class="def"/>
+    <text y="3" class="xt">X1</text>
+  </g>
+
+  <!-- X2 GETS CAUGHT ON SCREEN -->
+  <g>
+    <animateTransform attributeName="transform"
+      type="translate" dur="8s"
+      repeatCount="indefinite" calcMode="linear"
+      keyTimes="0;.12;.23;.34;.43;.65;1"
+      values="1128 159;1128 159;1127 166;1133 155;1141 147;1150 133;1150 133"/>
+    <circle r="8" class="def"/>
+    <text y="3" class="xt">X2</text>
+  </g>
+
+  <g transform="translate(921 143)">
+    <circle r="8" class="def"/>
+    <text y="3" class="xt">X3</text>
+  </g>
+
+  <g transform="translate(967 195)">
+    <circle r="8" class="def"/>
+    <text y="3" class="xt">X4</text>
+  </g>
+
+  <g transform="translate(1050 164)">
+    <circle r="8" class="def"/>
+    <text y="3" class="xt">X5</text>
+  </g>
+
+  <!-- SCREEN MARKER -->
+  <path d="M1095 183L1115 160M1105 151L1125 169"
+        fill="none" stroke="#6dead5"
+        stroke-width="2.3" opacity="0">
+    <animate attributeName="opacity"
+      dur="8s" repeatCount="indefinite"
       calcMode="discrete"
-      keyTimes="0;.43;.55;1" values="0;1;0;0"/>
-  </circle>
-</g>
+      keyTimes="0;.12;.35;1"
+      values="0;1;0;0"/>
+  </path>
 
-<g transform="translate(900 120)">
-  <circle r="8" class="off"/><text y="3" class="ot">O3</text>
-</g>
-
-<g transform="translate(945 208)">
-  <circle r="8" class="off"/>
-  <text y="3" class="ot">O4</text>
-  <circle cx="9" cy="3" r="3.5" fill="#ffc778" opacity="0">
-    <animate attributeName="opacity" dur="8s" repeatCount="indefinite"
+  <!-- O1 TO O4 -->
+  <path d="M1000 268L945 208"
+        class="pass" opacity="0">
+    <animate attributeName="opacity"
+      dur="8s" repeatCount="indefinite"
       calcMode="discrete"
-      keyTimes="0;.19;.35;1" values="0;1;0;0"/>
+      keyTimes="0;.12;.19;1"
+      values="0;1;0;0"/>
+  </path>
+
+  <circle r="3.5" fill="#ffc778" opacity="0">
+    <animate attributeName="opacity"
+      dur="8s" repeatCount="indefinite"
+      calcMode="discrete"
+      keyTimes="0;.12;.19;1"
+      values="0;1;0;0"/>
+    <animateMotion path="M1000 268L945 208"
+      dur="8s" repeatCount="indefinite"
+      calcMode="linear"
+      keyTimes="0;.12;.19;1"
+      keyPoints="0;0;1;1"/>
   </circle>
-</g>
 
-<g>
-  <animateTransform attributeName="transform" type="translate"
-    dur="8s" repeatCount="indefinite" calcMode="linear"
-    keyTimes="0;.12;.22;.4;.65;1"
-    values="1095 203;1115 160;1115 160;1115 160;1080 189;1080 189"/>
-  <circle r="8" class="off"/>
-  <text y="3" class="ot">O5</text>
-</g>
+  <!-- O4 TO OPEN O2 -->
+  <path d="M945 208L1168 102"
+        class="pass" opacity="0">
+    <animate attributeName="opacity"
+      dur="8s" repeatCount="indefinite"
+      calcMode="discrete"
+      keyTimes="0;.35;.43;1"
+      values="0;1;0;0"/>
+  </path>
 
-<g transform="translate(1002 243)">
-  <circle r="8" class="def"/><text y="3" class="xt">X1</text>
-</g>
-<g>
-  <animateTransform attributeName="transform" type="translate"
-    dur="8s" repeatCount="indefinite" calcMode="linear"
-    keyTimes="0;.12;.23;.34;.43;.65;1"
-    values="1128 159;1128 159;1127 166;1133 155;1141 147;1150 133;1150 133"/>
-  <circle r="8" class="def"/>
-  <text y="3" class="xt">X2</text>
-</g>
-<g transform="translate(921 143)">
-  <circle r="8" class="def"/><text y="3" class="xt">X3</text>
-</g>
-<g transform="translate(967 195)">
-  <circle r="8" class="def"/><text y="3" class="xt">X4</text>
-</g>
-<g transform="translate(1050 164)">
-  <circle r="8" class="def"/><text y="3" class="xt">X5</text>
-</g>
+  <circle r="3.5" fill="#ffc778" opacity="0">
+    <animate attributeName="opacity"
+      dur="8s" repeatCount="indefinite"
+      calcMode="discrete"
+      keyTimes="0;.35;.43;1"
+      values="0;1;0;0"/>
+    <animateMotion path="M945 208L1168 102"
+      dur="8s" repeatCount="indefinite"
+      calcMode="linear"
+      keyTimes="0;.35;.43;1"
+      keyPoints="0;0;1;1"/>
+  </circle>
 
-<path d="M1095 183L1115 160M1105 151L1125 169"
-  fill="none" stroke="#6dead5" stroke-width="2.3" opacity="0">
-  <animate attributeName="opacity" dur="8s" repeatCount="indefinite"
-    calcMode="discrete"
-    keyTimes="0;.12;.35;1" values="0;1;0;0"/>
-</path>
+  <!-- OPEN CORNER THREE -->
+  <circle r="3.5" fill="#ffc778" opacity="0">
+    <animate attributeName="opacity"
+      dur="8s" repeatCount="indefinite"
+      calcMode="discrete"
+      keyTimes="0;.55;.73;1"
+      values="0;1;0;0"/>
+    <animateMotion
+      path="M1168 102Q1095 47 1023 101L1023 122"
+      dur="8s" repeatCount="indefinite"
+      calcMode="linear"
+      keyTimes="0;.55;.73;1"
+      keyPoints="0;0;1;1"/>
+  </circle>
 
-<path d="M1000 268L945 208" class="pass" opacity="0">
-  <animate attributeName="opacity" dur="8s" repeatCount="indefinite"
-    calcMode="discrete" keyTimes="0;.12;.19;1"
-    values="0;1;0;0"/>
-</path>
-<circle r="3.5" fill="#ffc778" opacity="0">
-  <animate attributeName="opacity" dur="8s" repeatCount="indefinite"
-    calcMode="discrete" keyTimes="0;.12;.19;1"
-    values="0;1;0;0"/>
-  <animateMotion path="M1000 268L945 208"
-    dur="8s" repeatCount="indefinite" calcMode="linear"
-    keyTimes="0;.12;.19;1" keyPoints="0;0;1;1"/>
-</circle>
-
-<path d="M945 208L1168 102" class="pass" opacity="0">
-  <animate attributeName="opacity" dur="8s" repeatCount="indefinite"
-    calcMode="discrete"
-    keyTimes="0;.35;.43;1" values="0;1;0;0"/>
-</path>
-<circle r="3.5" fill="#ffc778" opacity="0">
-  <animate attributeName="opacity" dur="8s" repeatCount="indefinite"
-    calcMode="discrete"
-    keyTimes="0;.35;.43;1" values="0;1;0;0"/>
-  <animateMotion path="M945 208L1168 102"
-    dur="8s" repeatCount="indefinite" calcMode="linear"
-    keyTimes="0;.35;.43;1" keyPoints="0;0;1;1"/>
-</circle>
-
-<circle r="3.5" fill="#ffc778" opacity="0">
-  <animate attributeName="opacity" dur="8s" repeatCount="indefinite"
-    calcMode="discrete"
-    keyTimes="0;.55;.73;1" values="0;1;0;0"/>
-  <animateMotion path="M1168 102Q1095 47 1023 101L1023 122"
-    dur="8s" repeatCount="indefinite" calcMode="linear"
-    keyTimes="0;.55;.73;1" keyPoints="0;0;1;1"/>
-</circle>
-
-<text x="1023" y="181" text-anchor="middle" font-family="Arial"
-  font-size="14" font-weight="bold" fill="#6fe2af" opacity="0">+3
-  <animate attributeName="opacity" dur="8s" repeatCount="indefinite"
-    calcMode="discrete" keyTimes="0;.73;.9;1"
-    values="0;1;0;0"/>
-</text>
+  <text x="1023" y="181" text-anchor="middle"
+        font-family="Arial" font-size="14"
+        font-weight="bold" fill="#6fe2af" opacity="0">
+    +3
+    <animate attributeName="opacity"
+      dur="8s" repeatCount="indefinite"
+      calcMode="discrete"
+      keyTimes="0;.73;.9;1"
+      values="0;1;0;0"/>
+  </text>
 </g>
 
 </g>
 
 <!-- BOTTOM ACCENT -->
 <path d="M0 322Q300 312 600 322T1200 322V340H0Z"
-  fill="#49a9b3" opacity=".28"/>
+      fill="#49a9b3" opacity=".28"/>
+
 </svg>
