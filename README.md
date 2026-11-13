@@ -54,47 +54,51 @@
 
 <div align="center">
   <h2>📈 Selected Business Impact</h2>
-  <p><em>Measurable improvements in customer identification, data quality, and operational efficiency.</em></p>
+  <p><em>Turning customer data into operational efficiency, better resource allocation, and business opportunities.</em></p>
 </div>
 
 <table>
 <tr>
-<td width="25%" align="center">
-<h2>80–90%</h2>
-<strong>Customer Identification</strong>
+<td width="25%" align="center" valign="middle">
+<h2>+50%</h2>
+<strong>Relative Improvement</strong>
 <br>
-<sub>Improved from ~60%</sub>
+<sub>Customer identification<br>~60% to as high as 90%</sub>
 </td>
-<td width="25%" align="center">
-<h2>73.9%</h2>
-<strong>Records Resolved</strong>
+<td width="25%" align="center" valign="middle">
+<h2>92.5%</h2>
+<strong>High-Efficiency Identification</strong>
 <br>
-<sub>648 of 877 records</sub>
+<sub>38.1% of analyzed workload</sub>
 </td>
-<td width="25%" align="center">
-<h2>17</h2>
-<strong>Distributor Workbooks</strong>
+<td width="25%" align="center" valign="middle">
+<h2>82.1%</h2>
+<strong>Workload Concentration</strong>
 <br>
-<sub>Consolidated & standardized</sub>
+<sub>Top five distributors</sub>
 </td>
-<td width="25%" align="center">
-<h2>877</h2>
-<strong>Records Analyzed</strong>
+<td width="25%" align="center" valign="middle">
+<h2>84.7%</h2>
+<strong>Identification Success</strong>
 <br>
-<sub>Distributor reconciliation</sub>
+<sub>53.6% workload coverage</sub>
 </td>
 </tr>
 </table>
 
 <table>
 <tr>
-<td width="50%" valign="top">
-<h3>⚙️ Automation & Data Quality</h3>
-<p>Developed Python fuzzy-matching and standardization workflows that improved CRM customer identification, reduced repetitive manual reconciliation, and accelerated recurring data-processing operations.</p>
+<td width="33%" align="center" valign="top">
+<h3>⚙️ Operational Efficiency</h3>
+<p>Reduced repetitive research, supported backlog reduction, and created capacity for higher-value analytical work.</p>
 </td>
-<td width="50%" valign="top">
-<h3>📊 Reporting & Operational Efficiency</h3>
-<p>Consolidated distributor reporting, prioritized high-impact matching opportunities, eliminated reconciliation backlogs, and improved the availability of reliable customer data for business decisions.</p>
+<td width="33%" align="center" valign="top">
+<h3>🎯 Resource Optimization</h3>
+<p>Identified high-performing confidence-score segments to guide research prioritization and workload allocation.</p>
+</td>
+<td width="34%" align="center" valign="top">
+<h3>📈 Business Opportunities</h3>
+<p>Improved CRM customer visibility to support targeted sales outreach, customer retention, and potential revenue growth.</p>
 </td>
 </tr>
 </table>
@@ -177,7 +181,7 @@
 
 <div align="center">
   <h2>🚀 Featured Analytics Projects</h2>
-  <p><em>Applied analytics, automation, and business intelligence across real-world and simulated datasets.</em></p>
+  <p><em>Applied analytics, automation, and business intelligence across professional and simulated datasets.</em></p>
 </div>
 
 <table>
@@ -190,11 +194,13 @@
 <a href="https://github.com/RobCameron3/nba-four-factor-modeling"><img src="https://img.shields.io/badge/EXPLORE_PROJECT-181717?style=for-the-badge&logo=github&logoColor=white" alt="Explore NBA Four-Factor Modeling"/></a>
 </td>
 <td width="50%" valign="top">
-<h3>⚙️ 02 | Python Customer Matching</h3>
-<p><strong>Customer Identification & Automation</strong></p>
-<p>Developed Python fuzzy-matching workflows to standardize distributor records, improve CRM account identification, and reduce manual reconciliation.</p>
-<p><strong>Impact:</strong> Customer identification improved from ~60% to 80–90%.</p>
-<p><strong>Tools:</strong> Python · Pandas · Fuzzy Matching · CRM Integration</p>
+<h3>📊 02 | Customer Intelligence & Automation Strategy</h3>
+<p><strong>Business Intelligence, Workflow Optimization & Decision Support</strong></p>
+<p>Analyzed 877 distributor records, successfully identifying 648 (73.9%). Combined Python, Pandas, advanced Excel, DAX, and Power BI to evaluate customer identification performance, prioritize research workloads, and identify opportunities for automation.</p>
+<p><strong>Key Finding:</strong> A high-efficiency workload segment representing 38.1% of analyzed records achieved a 92.5% customer identification rate.</p>
+<p><strong>Business Value:</strong> Improved CRM data quality, reduced repetitive research, and supported more targeted sales outreach opportunities.</p>
+<p><strong>Tools:</strong> Python · Pandas · Excel · Power Pivot · DAX · Power BI · Dynamics 365 CRM</p>
+<a href="https://github.com/RobCameron3/Customer-Data-Analysis-Automation-Strategy"><img src="https://img.shields.io/badge/EXPLORE_PROJECT-181717?style=for-the-badge&logo=github&logoColor=white" alt="Explore Customer Intelligence and Automation Strategy"/></a>
 </td>
 </tr>
 <tr>
