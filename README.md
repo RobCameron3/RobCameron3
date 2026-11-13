@@ -1,24 +1,25 @@
 
 <div align="center">
-  <img src="profile-banner.svg" width="100%" alt="Robert J. Cameron — Business Intelligence, Data Analytics and Data Integration"/>
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=16&duration=2600&pause=1100&color=20B8C3&center=true&vCenter=true&width=780&height=26&lines=I+build+business+intelligence+solutions.;I+improve+data+quality+and+efficiency.;I+turn+data+into+better+business+decisions.;I+transform+analytics+into+business+value." alt="Professional introduction"/>
+<img src="profile-banner.svg" width="100%" alt="Robert J. Cameron — Business Intelligence and Data Analytics"/>
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=16&duration=2600&pause=1100&color=20B8C3&center=true&vCenter=true&width=780&height=26&lines=I+build+business+intelligence+solutions.;I+improve+data+quality+and+efficiency.;I+turn+data+into+better+business+decisions.;I+transform+analytics+into+business+value." alt="Professional introduction"/>
 </div>
+
 <table>
 <tr>
 <td width="30%" align="center" valign="middle">
-  <strong>🎓 UMASS AMHERST</strong>
-  <p><img src="https://img.shields.io/badge/UMASS-AMHERST-881C1C?style=for-the-badge" alt="UMass Amherst"/></p>
-  <strong>MASTER OF SCIENCE<br/>BUSINESS ANALYTICS</strong>
-  <p><strong>Isenberg School of Management</strong><br/>University of Massachusetts Amherst</p>
-  <img src="https://img.shields.io/badge/CLASS_OF-2023-881C1C?style=for-the-badge" alt="Class of 2023"/>
+<strong>🎓 UMASS AMHERST</strong>
+<p><img src="https://img.shields.io/badge/UMASS-AMHERST-881C1C?style=for-the-badge" alt="UMass Amherst"/></p>
+<strong>MASTER OF SCIENCE<br/>BUSINESS ANALYTICS</strong>
+<p><strong>Isenberg School of Management</strong><br/>University of Massachusetts Amherst</p>
+<img src="https://img.shields.io/badge/CLASS_OF-2023-881C1C?style=for-the-badge" alt="Class of 2023"/>
 </td>
 <td width="70%" valign="middle">
-  <h2>Robert J. Cameron</h2>
-  <strong>Business Intelligence &amp; Data Analyst</strong>
-  <p>Business intelligence professional with nearly three years of experience in data integration, reporting, operational analytics, and workflow automation.</p>
-  <p>I transform fragmented datasets into reliable insights that improve efficiency, strengthen decision-making, and generate measurable business value.</p>
-  <a href="https://www.linkedin.com/in/robertjcameron-/"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
-  <a href="https://github.com/RobCameron3"><img src="https://img.shields.io/badge/GitHub-Portfolio-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub"/></a>
+<h2>Robert J. Cameron</h2>
+<strong>Business Intelligence &amp; Data Analyst</strong>
+<p>Business intelligence professional with nearly three years of experience in data integration, reporting, operational analytics, and workflow automation.</p>
+<p>I transform fragmented datasets into reliable insights that improve efficiency, strengthen decision-making, and generate measurable business value.</p>
+<a href="https://www.linkedin.com/in/robertjcameron-/"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
+<a href="https://github.com/RobCameron3"><img src="https://img.shields.io/badge/GitHub-Portfolio-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub"/></a>
 </td>
 </tr>
 </table>
@@ -38,62 +39,45 @@ Improved customer identification, data quality, and operational reporting throug
 ## 🚀 Featured Analytics Projects
 
 ### 🏀 01 | NBA Four-Factor Modeling & Team Performance Analytics
-**Analyzing the statistical factors that influence basketball performance.**
-
-Applied Dean Oliver's Four Factors framework to examine shooting efficiency, turnovers, offensive rebounding, and free-throw production, identifying performance differences between teams.
-
+**Analyzing the statistical factors that influence basketball performance.**  
+Applied Dean Oliver's Four Factors framework to evaluate shooting efficiency, turnovers, offensive rebounding, and free-throw production.  
 **Tools:** Python · Pandas · Statistical Analysis · Predictive Modeling  
-**[Explore NBA Four-Factor Modeling](https://github.com/RobCameron3/nba-four-factor-modeling)**
+[Explore NBA Four-Factor Modeling](https://github.com/RobCameron3/nba-four-factor-modeling)
 
 ### ⚙️ 02 | Python Customer Identification & Automation
-**Transforming fragmented customer records into reliable business intelligence.**
-
-<img src="assets/customer-matching.svg" width="100%" alt="Python customer matching workflow"/>
-
-Developed Python-based matching workflows to clean and standardize distributor records, identify potential CRM accounts, and improve customer identification efficiency.
-
-**Measured impact:** Increased customer identification from approximately **60% to 80–90%**.  
+**Transforming fragmented customer records into reliable business intelligence.**  
+Developed Python fuzzy-matching workflows to clean distributor data, standardize customer records, and improve CRM account identification from **60% to 80–90%**.  
 **Tools:** Python · Pandas · Fuzzy Matching · Data Cleaning · CRM Integration
 
 ### 🕵️ 03 | SQL Data Breach Investigation
-**Connecting fragmented evidence through relational analysis.**
-
-<img src="assets/sql-investigation.svg" width="100%" alt="SQL data investigation workflow"/>
-
-Investigated a simulated data breach using SQL joins, filtering, and relational analysis to identify connections between records and narrow potential matches.
-
+**Connecting fragmented evidence through relational analysis.**  
+Investigated a simulated data breach using SQL joins, filtering, and relational analysis to identify connections between records.  
 **Tools:** PostgreSQL · SQL · Joins · Data Investigation  
-**[Explore SQL Investigation](https://github.com/RobCameron3/sql-data-breach-investigation)**
+[Explore SQL Investigation](https://github.com/RobCameron3/sql-data-breach-investigation)
 
 ### 📊 04 | Power BI Operational Performance & Logistics
-**Turning operational data into actionable business KPIs.**
-
-<img src="assets/power-bi-performance.gif" width="100%" alt="Power BI operational dashboard"/>
-
-Developed an interactive dashboard analyzing revenue, operational KPIs, shipment trends, regional performance, and business activity.
-
+**Turning operational data into actionable business KPIs.**  
+Developed an interactive dashboard analyzing revenue, operational KPIs, shipment trends, and regional performance.  
 **Tools:** Power BI · Power Query · DAX · Data Visualization  
-**[Explore Operational Logistics Dashboard](https://github.com/RobCameron3/power-bi-operational-logistics-dashboard)**
+[Explore Operational Logistics Dashboard](https://github.com/RobCameron3/power-bi-operational-logistics-dashboard)
 
 ### 🌎 05 | Geographic Density & Trend Analytics
-**Identifying geographic concentrations and changing business patterns.**
-
-<img src="assets/geographic-density.gif" width="100%" alt="Geographic density analytics"/>
-
-Built a geographic analytics dashboard to compare regional activity, identify geographic concentrations, and examine trends over time.
-
+**Identifying geographic concentrations and changing business patterns.**  
+Built a geographic dashboard to compare regional activity, identify concentrations, and examine trends over time.  
 **Tools:** Power BI · Power Query · DAX · Geographic Analytics  
-**[Explore Geographic Density Analytics](https://github.com/RobCameron3/power-bi-geographic-density-analytics)**
+[Explore Geographic Density Analytics](https://github.com/RobCameron3/power-bi-geographic-density-analytics)
 
 ### 📉 06 | Telecommunications Customer Churn Prediction
-**Identifying customers at risk of leaving.**
-
-<img src="assets/customer-churn.gif" width="100%" alt="Telecommunications churn prediction"/>
-
-Developed a predictive classification model to analyze customer characteristics, identify churn risk, and evaluate retention-related patterns.
-
+**Identifying customers at risk of leaving.**  
+Developed a classification model to analyze customer characteristics, identify churn risk, and evaluate retention patterns.  
 **Tools:** Python · Pandas · Classification · Predictive Analytics  
-**[Explore Telecom Churn Prediction](https://github.com/RobCameron3/Telco_Churn_Prediction)**
+[Explore Telecom Churn Prediction](https://github.com/RobCameron3/Telco_Churn_Prediction)
+
+### 🚗 07 | Used Car Price Prediction
+**Estimating vehicle prices through regression analysis.**  
+Developed a regression model examining how vehicle characteristics influence used-car prices and evaluating predicted versus actual values.  
+**Tools:** Python · Pandas · Regression · Predictive Modeling  
+[Explore Used Car Price Prediction](https://github.com/RobCameron3/Used_Car_Price_Prediction)
 
 ## 🛠️ Technical Skills
 
@@ -142,5 +126,5 @@ Developed a predictive classification model to analyze customer characteristics,
 ![Predictive Modeling](https://img.shields.io/badge/Predictive_Modeling-008B8B?style=flat-square)
 
 <div align="center">
-  <strong>Turning Data Into Decisions. Decisions Into Business Value.</strong>
+<strong>Turning Data Into Decisions. Decisions Into Business Value.</strong>
 </div>
