@@ -1,9 +1,9 @@
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:071525,50:123C57,100:087F8C&height=150&section=header&text=Hello,%20I'm%20Robert%20J.%20Cameron%20%F0%9F%91%8B&fontColor=FFFFFF&fontSize=29&fontAlignY=40&animation=fadeIn" width="100%" alt="Robert J. Cameron"/>
+<img src="profile-banner.svg" width="100%" alt="Robert J. Cameron — Business Intelligence, Data Analytics and Data Integration"/>
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=17&duration=2600&pause=1200&color=20B8C3&center=true&vCenter=true&width=800&height=32&lines=I+build+business+intelligence+solutions.;I+improve+data+quality+and+efficiency.;I+turn+data+into+better+business+decisions.;I+transform+analytics+into+business+value." alt="Animated professional introduction"/>
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=17&duration=2600&pause=1200&color=20B8C3&center=true&vCenter=true&width=800&height=35&lines=I+build+business+intelligence+solutions.;I+improve+data+quality+and+efficiency.;I+turn+data+into+better+business+decisions.;I+transform+analytics+into+business+value." alt="Animated professional introduction"/>
 
 </div>
 
@@ -36,7 +36,7 @@
 
 <p>I transform fragmented datasets into reliable insights that improve efficiency, strengthen decision-making, and generate measurable business value.</p>
 
-<a href="https://www.linkedin.com/in/robertjcameron-">
+<a href="https://www.linkedin.com/in/robertjcameron-/">
 <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"/>
 </a>
 
@@ -53,6 +53,7 @@
 ## 💼 Professional Experience & Business Impact
 
 ### Business Operations Analyst | Solmetex
+
 **April 2024 – October 2026**
 
 Improved customer identification, data quality, and operational reporting through Python automation, CRM analysis, and data integration.
@@ -84,7 +85,7 @@ Applied Dean Oliver's Four Factors framework to examine shooting efficiency, tur
 
 **Transforming fragmented customer records into reliable business intelligence.**
 
-<img src="assets/customer-matching.svg" width="100%" alt="Animated Python customer matching workflow showing data standardization, fuzzy matching, and CRM validation"/>
+<img src="assets/customer-matching.svg" width="100%" alt="Python customer matching workflow"/>
 
 Developed Python-based matching workflows to clean and standardize distributor records, identify potential CRM accounts, and improve customer identification efficiency.
 
@@ -98,7 +99,7 @@ Developed Python-based matching workflows to clean and standardize distributor r
 
 **Connecting fragmented evidence through relational analysis.**
 
-<img src="assets/sql-investigation.svg" width="100%" alt="Animated SQL investigation showing candidate records being evaluated to identify a matching record"/>
+<img src="assets/sql-investigation.svg" width="100%" alt="SQL data investigation workflow"/>
 
 Investigated a simulated data breach using SQL joins, filtering, and relational analysis to identify connections between records and narrow potential matches.
 
@@ -112,7 +113,7 @@ Investigated a simulated data breach using SQL joins, filtering, and relational 
 
 **Turning operational data into actionable business KPIs.**
 
-<img src="assets/power-bi-performance.gif" width="100%" alt="Animated Power BI operational performance dashboard"/>
+<img src="assets/power-bi-performance.gif" width="100%" alt="Power BI operational dashboard"/>
 
 Developed an interactive dashboard analyzing revenue, operational KPIs, shipment trends, regional performance, and business activity.
 
@@ -126,7 +127,7 @@ Developed an interactive dashboard analyzing revenue, operational KPIs, shipment
 
 **Identifying geographic concentrations and changing business patterns.**
 
-<img src="assets/geographic-density.gif" width="100%" alt="Animated Power BI geographic density and regional trend visualization"/>
+<img src="assets/geographic-density.gif" width="100%" alt="Geographic density analytics"/>
 
 Built a geographic analytics dashboard to compare regional activity, identify geographic concentrations, and examine trends over time.
 
@@ -140,7 +141,7 @@ Built a geographic analytics dashboard to compare regional activity, identify ge
 
 **Identifying customers at risk of leaving.**
 
-<img src="assets/customer-churn.gif" width="100%" alt="Animated customer churn prediction and risk segmentation visualization"/>
+<img src="assets/customer-churn.gif" width="100%" alt="Telecommunications churn prediction"/>
 
 Developed a predictive classification model to analyze customer characteristics, identify churn risk, and evaluate retention-related patterns.
 
@@ -154,7 +155,7 @@ Developed a predictive classification model to analyze customer characteristics,
 
 **Estimating vehicle prices through regression analysis.**
 
-<img src="assets/used-car-regression.gif" width="100%" alt="Animated used-car price regression and prediction visualization"/>
+<img src="assets/used-car-regression.gif" width="100%" alt="Used car price prediction"/>
 
 Developed a regression model examining how vehicle characteristics influence used-car prices, including predicted versus actual price evaluation.
 
