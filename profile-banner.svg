@@ -8,6 +8,12 @@
   <clipPath id="courtClip">
     <rect x="870" y="76" width="306" height="225"/>
   </clipPath>
+  <clipPath id="typingClip">
+    <rect x="0" y="0" width="0" height="20">
+      <animate attributeName="width" values="0;310;310"
+        keyTimes="0;.8;1" dur="1s" fill="freeze"/>
+    </rect>
+  </clipPath>
 </defs>
 
 <style>
@@ -35,39 +41,82 @@
 <circle cx="71" cy="58" r="4.5" fill="#55d5a1"/>
 <path d="M18 77H344" stroke="#48cdd5" opacity=".45"/>
 
+<!-- SCRIPT 1: FUZZY MATCHER -->
 <g>
   <animate attributeName="opacity" values="1;1;0;0;1"
     keyTimes="0;.499;.5;.999;1" dur="20s" repeatCount="indefinite"/>
   <text x="184" y="62" text-anchor="middle" class="mono" font-size="11" fill="#a5e8ea">fuzzy_account_matcher.py</text>
+
   <g class="code" xml:space="preserve">
-    <text x="34" y="104" fill="#6fe2af"># Parallel fuzzy matching</text>
-    <text x="34" y="124" fill="#8be0e5">num_cores = cpu_count()</text>
-    <text x="34" y="144" fill="#f0c879">chunks = [</text>
-    <text x="34" y="164" fill="#e9f3f7">  df.iloc[i:i+chunk_size]</text>
-    <text x="34" y="184" fill="#e9f3f7">  for i in range(0,len(df),size)]</text>
-    <text x="34" y="204" fill="#f0c879">results = Parallel(n_jobs=cores)(</text>
-    <text x="34" y="224" fill="#e9f3f7">  delayed(find_best_match)(</text>
-    <text x="34" y="244" fill="#e9f3f7">    chunk, col, field, crm, 2)</text>
-    <text x="34" y="264" fill="#e9f3f7">  for chunk in chunks)</text>
-    <text x="34" y="284" fill="#8be0e5">matches = pd.concat(results)</text>
+    <text x="34" y="104" fill="#6fe2af"># Parallel fuzzy matching
+      <animate attributeName="opacity" values="0;1" dur=".5s" fill="freeze"/>
+    </text>
+    <text x="34" y="124" fill="#8be0e5">num_cores = cpu_count()
+      <animate attributeName="opacity" values="0;0;1" keyTimes="0;.5;1" dur="1s" fill="freeze"/>
+    </text>
+    <text x="34" y="144" fill="#f0c879">chunks = [
+      <animate attributeName="opacity" values="0;0;1" keyTimes="0;.66;1" dur="1.5s" fill="freeze"/>
+    </text>
+    <text x="34" y="164" fill="#e9f3f7">  df.iloc[i:i+chunk_size]
+      <animate attributeName="opacity" values="0;0;1" keyTimes="0;.75;1" dur="2s" fill="freeze"/>
+    </text>
+    <text x="34" y="184" fill="#e9f3f7">  for i in range(0,len(df),size)]
+      <animate attributeName="opacity" values="0;0;1" keyTimes="0;.8;1" dur="2.5s" fill="freeze"/>
+    </text>
+    <text x="34" y="204" fill="#f0c879">results = Parallel(n_jobs=cores)(
+      <animate attributeName="opacity" values="0;0;1" keyTimes="0;.83;1" dur="3s" fill="freeze"/>
+    </text>
+    <text x="34" y="224" fill="#e9f3f7">  delayed(find_best_match)(
+      <animate attributeName="opacity" values="0;0;1" keyTimes="0;.86;1" dur="3.5s" fill="freeze"/>
+    </text>
+    <text x="34" y="244" fill="#e9f3f7">    chunk, col, field, crm, 2)
+      <animate attributeName="opacity" values="0;0;1" keyTimes="0;.875;1" dur="4s" fill="freeze"/>
+    </text>
+    <text x="34" y="264" fill="#e9f3f7">  for chunk in chunks)
+      <animate attributeName="opacity" values="0;0;1" keyTimes="0;.89;1" dur="4.5s" fill="freeze"/>
+    </text>
+    <text x="34" y="284" fill="#8be0e5">matches = pd.concat(results)
+      <animate attributeName="opacity" values="0;0;1" keyTimes="0;.9;1" dur="5s" fill="freeze"/>
+    </text>
   </g>
 </g>
 
+<!-- SCRIPT 2: NBA SCRAPER -->
 <g opacity="0">
   <animate attributeName="opacity" values="0;0;1;1;0"
     keyTimes="0;.499;.5;.999;1" dur="20s" repeatCount="indefinite"/>
   <text x="184" y="62" text-anchor="middle" class="mono" font-size="11" fill="#a5e8ea">nba_stats_scraper.py</text>
   <g class="code" xml:space="preserve">
-    <text x="34" y="104" fill="#6fe2af"># Basketball Reference ETL</text>
-    <text x="34" y="124" fill="#8be0e5">response = requests.get(</text>
-    <text x="34" y="144" fill="#e9f3f7">  url, headers=headers)</text>
-    <text x="34" y="164" fill="#f0c879">if response.status_code == 429:</text>
-    <text x="34" y="184" fill="#e9f3f7">  time.sleep(120)</text>
-    <text x="34" y="204" fill="#8be0e5">soup = BeautifulSoup(</text>
-    <text x="34" y="224" fill="#e9f3f7">  response.text, "html.parser")</text>
-    <text x="34" y="244" fill="#e9f3f7">table = soup.find("table")</text>
-    <text x="34" y="264" fill="#8be0e5">df = pd.read_html(str(table))[0]</text>
-    <text x="34" y="284" fill="#6fe2af"># Export player and team stats</text>
+    <text x="34" y="104" fill="#6fe2af"># Basketball Reference ETL
+      <animate attributeName="opacity" values="0;1" dur=".5s" begin="10s" fill="freeze"/>
+    </text>
+    <text x="34" y="124" fill="#8be0e5">response = requests.get(
+      <animate attributeName="opacity" values="0;1" dur=".5s" begin="10.5s" fill="freeze"/>
+    </text>
+    <text x="34" y="144" fill="#e9f3f7">  url, headers=headers)
+      <animate attributeName="opacity" values="0;1" dur=".5s" begin="11s" fill="freeze"/>
+    </text>
+    <text x="34" y="164" fill="#f0c879">if response.status_code == 429:
+      <animate attributeName="opacity" values="0;1" dur=".5s" begin="11.5s" fill="freeze"/>
+    </text>
+    <text x="34" y="184" fill="#e9f3f7">  time.sleep(120)
+      <animate attributeName="opacity" values="0;1" dur=".5s" begin="12s" fill="freeze"/>
+    </text>
+    <text x="34" y="204" fill="#8be0e5">soup = BeautifulSoup(
+      <animate attributeName="opacity" values="0;1" dur=".5s" begin="12.5s" fill="freeze"/>
+    </text>
+    <text x="34" y="224" fill="#e9f3f7">  response.text, "html.parser")
+      <animate attributeName="opacity" values="0;1" dur=".5s" begin="13s" fill="freeze"/>
+    </text>
+    <text x="34" y="244" fill="#e9f3f7">table = soup.find("table")
+      <animate attributeName="opacity" values="0;1" dur=".5s" begin="13.5s" fill="freeze"/>
+    </text>
+    <text x="34" y="264" fill="#8be0e5">df = pd.read_html(str(table))[0]
+      <animate attributeName="opacity" values="0;1" dur=".5s" begin="14s" fill="freeze"/>
+    </text>
+    <text x="34" y="284" fill="#6fe2af"># Export player and team stats
+      <animate attributeName="opacity" values="0;1" dur=".5s" begin="14.5s" fill="freeze"/>
+    </text>
   </g>
 </g>
 
@@ -341,7 +390,6 @@
   <path d="M1129 179L1145 145L1168 102"/>
 </g>
 
-<!-- O1 initiates -->
 <g transform="translate(1000 268)">
   <circle r="8" class="off"/><text y="3" class="ot">O1</text>
   <circle cx="9" cy="3" r="3.5" fill="#ffc778">
@@ -350,7 +398,6 @@
   </circle>
 </g>
 
-<!-- O2 clears the screen, cuts deeper into corner -->
 <g>
   <animateTransform attributeName="transform" type="translate"
     dur="8s" repeatCount="indefinite" calcMode="linear"
@@ -369,7 +416,6 @@
   <circle r="8" class="off"/><text y="3" class="ot">O3</text>
 </g>
 
-<!-- O4 is ready to pass before O2 clears -->
 <g transform="translate(945 208)">
   <circle r="8" class="off"/>
   <text y="3" class="ot">O4</text>
@@ -380,7 +426,6 @@
   </circle>
 </g>
 
-<!-- O5 plants a real screen -->
 <g>
   <animateTransform attributeName="transform" type="translate"
     dur="8s" repeatCount="indefinite" calcMode="linear"
@@ -393,8 +438,6 @@
 <g transform="translate(1002 243)">
   <circle r="8" class="def"/><text y="3" class="xt">X1</text>
 </g>
-
-<!-- X2 is caught by O5 and stays behind O2 -->
 <g>
   <animateTransform attributeName="transform" type="translate"
     dur="8s" repeatCount="indefinite" calcMode="linear"
@@ -403,7 +446,6 @@
   <circle r="8" class="def"/>
   <text y="3" class="xt">X2</text>
 </g>
-
 <g transform="translate(921 143)">
   <circle r="8" class="def"/><text y="3" class="xt">X3</text>
 </g>
@@ -414,7 +456,6 @@
   <circle r="8" class="def"/><text y="3" class="xt">X5</text>
 </g>
 
-<!-- Screen T-marker -->
 <path d="M1095 183L1115 160M1105 151L1125 169"
   fill="none" stroke="#6dead5" stroke-width="2.3" opacity="0">
   <animate attributeName="opacity" dur="8s" repeatCount="indefinite"
@@ -422,7 +463,6 @@
     keyTimes="0;.12;.35;1" values="0;1;0;0"/>
 </path>
 
-<!-- O1 passes to O4 early -->
 <path d="M1000 268L945 208" class="pass" opacity="0">
   <animate attributeName="opacity" dur="8s" repeatCount="indefinite"
     calcMode="discrete" keyTimes="0;.12;.19;1"
@@ -437,7 +477,6 @@
     keyTimes="0;.12;.19;1" keyPoints="0;0;1;1"/>
 </circle>
 
-<!-- O4 passes AS O2 clears the screen -->
 <path d="M945 208L1168 102" class="pass" opacity="0">
   <animate attributeName="opacity" dur="8s" repeatCount="indefinite"
     calcMode="discrete"
@@ -452,7 +491,6 @@
     keyTimes="0;.35;.43;1" keyPoints="0;0;1;1"/>
 </circle>
 
-<!-- QUICK CATCH AND SHOOT FROM DEEP CORNER -->
 <circle r="3.5" fill="#ffc778" opacity="0">
   <animate attributeName="opacity" dur="8s" repeatCount="indefinite"
     calcMode="discrete"
