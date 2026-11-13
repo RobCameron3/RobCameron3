@@ -1,3 +1,4 @@
+
 <div align="center">
 <img src="profile-banner.svg" width="100%" alt="Robert J. Cameron — Business Intelligence and Data Analytics"/>
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=16&duration=2600&pause=1100&color=20B8C3&center=true&vCenter=true&width=780&height=26&lines=Transforming+data+into+actionable+business+insights.;Building+business+intelligence+and+analytics+solutions.;Improving+operational+efficiency+through+automation.;Driving+better+business+decisions+through+data." alt="Professional introduction"/>
@@ -26,15 +27,14 @@
 
 <table>
 <tr>
-<td width="32%" align="center" valign="middle">
-<h2>💼</h2>
+<td width="32%" align="center" valign="top">
 <img src="https://img.shields.io/badge/PROFESSIONAL-EXPERIENCE-123C57?style=for-the-badge" alt="Professional Experience"/>
 <h3>SOLMETEX</h3>
 <strong>BUSINESS OPERATIONS ANALYST</strong>
 <p>April 2024 – October 2026</p>
 <img src="https://img.shields.io/badge/2%2B_YEARS-ANALYTICS-087F8C?style=for-the-badge" alt="More than two years of analytics experience"/>
 </td>
-<td width="68%" valign="middle">
+<td width="68%" valign="top">
 <h3>Business Intelligence, Automation &amp; Data Integration</h3>
 <p>Nearly three years supporting operational analytics, customer data reconciliation, CRM integration, and distributor reporting.</p>
 <p>Developed Python-based automation and data-standardization workflows to improve data accuracy, reduce manual processing, and strengthen business reporting.</p>
