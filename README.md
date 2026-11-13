@@ -1,19 +1,19 @@
 
 <div align="center">
-<img src="profile-banner.svg" width="100%" alt="Robert J. Cameron — Business Intelligence and Data Analytics"/>
+<img src="profile-banner.svg" width="100%" alt="Robert J. Cameron — Business Intelligence, Data Analytics and Data Integration"/>
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=16&duration=2600&pause=1100&color=20B8C3&center=true&vCenter=true&width=780&height=26&lines=I+build+business+intelligence+solutions.;I+improve+data+quality+and+efficiency.;I+turn+data+into+better+business+decisions.;I+transform+analytics+into+business+value." alt="Professional introduction"/>
 </div>
 
 <table>
 <tr>
-<td width="30%" align="center" valign="middle">
-<strong>🎓 UMASS AMHERST</strong>
-<p><img src="https://img.shields.io/badge/UMASS-AMHERST-881C1C?style=for-the-badge" alt="UMass Amherst"/></p>
-<strong>MASTER OF SCIENCE<br/>BUSINESS ANALYTICS</strong>
-<p><strong>Isenberg School of Management</strong><br/>University of Massachusetts Amherst</p>
-<img src="https://img.shields.io/badge/CLASS_OF-2023-881C1C?style=for-the-badge" alt="Class of 2023"/>
+<td width="32%" align="center" valign="middle">
+<h3>🎓 UMASS AMHERST</h3>
+<img src="https://img.shields.io/badge/UMASS-AMHERST-881C1C?style=for-the-badge" alt="UMass Amherst"/>
+<h3>MASTER OF SCIENCE</h3>
+<strong>BUSINESS ANALYTICS</strong>
+<p>Isenberg School of Management</p>
 </td>
-<td width="70%" valign="middle">
+<td width="68%" valign="middle">
 <h2>Robert J. Cameron</h2>
 <strong>Business Intelligence &amp; Data Analyst</strong>
 <p>Business intelligence professional with nearly three years of experience in data integration, reporting, operational analytics, and workflow automation.</p>
@@ -25,16 +25,49 @@
 </table>
 
 ## 💼 Professional Experience & Business Impact
-**Business Operations Analyst | Solmetex** · April 2024 – October 2026
 
-Improved customer identification, data quality, and operational reporting through Python automation, CRM analysis, and data integration.
-
-| Business Challenge | Solution | Business Impact |
-|:---|:---|:---|
-| Customer records could not consistently be matched to existing CRM accounts | Developed Python fuzzy-matching and data-standardization workflows | Improved customer identification from approximately **60% to 80–90%** |
-| Recurring monthly datasets created large volumes of unmatched customer records | Analyzed **877 records**, identified high-yield matching opportunities, and prioritized records with the greatest potential for resolution | Resolved **648 records (73.9%)**, reducing monthly matching backlogs |
-| Distributor data was fragmented across separate spreadsheets | Consolidated and standardized **17 distributor workbooks** | Improved cross-distributor analysis and data-quality review |
-| Inconsistent customer information complicated reporting | Standardized customer names, addresses, and account relationships | Improved data reliability and reduced manual matching effort |
+<table>
+<tr>
+<td colspan="3">
+<h3>🏢 Solmetex</h3>
+<strong>Business Operations Analyst</strong> · April 2024 – October 2026
+<p>Built Python automation and data-standardization workflows to improve CRM matching, reduce manual reconciliation, and strengthen operational reporting.</p>
+</td>
+</tr>
+<tr>
+<td width="33%" align="center">
+<h2>80–90%</h2>
+<strong>Customer Identification</strong>
+<p>Improved from approximately 60%</p>
+</td>
+<td width="33%" align="center">
+<h2>73.9%</h2>
+<strong>Records Resolved</strong>
+<p>648 of 877 analyzed records</p>
+</td>
+<td width="34%" align="center">
+<h2>17</h2>
+<strong>Distributor Workbooks</strong>
+<p>Consolidated and standardized</p>
+</td>
+</tr>
+<tr>
+<td colspan="3">
+<strong>Key Contributions</strong>
+<ul>
+<li>Developed Python fuzzy-matching and data-cleaning workflows to improve customer identification and CRM account matching.</li>
+<li>Analyzed recurring distributor datasets, prioritized high-yield matching opportunities, and reduced monthly reconciliation backlogs.</li>
+<li>Consolidated 17 distributor workbooks to support cross-distributor reporting and operational analysis.</li>
+<li>Standardized customer names, addresses, and account relationships to improve data quality and reporting reliability.</li>
+</ul>
+<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python"/>
+<img src="https://img.shields.io/badge/Data_Integration-5865F2?style=flat-square" alt="Data Integration"/>
+<img src="https://img.shields.io/badge/CRM-008B8B?style=flat-square" alt="CRM"/>
+<img src="https://img.shields.io/badge/Advanced_Excel-217346?style=flat-square&logo=microsoftexcel&logoColor=white" alt="Advanced Excel"/>
+<img src="https://img.shields.io/badge/Automation-5865F2?style=flat-square" alt="Automation"/>
+</td>
+</tr>
+</table>
 
 ## 🚀 Featured Analytics Projects
 
