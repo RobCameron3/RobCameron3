@@ -1,7 +1,7 @@
 
 <div align="center">
   <img src="profile-banner.svg" width="100%" alt="Robert J. Cameron — Business Intelligence and Data Analytics"/>
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=16&duration=2600&pause=1100&color=20B8C3&center=true&vCenter=true&width=780&height=26&lines=Transforming+data+into+actionable+business+insights.;Building+business+intelligence+and+analytics+solutions.;Improving+operational+efficiency+through+automation.;Driving+better+business+decisions+through+data." alt="Professional introduction"/>
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=22&duration=3000&pause=1200&color=20B8C3&center=true&vCenter=true&width=1050&height=42&lines=Transforming+data+into+actionable+business+insights.;Building+business+intelligence+and+analytics+solutions.;Improving+operational+efficiency+through+automation.;Driving+better+business+decisions+through+data." alt="Animated professional introduction"/>
 </div>
 
 <table>
@@ -53,35 +53,31 @@
 <br>
 
 <div align="center">
-  <h2>📈 Selected Business Impact</h2>
-  <p><em>Turning customer data into operational efficiency, better resource allocation, and business opportunities.</em></p>
+  <h2>📈 Data-Driven Business Impact</h2>
+  <p><em>Translating analytics and automation into measurable performance improvements, operational efficiency, and strategic business value.</em></p>
 </div>
 
-<table>
+<table width="100%">
 <tr>
 <td width="25%" align="center" valign="middle">
-<h2>+50%</h2>
-<strong>Relative Improvement</strong>
-<br>
-<sub>Customer identification<br>~60% to as high as 90%</sub>
+<h2 align="center">+50%</h2>
+<p align="center"><strong>Relative<br>Improvement</strong></p>
+<p align="center"><sub>Customer identification<br>~60% to as high as 90%</sub></p>
 </td>
 <td width="25%" align="center" valign="middle">
-<h2>92.5%</h2>
-<strong>High-Efficiency Identification</strong>
-<br>
-<sub>38.1% of analyzed workload</sub>
+<h2 align="center">92.5%</h2>
+<p align="center"><strong>High-Efficiency<br>Identification</strong></p>
+<p align="center"><sub>38.1% of analyzed workload</sub></p>
 </td>
 <td width="25%" align="center" valign="middle">
-<h2>82.1%</h2>
-<strong>Workload Concentration</strong>
-<br>
-<sub>Top five distributors</sub>
+<h2 align="center">82.1%</h2>
+<p align="center"><strong>Workload<br>Concentration</strong></p>
+<p align="center"><sub>Top five distributors</sub></p>
 </td>
 <td width="25%" align="center" valign="middle">
-<h2>84.7%</h2>
-<strong>Identification Success</strong>
-<br>
-<sub>53.6% workload coverage</sub>
+<h2 align="center">84.7%</h2>
+<p align="center"><strong>Identification<br>Success</strong></p>
+<p align="center"><sub>53.6% workload coverage</sub></p>
 </td>
 </tr>
 </table>
@@ -115,23 +111,17 @@
 <table>
 <tr>
 <td width="50%" valign="top">
-
 <h3>📊 Business Intelligence &amp; Reporting</h3>
-
 <img src="https://img.shields.io/badge/Power_BI-F2C811?style=flat-square&logo=powerbi&logoColor=black" alt="Power BI"/>
 <img src="https://img.shields.io/badge/Advanced_Excel-217346?style=flat-square&logo=microsoftexcel&logoColor=white" alt="Advanced Excel"/>
 <img src="https://img.shields.io/badge/Tableau-E97627?style=flat-square" alt="Tableau"/>
 <img src="https://img.shields.io/badge/Power_Query-217346?style=flat-square" alt="Power Query"/>
 <img src="https://img.shields.io/badge/DAX-0878D1?style=flat-square" alt="DAX"/>
 <img src="https://img.shields.io/badge/Power_Pivot-217346?style=flat-square" alt="Power Pivot"/>
-
 </td>
 <td width="50%" valign="top">
-
 <h3>🐍 Programming &amp; Data Analysis</h3>
-
 <img src="https://skillicons.dev/icons?i=python,r,postgres,mysql,azure,git,github,vscode" alt="Programming and development tools"/>
-
 <p>
 <img src="https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white" alt="Pandas"/>
 <img src="https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white" alt="NumPy"/>
@@ -140,14 +130,11 @@
 <img src="https://img.shields.io/badge/Requests-3776AB?style=flat-square" alt="Requests"/>
 <img src="https://img.shields.io/badge/Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white" alt="Jupyter"/>
 </p>
-
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top">
-
 <h3>🗄️ Databases &amp; Enterprise Systems</h3>
-
 <img src="https://img.shields.io/badge/SQL-4479A1?style=flat-square" alt="SQL"/>
 <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL"/>
 <img src="https://img.shields.io/badge/Azure_SQL-0078D4?style=flat-square" alt="Azure SQL"/>
@@ -156,12 +143,9 @@
 <img src="https://img.shields.io/badge/SAP_BW-0FA6D4?style=flat-square" alt="SAP BW"/>
 <img src="https://img.shields.io/badge/SAP_BusinessObjects-0FA6D4?style=flat-square" alt="SAP BusinessObjects"/>
 <img src="https://img.shields.io/badge/NetSuite-1B365D?style=flat-square" alt="NetSuite"/>
-
 </td>
 <td width="50%" valign="top">
-
 <h3>🔄 Data Integration &amp; Automation</h3>
-
 <img src="https://img.shields.io/badge/Data_Integration-5865F2?style=flat-square" alt="Data Integration"/>
 <img src="https://img.shields.io/badge/ETL-5865F2?style=flat-square" alt="ETL"/>
 <img src="https://img.shields.io/badge/Fuzzy_Matching-5865F2?style=flat-square" alt="Fuzzy Matching"/>
@@ -172,7 +156,6 @@
 <img src="https://img.shields.io/badge/Regression-008B8B?style=flat-square" alt="Regression"/>
 <img src="https://img.shields.io/badge/Classification-008B8B?style=flat-square" alt="Classification"/>
 <img src="https://img.shields.io/badge/Predictive_Modeling-008B8B?style=flat-square" alt="Predictive Modeling"/>
-
 </td>
 </tr>
 </table>
