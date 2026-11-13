@@ -56,7 +56,7 @@
 - **Large-Scale Data Reconciliation:** Analyzed **877 distributor records**, successfully resolving **648 (73.9%)** through targeted matching and data validation.
 - **Operational Efficiency:** Optimized recurring data-processing workflows, eliminated reconciliation backlogs, and accelerated the delivery of accurate customer data for business reporting.
 - **Data Integration & Reporting:** Consolidated and standardized **17 distributor workbooks**, improving data consistency, reporting accuracy, and cross-distributor visibility.
-- **Project Collaboration:** Collaborated on a large-scale data reconciliation initiative, contributing to process improvements, data quality, and more efficient business operations.
+- **Business Impact & Cost Efficiency:** Contributed to a large-scale data reconciliation initiative that improved operational efficiency, streamlined manual workflows, and generated significant cost savings through automation and process optimization.
 
 ## 🚀 Featured Analytics Projects
 
