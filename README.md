@@ -32,7 +32,7 @@
 <h3>SOLMETEX</h3>
 <strong>BUSINESS OPERATIONS ANALYST</strong>
 <p>April 2024 – October 2026</p>
-<img src="https://img.shields.io/badge/2%2B_YEARS-ANALYTICS-087F8C?style=for-the-badge" alt="More than two years of analytics experience"/>
+<img src="https://img.shields.io/badge/2.5%2B_YEARS-ANALYTICS-087F8C?style=for-the-badge" alt="More than two and a half years of analytics experience"/>
 </td>
 <td width="68%" valign="top">
 <h3>Business Intelligence, Automation &amp; Data Integration</h3>
