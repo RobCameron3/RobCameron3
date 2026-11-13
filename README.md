@@ -1,13 +1,11 @@
-
 <div align="center">
-<img src="profile-banner.svg" width="100%" alt="Robert J. Cameron — Business Intelligence, Data Analytics and Data Integration"/>
+<img src="profile-banner.svg" width="100%" alt="Robert J. Cameron — Business Intelligence and Data Analytics"/>
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=16&duration=2600&pause=1100&color=20B8C3&center=true&vCenter=true&width=780&height=26&lines=I+build+business+intelligence+solutions.;I+improve+data+quality+and+efficiency.;I+turn+data+into+better+business+decisions.;I+transform+analytics+into+business+value." alt="Professional introduction"/>
 </div>
 
 <table>
 <tr>
 <td width="32%" align="center" valign="middle">
-<h3>🎓 UMASS AMHERST</h3>
 <img src="https://img.shields.io/badge/UMASS-AMHERST-881C1C?style=for-the-badge" alt="UMass Amherst"/>
 <h3>MASTER OF SCIENCE</h3>
 <strong>BUSINESS ANALYTICS</strong>
@@ -28,46 +26,37 @@
 
 <table>
 <tr>
-<td colspan="3">
-<h3>🏢 Solmetex</h3>
-<strong>Business Operations Analyst</strong> · April 2024 – October 2026
-<p>Built Python automation and data-standardization workflows to improve CRM matching, reduce manual reconciliation, and strengthen operational reporting.</p>
+<td width="32%" align="center" valign="middle">
+<h2>💼</h2>
+<img src="https://img.shields.io/badge/PROFESSIONAL-EXPERIENCE-123C57?style=for-the-badge" alt="Professional Experience"/>
+<h3>SOLMETEX</h3>
+<strong>BUSINESS OPERATIONS ANALYST</strong>
+<p>April 2024 – October 2026</p>
+<img src="https://img.shields.io/badge/2%2B_YEARS-ANALYTICS-087F8C?style=for-the-badge" alt="More than two years of analytics experience"/>
 </td>
-</tr>
-<tr>
-<td width="33%" align="center">
-<h2>80–90%</h2>
-<strong>Customer Identification</strong>
-<p>Improved from approximately 60%</p>
-</td>
-<td width="33%" align="center">
-<h2>73.9%</h2>
-<strong>Records Resolved</strong>
-<p>648 of 877 analyzed records</p>
-</td>
-<td width="34%" align="center">
-<h2>17</h2>
-<strong>Distributor Workbooks</strong>
-<p>Consolidated and standardized</p>
-</td>
-</tr>
-<tr>
-<td colspan="3">
-<strong>Key Contributions</strong>
-<ul>
-<li>Developed Python fuzzy-matching and data-cleaning workflows to improve customer identification and CRM account matching.</li>
-<li>Analyzed recurring distributor datasets, prioritized high-yield matching opportunities, and reduced monthly reconciliation backlogs.</li>
-<li>Consolidated 17 distributor workbooks to support cross-distributor reporting and operational analysis.</li>
-<li>Standardized customer names, addresses, and account relationships to improve data quality and reporting reliability.</li>
-</ul>
+<td width="68%" valign="middle">
+<h3>Business Intelligence, Automation &amp; Data Integration</h3>
+<p>Nearly three years supporting operational analytics, customer data reconciliation, CRM integration, and distributor reporting.</p>
+<p>Developed Python-based automation and data-standardization workflows to improve data accuracy, reduce manual processing, and strengthen business reporting.</p>
+<strong>Core Technologies</strong>
+<p>
 <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python"/>
-<img src="https://img.shields.io/badge/Data_Integration-5865F2?style=flat-square" alt="Data Integration"/>
-<img src="https://img.shields.io/badge/CRM-008B8B?style=flat-square" alt="CRM"/>
+<img src="https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white" alt="Pandas"/>
 <img src="https://img.shields.io/badge/Advanced_Excel-217346?style=flat-square&logo=microsoftexcel&logoColor=white" alt="Advanced Excel"/>
-<img src="https://img.shields.io/badge/Automation-5865F2?style=flat-square" alt="Automation"/>
+<img src="https://img.shields.io/badge/CRM-008B8B?style=flat-square" alt="CRM"/>
+<img src="https://img.shields.io/badge/Data_Integration-5865F2?style=flat-square" alt="Data Integration"/>
+</p>
 </td>
 </tr>
 </table>
+
+**Selected Professional Contributions**
+
+- **Python Automation & Efficiency:** Developed fuzzy-matching workflows that improved customer identification from approximately **60% to 80–90%**, reducing manual reconciliation requirements.
+- **Large-Scale Data Reconciliation:** Supported an extensive distributor data project, analyzing **877 records** and resolving **648 (73.9%)** through targeted matching and prioritization.
+- **Operational Efficiency:** Improved recurring data-processing workflows, reduced matching backlogs, and helped accelerate the preparation of reliable customer data for reporting.
+- **Data Integration & Reporting:** Consolidated and standardized **17 distributor workbooks**, strengthening cross-distributor visibility and data consistency.
+- **Project Collaboration:** Contributed to a substantial, multi-person data reconciliation initiative involving an estimated **$114,000 in combined staffing costs** based on a two-person, $57,000-per-person estimate.
 
 ## 🚀 Featured Analytics Projects
 
