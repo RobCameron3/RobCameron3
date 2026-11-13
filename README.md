@@ -67,18 +67,6 @@ Built a geographic dashboard to compare regional activity, identify concentratio
 **Tools:** Power BI · Power Query · DAX · Geographic Analytics  
 [Explore Geographic Density Analytics](https://github.com/RobCameron3/power-bi-geographic-density-analytics)
 
-### 📉 06 | Telecommunications Customer Churn Prediction
-**Identifying customers at risk of leaving.**  
-Developed a classification model to analyze customer characteristics, identify churn risk, and evaluate retention patterns.  
-**Tools:** Python · Pandas · Classification · Predictive Analytics  
-[Explore Telecom Churn Prediction](https://github.com/RobCameron3/Telco_Churn_Prediction)
-
-### 🚗 07 | Used Car Price Prediction
-**Estimating vehicle prices through regression analysis.**  
-Developed a regression model examining how vehicle characteristics influence used-car prices and evaluating predicted versus actual values.  
-**Tools:** Python · Pandas · Regression · Predictive Modeling  
-[Explore Used Car Price Prediction](https://github.com/RobCameron3/Used_Car_Price_Prediction)
-
 ## 🛠️ Technical Skills
 
 **Business Intelligence & Reporting**
