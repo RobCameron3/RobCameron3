@@ -116,60 +116,62 @@
 <tr>
 <td width="50%" valign="top">
 
-### 📊 Business Intelligence & Reporting
+<h3>📊 Business Intelligence &amp; Reporting</h3>
 
-![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=flat-square&logo=powerbi&logoColor=black)
-![Excel](https://img.shields.io/badge/Advanced_Excel-217346?style=flat-square&logo=microsoftexcel&logoColor=white)
-![Tableau](https://img.shields.io/badge/Tableau-E97627?style=flat-square)
-![Power Query](https://img.shields.io/badge/Power_Query-217346?style=flat-square)
-![DAX](https://img.shields.io/badge/DAX-0878D1?style=flat-square)
-![Power Pivot](https://img.shields.io/badge/Power_Pivot-217346?style=flat-square)
+<img src="https://img.shields.io/badge/Power_BI-F2C811?style=flat-square&logo=powerbi&logoColor=black" alt="Power BI"/>
+<img src="https://img.shields.io/badge/Advanced_Excel-217346?style=flat-square&logo=microsoftexcel&logoColor=white" alt="Advanced Excel"/>
+<img src="https://img.shields.io/badge/Tableau-E97627?style=flat-square" alt="Tableau"/>
+<img src="https://img.shields.io/badge/Power_Query-217346?style=flat-square" alt="Power Query"/>
+<img src="https://img.shields.io/badge/DAX-0878D1?style=flat-square" alt="DAX"/>
+<img src="https://img.shields.io/badge/Power_Pivot-217346?style=flat-square" alt="Power Pivot"/>
 
 </td>
 <td width="50%" valign="top">
 
-### 🐍 Programming & Data Analysis
+<h3>🐍 Programming &amp; Data Analysis</h3>
 
 <img src="https://skillicons.dev/icons?i=python,r,postgres,mysql,azure,git,github,vscode" alt="Programming and development tools"/>
 
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white)
-![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white)
-![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=flat-square)
-![BeautifulSoup](https://img.shields.io/badge/BeautifulSoup-3776AB?style=flat-square)
-![Requests](https://img.shields.io/badge/Requests-3776AB?style=flat-square)
-![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white)
+<p>
+<img src="https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white" alt="Pandas"/>
+<img src="https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white" alt="NumPy"/>
+<img src="https://img.shields.io/badge/Matplotlib-11557C?style=flat-square" alt="Matplotlib"/>
+<img src="https://img.shields.io/badge/BeautifulSoup-3776AB?style=flat-square" alt="BeautifulSoup"/>
+<img src="https://img.shields.io/badge/Requests-3776AB?style=flat-square" alt="Requests"/>
+<img src="https://img.shields.io/badge/Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white" alt="Jupyter"/>
+</p>
 
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top">
 
-### 🗄️ Databases & Enterprise Systems
+<h3>🗄️ Databases &amp; Enterprise Systems</h3>
 
-![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat-square)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
-![Azure SQL](https://img.shields.io/badge/Azure_SQL-0078D4?style=flat-square)
-![Access](https://img.shields.io/badge/Microsoft_Access-A4373A?style=flat-square)
-![Dynamics 365](https://img.shields.io/badge/Dynamics_365-002050?style=flat-square)
-![SAP BW](https://img.shields.io/badge/SAP_BW-0FA6D4?style=flat-square)
-![SAP BusinessObjects](https://img.shields.io/badge/SAP_BusinessObjects-0FA6D4?style=flat-square)
-![NetSuite](https://img.shields.io/badge/NetSuite-1B365D?style=flat-square)
+<img src="https://img.shields.io/badge/SQL-4479A1?style=flat-square" alt="SQL"/>
+<img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL"/>
+<img src="https://img.shields.io/badge/Azure_SQL-0078D4?style=flat-square" alt="Azure SQL"/>
+<img src="https://img.shields.io/badge/Microsoft_Access-A4373A?style=flat-square" alt="Microsoft Access"/>
+<img src="https://img.shields.io/badge/Dynamics_365-002050?style=flat-square" alt="Dynamics 365"/>
+<img src="https://img.shields.io/badge/SAP_BW-0FA6D4?style=flat-square" alt="SAP BW"/>
+<img src="https://img.shields.io/badge/SAP_BusinessObjects-0FA6D4?style=flat-square" alt="SAP BusinessObjects"/>
+<img src="https://img.shields.io/badge/NetSuite-1B365D?style=flat-square" alt="NetSuite"/>
 
 </td>
 <td width="50%" valign="top">
 
-### 🔄 Data Integration & Automation
+<h3>🔄 Data Integration &amp; Automation</h3>
 
-![Data Integration](https://img.shields.io/badge/Data_Integration-5865F2?style=flat-square)
-![ETL](https://img.shields.io/badge/ETL-5865F2?style=flat-square)
-![Fuzzy Matching](https://img.shields.io/badge/Fuzzy_Matching-5865F2?style=flat-square)
-![Data Cleaning](https://img.shields.io/badge/Data_Cleaning-5865F2?style=flat-square)
-![Workflow Automation](https://img.shields.io/badge/Workflow_Automation-5865F2?style=flat-square)
-![KPI Reporting](https://img.shields.io/badge/KPI_Reporting-008B8B?style=flat-square)
-![Statistics](https://img.shields.io/badge/Statistical_Analysis-008B8B?style=flat-square)
-![Regression](https://img.shields.io/badge/Regression-008B8B?style=flat-square)
-![Classification](https://img.shields.io/badge/Classification-008B8B?style=flat-square)
-![Predictive Modeling](https://img.shields.io/badge/Predictive_Modeling-008B8B?style=flat-square)
+<img src="https://img.shields.io/badge/Data_Integration-5865F2?style=flat-square" alt="Data Integration"/>
+<img src="https://img.shields.io/badge/ETL-5865F2?style=flat-square" alt="ETL"/>
+<img src="https://img.shields.io/badge/Fuzzy_Matching-5865F2?style=flat-square" alt="Fuzzy Matching"/>
+<img src="https://img.shields.io/badge/Data_Cleaning-5865F2?style=flat-square" alt="Data Cleaning"/>
+<img src="https://img.shields.io/badge/Workflow_Automation-5865F2?style=flat-square" alt="Workflow Automation"/>
+<img src="https://img.shields.io/badge/KPI_Reporting-008B8B?style=flat-square" alt="KPI Reporting"/>
+<img src="https://img.shields.io/badge/Statistical_Analysis-008B8B?style=flat-square" alt="Statistical Analysis"/>
+<img src="https://img.shields.io/badge/Regression-008B8B?style=flat-square" alt="Regression"/>
+<img src="https://img.shields.io/badge/Classification-008B8B?style=flat-square" alt="Classification"/>
+<img src="https://img.shields.io/badge/Predictive_Modeling-008B8B?style=flat-square" alt="Predictive Modeling"/>
 
 </td>
 </tr>
@@ -189,17 +191,15 @@
 <td width="50%" valign="top">
 <h3>🏀 01 | NBA Four-Factor Analytics</h3>
 <p><strong>Basketball Performance Modeling</strong></p>
-<p>Applied Dean Oliver's Four Factors framework to evaluate shooting efficiency, turnovers, offensive rebounding, and free-throw production.</p>
+<p>Analyzed team performance using Dean Oliver's Four Factors framework to evaluate shooting efficiency, turnovers, offensive rebounding, and free-throw production.</p>
 <p><strong>Tools:</strong> Python · Pandas · Statistical Analysis · Predictive Modeling</p>
 <a href="https://github.com/RobCameron3/nba-four-factor-modeling"><img src="https://img.shields.io/badge/EXPLORE_PROJECT-181717?style=for-the-badge&logo=github&logoColor=white" alt="Explore NBA Four-Factor Modeling"/></a>
 </td>
 <td width="50%" valign="top">
-<h3>📊 02 | Customer Intelligence & Automation Strategy</h3>
-<p><strong>Business Intelligence, Workflow Optimization & Decision Support</strong></p>
-<p>Analyzed 877 distributor records, successfully identifying 648 (73.9%). Combined Python, Pandas, advanced Excel, DAX, and Power BI to evaluate customer identification performance, prioritize research workloads, and identify opportunities for automation.</p>
-<p><strong>Key Finding:</strong> A high-efficiency workload segment representing 38.1% of analyzed records achieved a 92.5% customer identification rate.</p>
-<p><strong>Business Value:</strong> Improved CRM data quality, reduced repetitive research, and supported more targeted sales outreach opportunities.</p>
-<p><strong>Tools:</strong> Python · Pandas · Excel · Power Pivot · DAX · Power BI · Dynamics 365 CRM</p>
+<h3>📊 02 | Customer Intelligence &amp; Automation</h3>
+<p><strong>Customer Data &amp; Workflow Optimization</strong></p>
+<p>Analyzed distributor records using Python, Excel, and Power BI to improve customer identification, prioritize research workloads, and support data-driven operational decisions.</p>
+<p><strong>Tools:</strong> Python · Pandas · Excel · Power BI · DAX</p>
 <a href="https://github.com/RobCameron3/Customer-Data-Analysis-Automation-Strategy"><img src="https://img.shields.io/badge/EXPLORE_PROJECT-181717?style=for-the-badge&logo=github&logoColor=white" alt="Explore Customer Intelligence and Automation Strategy"/></a>
 </td>
 </tr>
@@ -207,23 +207,23 @@
 <td width="50%" valign="top">
 <h3>🕵️ 03 | SQL Data Breach Investigation</h3>
 <p><strong>Relational Data Investigation</strong></p>
-<p>Investigated a simulated data breach using SQL joins, filtering, and relational analysis to uncover relationships between records.</p>
+<p>Investigated a simulated data breach using SQL queries, joins, and relational analysis to uncover connections between records and identify suspicious activity.</p>
 <p><strong>Tools:</strong> PostgreSQL · SQL · Joins · Data Investigation</p>
 <a href="https://github.com/RobCameron3/sql-data-breach-investigation"><img src="https://img.shields.io/badge/EXPLORE_PROJECT-181717?style=for-the-badge&logo=github&logoColor=white" alt="Explore SQL Investigation"/></a>
 </td>
 <td width="50%" valign="top">
-<h3>📊 04 | Operational Logistics Dashboard</h3>
-<p><strong>Meal-Kit Subscription & Delivery Analytics</strong></p>
-<p>Built a Power BI dashboard analyzing subscription demand, revenue performance, shipment volumes, and regional operational KPIs.</p>
+<h3>📦 04 | Meal-Kit Logistics Analytics</h3>
+<p><strong>Subscription &amp; Delivery Performance</strong></p>
+<p>Developed a Power BI dashboard to monitor meal-kit subscription demand, shipment volumes, revenue performance, and regional operational trends.</p>
 <p><strong>Tools:</strong> Power BI · Power Query · DAX · Forecasting</p>
 <a href="https://github.com/RobCameron3/power-bi-operational-logistics-dashboard"><img src="https://img.shields.io/badge/EXPLORE_PROJECT-181717?style=for-the-badge&logo=github&logoColor=white" alt="Explore Operational Logistics Dashboard"/></a>
 </td>
 </tr>
 <tr>
 <td colspan="2" valign="top">
-<h3>🌎 05 | Geographic Density & Trend Analytics</h3>
-<p><strong>Regional Concentrations & Historical Trend Analysis</strong></p>
-<p>Built an interactive Power BI dashboard to examine geographic concentrations, regional activity, seasonal distributions, and long-term trends.</p>
+<h3>🌎 05 | Geographic Density &amp; Trend Analytics</h3>
+<p><strong>Regional &amp; Historical Pattern Analysis</strong></p>
+<p>Built an interactive Power BI dashboard to examine geographic concentrations, compare regional activity, and identify seasonal and long-term trends.</p>
 <p><strong>Tools:</strong> Power BI · Power Query · DAX · Geographic Analytics</p>
 <a href="https://github.com/RobCameron3/power-bi-geographic-density-analytics"><img src="https://img.shields.io/badge/EXPLORE_PROJECT-181717?style=for-the-badge&logo=github&logoColor=white" alt="Explore Geographic Density Analytics"/></a>
 </td>
