@@ -3,309 +3,545 @@
      width="1200" height="340"
      viewBox="0 0 1200 340"
      role="img"
-     aria-label="Robert J. Cameron — animated analytics projects and basketball pick-and-roll">
+     aria-label="Robert J. Cameron animated analytics portfolio">
 
 <defs>
   <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-    <stop offset="0%" stop-color="#061421"/>
-    <stop offset="100%" stop-color="#12485b"/>
+    <stop offset="0" stop-color="#061421"/>
+    <stop offset="1" stop-color="#12485b"/>
   </linearGradient>
 
   <clipPath id="terminalClip">
-    <rect x="37" y="90" width="358" height="210"/>
+    <rect x="33" y="87" width="295" height="212"/>
+  </clipPath>
+
+  <clipPath id="courtClip">
+    <rect x="872" y="78" width="302" height="221"/>
   </clipPath>
 </defs>
+
+<style>
+  .mono {
+    font-family: Consolas, Menlo, monospace;
+  }
+
+  .code {
+    font-family: Consolas, Menlo, monospace;
+    font-size: 10.8px;
+  }
+
+  .green { fill: #6fe2af; }
+  .blue { fill: #8be0e5; }
+  .gold { fill: #f0c879; }
+  .white { fill: #e9f3f7; }
+
+  .offense {
+    fill: #6dead5;
+    font-family: Arial, sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    text-anchor: middle;
+  }
+
+  .defense {
+    fill: #ffb17f;
+    font-family: Arial, sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    text-anchor: middle;
+  }
+
+  .route {
+    fill: none;
+    stroke: #6dead5;
+    stroke-width: 1.8;
+    stroke-dasharray: 4 6;
+    opacity: .7;
+  }
+
+  .passRoute {
+    fill: none;
+    stroke: #ffc778;
+    stroke-width: 2.3;
+    stroke-dasharray: 5 6;
+  }
+</style>
 
 <!-- BACKGROUND -->
 <rect width="1200" height="340" fill="url(#bg)"/>
 
-<g stroke="#61a9bd" stroke-width=".5" opacity=".12">
+<g stroke="#61a9bd" stroke-width=".5" opacity=".1">
   <path d="M0 50H1200 M0 100H1200 M0 150H1200 M0 200H1200 M0 250H1200 M0 300H1200"/>
   <path d="M60 0V340 M120 0V340 M180 0V340 M240 0V340 M300 0V340 M360 0V340 M420 0V340 M480 0V340 M540 0V340 M600 0V340 M660 0V340 M720 0V340 M780 0V340 M840 0V340 M900 0V340 M960 0V340 M1020 0V340 M1080 0V340 M1140 0V340"/>
 </g>
 
-<!-- PYTHON TERMINAL -->
-<rect x="18" y="38" width="390" height="274" rx="13"
-      fill="#04121e" stroke="#48cdd5" stroke-width="2"/>
+<!-- LEFT TERMINAL -->
+<rect x="18" y="38" width="326" height="274"
+      rx="12" fill="#04121e"
+      stroke="#48cdd5" stroke-width="1.7"/>
 
-<circle cx="40" cy="59" r="5" fill="#f07575"/>
-<circle cx="57" cy="59" r="5" fill="#e6be62"/>
-<circle cx="74" cy="59" r="5" fill="#55d5a1"/>
+<circle cx="39" cy="58" r="4.5" fill="#f07575"/>
+<circle cx="55" cy="58" r="4.5" fill="#e6be62"/>
+<circle cx="71" cy="58" r="4.5" fill="#55d5a1"/>
 
-<path d="M18 78H408" stroke="#48cdd5" opacity=".5"/>
+<path d="M18 77H344"
+      stroke="#48cdd5" opacity=".45"/>
 
-<!-- SOLMETEX CODE -->
-<g opacity="1">
+<!-- PROJECT 1: FUZZY ACCOUNT MATCHER -->
+<g>
   <animate attributeName="opacity"
-    values="1;1;0;0;1"
-    keyTimes="0;.495;.5;.995;1"
-    dur="16s" repeatCount="indefinite"/>
+           values="1;1;0;0;1"
+           keyTimes="0;.499;.5;.999;1"
+           dur="20s"
+           repeatCount="indefinite"/>
 
-  <text x="215" y="63" text-anchor="middle"
-        font-family="monospace" font-size="12"
+  <text x="184" y="62"
+        text-anchor="middle"
+        class="mono"
+        font-size="11"
         fill="#a5e8ea">fuzzy_account_matcher.py</text>
 
-  <g font-family="monospace" font-size="12.3"
+  <clipPath id="s1"><rect x="34" y="90" height="18" width="0"><animate attributeName="width" values="0;285;285;0" keyTimes="0;.035;.499;1" dur="20s" repeatCount="indefinite"/></rect></clipPath>
+  <clipPath id="s2"><rect x="34" y="110" height="18" width="0"><animate attributeName="width" values="0;0;285;285;0" keyTimes="0;.035;.07;.499;1" dur="20s" repeatCount="indefinite"/></rect></clipPath>
+  <clipPath id="s3"><rect x="34" y="130" height="18" width="0"><animate attributeName="width" values="0;0;285;285;0" keyTimes="0;.07;.105;.499;1" dur="20s" repeatCount="indefinite"/></rect></clipPath>
+  <clipPath id="s4"><rect x="34" y="150" height="18" width="0"><animate attributeName="width" values="0;0;285;285;0" keyTimes="0;.105;.14;.499;1" dur="20s" repeatCount="indefinite"/></rect></clipPath>
+  <clipPath id="s5"><rect x="34" y="170" height="18" width="0"><animate attributeName="width" values="0;0;285;285;0" keyTimes="0;.14;.175;.499;1" dur="20s" repeatCount="indefinite"/></rect></clipPath>
+  <clipPath id="s6"><rect x="34" y="190" height="18" width="0"><animate attributeName="width" values="0;0;285;285;0" keyTimes="0;.175;.21;.499;1" dur="20s" repeatCount="indefinite"/></rect></clipPath>
+  <clipPath id="s7"><rect x="34" y="210" height="18" width="0"><animate attributeName="width" values="0;0;285;285;0" keyTimes="0;.21;.245;.499;1" dur="20s" repeatCount="indefinite"/></rect></clipPath>
+  <clipPath id="s8"><rect x="34" y="230" height="18" width="0"><animate attributeName="width" values="0;0;285;285;0" keyTimes="0;.245;.28;.499;1" dur="20s" repeatCount="indefinite"/></rect></clipPath>
+  <clipPath id="s9"><rect x="34" y="250" height="18" width="0"><animate attributeName="width" values="0;0;285;285;0" keyTimes="0;.28;.315;.499;1" dur="20s" repeatCount="indefinite"/></rect></clipPath>
+  <clipPath id="s10"><rect x="34" y="270" height="18" width="0"><animate attributeName="width" values="0;0;285;285;0" keyTimes="0;.315;.35;.499;1" dur="20s" repeatCount="indefinite"/></rect></clipPath>
+
+  <g class="code" xml:space="preserve"
      clip-path="url(#terminalClip)">
-
-    <text x="37" y="104" fill="#6fe2af">
-      # Parallel fuzzy matching
-      <animate attributeName="opacity" values="0;1;1"
-        keyTimes="0;.06;1" dur="8s" repeatCount="indefinite"/>
-    </text>
-
-    <text x="37" y="124" fill="#8be0e5" opacity="0">
-      num_cores = cpu_count()
-      <animate attributeName="opacity" values="0;0;1;1"
-        keyTimes="0;.1;.15;1" dur="8s" repeatCount="indefinite"/>
-    </text>
-
-    <text x="37" y="144" fill="#f0c879" opacity="0">
-      chunks = [
-      <animate attributeName="opacity" values="0;0;1;1"
-        keyTimes="0;.2;.25;1" dur="8s" repeatCount="indefinite"/>
-    </text>
-
-    <text x="37" y="164" fill="#ffffff" opacity="0">
-      &#160;&#160;df.iloc[i:i+chunk_size]
-      <animate attributeName="opacity" values="0;0;1;1"
-        keyTimes="0;.3;.35;1" dur="8s" repeatCount="indefinite"/>
-    </text>
-
-    <text x="37" y="184" fill="#ffffff" opacity="0">
-      &#160;&#160;for i in range(0,len(df),chunk_size)]
-      <animate attributeName="opacity" values="0;0;1;1"
-        keyTimes="0;.4;.45;1" dur="8s" repeatCount="indefinite"/>
-    </text>
-
-    <text x="37" y="204" fill="#f0c879" opacity="0">
-      results = Parallel(n_jobs=num_cores)(
-      <animate attributeName="opacity" values="0;0;1;1"
-        keyTimes="0;.5;.55;1" dur="8s" repeatCount="indefinite"/>
-    </text>
-
-    <text x="37" y="224" fill="#ffffff" opacity="0">
-      &#160;&#160;delayed(parallel_find_best_match)(
-      <animate attributeName="opacity" values="0;0;1;1"
-        keyTimes="0;.6;.65;1" dur="8s" repeatCount="indefinite"/>
-    </text>
-
-    <text x="37" y="244" fill="#ffffff" opacity="0">
-      &#160;&#160;&#160;&#160;chunk, col, field, crm, 2)
-      <animate attributeName="opacity" values="0;0;1;1"
-        keyTimes="0;.7;.75;1" dur="8s" repeatCount="indefinite"/>
-    </text>
-
-    <text x="37" y="264" fill="#ffffff" opacity="0">
-      &#160;&#160;for chunk in chunks)
-      <animate attributeName="opacity" values="0;0;1;1"
-        keyTimes="0;.8;.85;1" dur="8s" repeatCount="indefinite"/>
-    </text>
-
-    <text x="37" y="284" fill="#8be0e5" opacity="0">
-      matches = pd.concat(results)
-      <animate attributeName="opacity" values="0;0;1;1"
-        keyTimes="0;.9;.95;1" dur="8s" repeatCount="indefinite"/>
-    </text>
+    <text x="34" y="104" class="green" clip-path="url(#s1)"># Parallel fuzzy matching</text>
+    <text x="34" y="124" class="blue" clip-path="url(#s2)">num_cores = cpu_count()</text>
+    <text x="34" y="144" class="gold" clip-path="url(#s3)">chunks = [</text>
+    <text x="34" y="164" class="white" clip-path="url(#s4)">  df.iloc[i:i+chunk_size]</text>
+    <text x="34" y="184" class="white" clip-path="url(#s5)">  for i in range(0,len(df),size)]</text>
+    <text x="34" y="204" class="gold" clip-path="url(#s6)">results = Parallel(n_jobs=cores)(</text>
+    <text x="34" y="224" class="white" clip-path="url(#s7)">  delayed(find_best_match)(</text>
+    <text x="34" y="244" class="white" clip-path="url(#s8)">    chunk, col, field, crm, 2)</text>
+    <text x="34" y="264" class="white" clip-path="url(#s9)">  for chunk in chunks)</text>
+    <text x="34" y="284" class="blue" clip-path="url(#s10)">matches = pd.concat(results)</text>
   </g>
 </g>
 
-<!-- NBA SCRAPER CODE -->
+<!-- PROJECT 2: NBA SCRAPER -->
 <g opacity="0">
   <animate attributeName="opacity"
-    values="0;0;1;1;0"
-    keyTimes="0;.495;.5;.995;1"
-    dur="16s" repeatCount="indefinite"/>
+           values="0;0;1;1;0"
+           keyTimes="0;.499;.5;.999;1"
+           dur="20s"
+           repeatCount="indefinite"/>
 
-  <text x="215" y="63" text-anchor="middle"
-        font-family="monospace" font-size="12"
+  <text x="184" y="62"
+        text-anchor="middle"
+        class="mono"
+        font-size="11"
         fill="#a5e8ea">nba_stats_scraper.py</text>
 
-  <g font-family="monospace" font-size="12.3"
+  <clipPath id="n1"><rect x="34" y="90" height="18" width="0"><animate attributeName="width" values="0;0;285;285;0" keyTimes="0;.5;.535;.999;1" dur="20s" repeatCount="indefinite"/></rect></clipPath>
+  <clipPath id="n2"><rect x="34" y="110" height="18" width="0"><animate attributeName="width" values="0;0;285;285;0" keyTimes="0;.535;.57;.999;1" dur="20s" repeatCount="indefinite"/></rect></clipPath>
+  <clipPath id="n3"><rect x="34" y="130" height="18" width="0"><animate attributeName="width" values="0;0;285;285;0" keyTimes="0;.57;.605;.999;1" dur="20s" repeatCount="indefinite"/></rect></clipPath>
+  <clipPath id="n4"><rect x="34" y="150" height="18" width="0"><animate attributeName="width" values="0;0;285;285;0" keyTimes="0;.605;.64;.999;1" dur="20s" repeatCount="indefinite"/></rect></clipPath>
+  <clipPath id="n5"><rect x="34" y="170" height="18" width="0"><animate attributeName="width" values="0;0;285;285;0" keyTimes="0;.64;.675;.999;1" dur="20s" repeatCount="indefinite"/></rect></clipPath>
+  <clipPath id="n6"><rect x="34" y="190" height="18" width="0"><animate attributeName="width" values="0;0;285;285;0" keyTimes="0;.675;.71;.999;1" dur="20s" repeatCount="indefinite"/></rect></clipPath>
+  <clipPath id="n7"><rect x="34" y="210" height="18" width="0"><animate attributeName="width" values="0;0;285;285;0" keyTimes="0;.71;.745;.999;1" dur="20s" repeatCount="indefinite"/></rect></clipPath>
+  <clipPath id="n8"><rect x="34" y="230" height="18" width="0"><animate attributeName="width" values="0;0;285;285;0" keyTimes="0;.745;.78;.999;1" dur="20s" repeatCount="indefinite"/></rect></clipPath>
+  <clipPath id="n9"><rect x="34" y="250" height="18" width="0"><animate attributeName="width" values="0;0;285;285;0" keyTimes="0;.78;.815;.999;1" dur="20s" repeatCount="indefinite"/></rect></clipPath>
+  <clipPath id="n10"><rect x="34" y="270" height="18" width="0"><animate attributeName="width" values="0;0;285;285;0" keyTimes="0;.815;.85;.999;1" dur="20s" repeatCount="indefinite"/></rect></clipPath>
+
+  <g class="code" xml:space="preserve"
      clip-path="url(#terminalClip)">
-
-    <text x="37" y="104" fill="#6fe2af">
-      # Basketball Reference scraper
-    </text>
-
-    <text x="37" y="124" fill="#8be0e5">
-      response = requests.get(url,
-    </text>
-
-    <text x="37" y="144" fill="#ffffff">
-      &#160;&#160;headers=headers)
-    </text>
-
-    <text x="37" y="164" fill="#f0c879">
-      if response.status_code == 429:
-    </text>
-
-    <text x="37" y="184" fill="#ffffff">
-      &#160;&#160;time.sleep(120)
-    </text>
-
-    <text x="37" y="204" fill="#ffffff">
-      &#160;&#160;response = requests.get(url)
-    </text>
-
-    <text x="37" y="224" fill="#8be0e5">
-      soup = BeautifulSoup(
-    </text>
-
-    <text x="37" y="244" fill="#ffffff">
-      &#160;&#160;response.text, "html.parser")
-    </text>
-
-    <text x="37" y="264" fill="#ffffff">
-      table = soup.find("table")
-    </text>
-
-    <text x="37" y="284" fill="#6fe2af">
-      df = pd.read_html(str(table))[0]
-    </text>
+    <text x="34" y="104" class="green" clip-path="url(#n1)"># Basketball Reference ETL</text>
+    <text x="34" y="124" class="blue" clip-path="url(#n2)">response = requests.get(</text>
+    <text x="34" y="144" class="white" clip-path="url(#n3)">  url, headers=headers)</text>
+    <text x="34" y="164" class="gold" clip-path="url(#n4)">if response.status_code == 429:</text>
+    <text x="34" y="184" class="white" clip-path="url(#n5)">  time.sleep(120)</text>
+    <text x="34" y="204" class="blue" clip-path="url(#n6)">soup = BeautifulSoup(</text>
+    <text x="34" y="224" class="white" clip-path="url(#n7)">  response.text, "html.parser")</text>
+    <text x="34" y="244" class="white" clip-path="url(#n8)">table = soup.find("table")</text>
+    <text x="34" y="264" class="blue" clip-path="url(#n9)">df = pd.read_html(str(table))[0]</text>
+    <text x="34" y="284" class="green" clip-path="url(#n10)"># Export player and team stats</text>
   </g>
 </g>
 
-<!-- PROFESSIONAL HEADLINE -->
-<rect x="424" y="93" width="480" height="154"
-      rx="14" fill="#04121e"
-      stroke="#55c5d0" stroke-width="2"/>
+<!-- CENTER PROFILE -->
+<rect x="365" y="93" width="478" height="154"
+      rx="13" fill="#04121e"
+      stroke="#55c5d0" stroke-width="1.8"/>
 
-<text x="664" y="145" text-anchor="middle"
-      font-family="Arial,sans-serif"
-      font-size="34" font-weight="bold"
+<text x="604" y="145"
+      text-anchor="middle"
+      font-family="Arial, Helvetica, sans-serif"
+      font-size="34"
+      font-weight="bold"
       fill="#ffffff">Robert J. Cameron</text>
 
-<text x="664" y="183" text-anchor="middle"
-      font-family="Arial,sans-serif"
-      font-size="14.5" font-weight="bold"
-      fill="#8be0e5">
-  Business Intelligence | Data Analytics | Data Integration
-</text>
+<text x="604" y="184"
+      text-anchor="middle"
+      font-family="Arial, Helvetica, sans-serif"
+      font-size="16.5"
+      font-weight="bold"
+      textLength="448"
+      lengthAdjust="spacingAndGlyphs"
+      fill="#8be0e5">Business Intelligence | Data Analytics | Data Integration</text>
 
-<text x="664" y="219" text-anchor="middle"
-      font-family="monospace" font-size="16"
-      fill="#c0e4eb">
-  SQL | Python | Power BI | Excel
-</text>
+<text x="604" y="219"
+      text-anchor="middle"
+      class="mono"
+      font-size="16"
+      fill="#c0e4eb">SQL | Python | Power BI | Excel</text>
 
-<!-- BASKETBALL COURT -->
-<rect x="919" y="38" width="266" height="274"
-      rx="13" fill="#04121e"
-      stroke="#55cad2" stroke-width="2"/>
+<!-- BASKETBALL PANEL -->
+<rect x="861" y="38" width="324" height="274"
+      rx="12" fill="#04121e"
+      stroke="#55cad2" stroke-width="1.8"/>
 
-<text x="1052" y="63" text-anchor="middle"
-      font-family="monospace" font-size="12"
-      fill="#a4e8ea">NBA PICK-AND-ROLL</text>
+<text x="1023" y="61"
+      text-anchor="middle"
+      class="mono"
+      font-size="12"
+      fill="#a4e8ea">NBA 5-ON-5 PICK-AND-ROLL</text>
 
-<g stroke="#a2dde5" stroke-width="1.7"
-   fill="none" opacity=".85">
-  <rect x="930" y="78" width="244" height="220"/>
-  <path d="M1012 78V146H1092V78 M1036 93H1068"/>
-  <circle cx="1052" cy="103" r="8"/>
-  <path d="M1028 146A24 24 0 0 0 1076 146"/>
-  <path d="M949 78V119A103 103 0 0 0 1155 119V78"/>
+<g clip-path="url(#courtClip)">
+
+  <!-- HALF COURT -->
+  <g stroke="#a2dde5"
+     stroke-width="1.6"
+     fill="none"
+     opacity=".8">
+
+    <rect x="872" y="78" width="302" height="221"/>
+
+    <path d="M984 78V146H1062V78"/>
+
+    <path d="M1008 92H1038"/>
+
+    <circle cx="1023" cy="103" r="8"/>
+
+    <path d="M999 146A24 24 0 0 0 1047 146"/>
+
+    <path d="M895 78V116
+             A128 128 0 0 0 1151 116
+             V78"/>
+  </g>
+
+  <!-- OFFENSIVE ROUTES -->
+
+  <!-- O1 stays outside the arc -->
+  <path class="route"
+        d="M995 278
+           Q1010 288 1035 286
+           Q1060 283 1080 274"/>
+
+  <!-- O1 relocates to right corner -->
+  <path class="route"
+        d="M1080 274
+           Q1148 278 1157 238
+           L1157 112"/>
+
+  <!-- O5 screen approach -->
+  <path class="route"
+        d="M1090 200
+           Q1072 239 1044 267"/>
+
+  <!-- O5 early roll -->
+  <path class="route"
+        d="M1044 267
+           Q1033 207 1023 133"/>
+
+  <!-- O2 right-side spacing -->
+  <path class="route"
+        d="M1146 139
+           Q1124 166 1119 194"/>
+
+  <!-- O4 off-ball screen -->
+  <path class="route"
+        d="M951 214
+           Q935 183 923 160
+           Q940 186 950 214"/>
+
+  <!-- PASS ROUTE -->
+  <path class="passRoute"
+        d="M1080 274
+           Q1055 213 1023 145">
+    <animate attributeName="stroke-dashoffset"
+             values="0;-48"
+             dur="2s"
+             repeatCount="indefinite"/>
+  </path>
+
+  <!-- O1: BALL HANDLER -->
+  <g class="offense">
+    <text y="8">O</text>
+
+    <animateTransform
+      attributeName="transform"
+      type="translate"
+      dur="10s"
+      repeatCount="indefinite"
+      calcMode="linear"
+      keyTimes="0;.12;.2;.3;.38;.44;.55;.7;.85;1"
+      values="
+        995 278;
+        1005 282;
+        1025 285;
+        1055 283;
+        1080 274;
+        1080 274;
+        1115 282;
+        1157 238;
+        1157 112;
+        1157 112"/>
+  </g>
+
+  <!-- O5: EARLY SCREEN AND ROLL -->
+  <g class="offense">
+    <text y="8">O</text>
+
+    <animateTransform
+      attributeName="transform"
+      type="translate"
+      dur="10s"
+      repeatCount="indefinite"
+      calcMode="linear"
+      keyTimes="0;.1;.17;.25;.3;.38;.48;.56;.65;1"
+      values="
+        1090 200;
+        1067 243;
+        1044 267;
+        1044 267;
+        1044 267;
+        1036 226;
+        1028 181;
+        1023 145;
+        1023 130;
+        1023 130"/>
+  </g>
+
+  <!-- O2: RIGHT-SIDE SHOOTER -->
+  <g class="offense">
+    <text y="8">O</text>
+
+    <animateTransform
+      attributeName="transform"
+      type="translate"
+      dur="10s"
+      repeatCount="indefinite"
+      calcMode="linear"
+      keyTimes="0;.25;.4;.55;.7;1"
+      values="
+        1146 139;
+        1146 139;
+        1132 164;
+        1119 194;
+        1119 194;
+        1119 194"/>
+  </g>
+
+  <!-- O3: LEFT CORNER, STATIONARY -->
+  <g class="offense" transform="translate(895 112)">
+    <text y="8">O</text>
+  </g>
+
+  <!-- O4: OFF-BALL SCREEN -->
+  <g class="offense">
+    <text y="8">O</text>
+
+    <animateTransform
+      attributeName="transform"
+      type="translate"
+      dur="10s"
+      repeatCount="indefinite"
+      calcMode="linear"
+      keyTimes="0;.15;.28;.4;.55;.75;1"
+      values="
+        951 214;
+        936 179;
+        923 160;
+        923 160;
+        950 214;
+        950 214;
+        950 214"/>
+  </g>
+
+  <!-- X1: SCREENED DEFENDER -->
+  <g class="defense">
+    <text y="8">X</text>
+
+    <animateTransform
+      attributeName="transform"
+      type="translate"
+      dur="10s"
+      repeatCount="indefinite"
+      calcMode="linear"
+      keyTimes="0;.16;.25;.32;.4;.5;.7;1"
+      values="
+        995 254;
+        1016 256;
+        1031 257;
+        1031 257;
+        1054 260;
+        1070 255;
+        1070 255;
+        1070 255"/>
+  </g>
+
+  <!-- X5: SWITCHES AND COMMITS TO O1 -->
+  <g class="defense">
+    <text y="8">X</text>
+
+    <animateTransform
+      attributeName="transform"
+      type="translate"
+      dur="10s"
+      repeatCount="indefinite"
+      calcMode="linear"
+      keyTimes="0;.16;.26;.35;.43;.55;.7;1"
+      values="
+        1074 186;
+        1074 211;
+        1077 244;
+        1088 257;
+        1093 257;
+        1093 257;
+        1093 257;
+        1093 257"/>
+  </g>
+
+  <!-- X2: RIGHT-SIDE DEFENDER -->
+  <!-- Holds O2 until the pass begins at 4.4 seconds. -->
+  <!-- Then makes a late help rotation toward O5. -->
+  <g class="defense">
+    <text y="8">X</text>
+
+    <animateTransform
+      attributeName="transform"
+      type="translate"
+      dur="10s"
+      repeatCount="indefinite"
+      calcMode="linear"
+      keyTimes="0;.25;.4;.439;.44;.49;.55;.62;.7;1"
+      values="
+        1130 153;
+        1130 153;
+        1117 180;
+        1117 180;
+        1117 180;
+        1093 177;
+        1065 158;
+        1042 132;
+        1038 125;
+        1038 125"/>
+  </g>
+
+  <!-- X3: STAYS WITH LEFT-CORNER SHOOTER -->
+  <g class="defense"
+     transform="translate(915 128)">
+    <text y="8">X</text>
+  </g>
+
+  <!-- X4: NAVIGATES OFF-BALL SCREEN -->
+  <g class="defense">
+    <text y="8">X</text>
+
+    <animateTransform
+      attributeName="transform"
+      type="translate"
+      dur="10s"
+      repeatCount="indefinite"
+      calcMode="linear"
+      keyTimes="0;.18;.32;.42;.58;.75;1"
+      values="
+        964 199;
+        946 174;
+        943 174;
+        943 174;
+        962 207;
+        962 207;
+        962 207"/>
+  </g>
+
+  <!-- BALL: O1 DRIBBLES -->
+  <circle r="5.5" fill="#ffc778">
+    <animateTransform
+      attributeName="transform"
+      type="translate"
+      dur="10s"
+      repeatCount="indefinite"
+      calcMode="linear"
+      keyTimes="0;.12;.2;.3;.38;.44;1"
+      values="
+        995 290;
+        1005 294;
+        1025 297;
+        1055 295;
+        1080 286;
+        1080 286;
+        1080 286"/>
+
+    <animate attributeName="opacity"
+             values="1;1;0;0"
+             keyTimes="0;.439;.44;1"
+             dur="10s"
+             repeatCount="indefinite"/>
+  </circle>
+
+  <!-- BALL: EARLY PASS -->
+  <circle r="5.5" fill="#ffc778" opacity="0">
+
+    <animate attributeName="opacity"
+             values="0;0;1;1;0;0"
+             keyTimes="0;.439;.44;.55;.56;1"
+             dur="10s"
+             repeatCount="indefinite"/>
+
+    <animateTransform
+      attributeName="transform"
+      type="translate"
+      dur="10s"
+      repeatCount="indefinite"
+      calcMode="linear"
+      keyTimes="0;.44;.49;.55;1"
+      values="
+        1080 274;
+        1080 274;
+        1052 212;
+        1023 145;
+        1023 145"/>
+  </circle>
+
+  <!-- BALL: O5 CATCHES AND FINISHES -->
+  <circle r="5.5" fill="#ffc778" opacity="0">
+
+    <animate attributeName="opacity"
+             values="0;0;1;1;0;0"
+             keyTimes="0;.549;.55;.7;.71;1"
+             dur="10s"
+             repeatCount="indefinite"/>
+
+    <animateTransform
+      attributeName="transform"
+      type="translate"
+      dur="10s"
+      repeatCount="indefinite"
+      calcMode="linear"
+      keyTimes="0;.55;.62;.7;1"
+      values="
+        1023 145;
+        1023 145;
+        1023 115;
+        1023 103;
+        1023 103"/>
+  </circle>
+
 </g>
-
-<!-- SCREEN LOCATION -->
-<circle cx="1050" cy="214" r="18"
-        fill="none" stroke="#ffc778"
-        stroke-width="1.5"
-        stroke-dasharray="4 5" opacity="0">
-  <animate attributeName="opacity"
-    values="0;0;1;1;0;0"
-    keyTimes="0;.18;.25;.39;.5;1"
-    dur="10s" repeatCount="indefinite"/>
-</circle>
-
-<!-- O1: BALL HANDLER -->
-<g fill="#6dead5" font-family="Arial"
-   font-size="27" font-weight="bold"
-   text-anchor="middle">
-  <text x="0" y="0">O</text>
-  <animateMotion dur="10s" repeatCount="indefinite"
-    calcMode="linear"
-    keyPoints="0;.1;.1;.35;.55;.65;.65;1"
-    keyTimes="0;.12;.25;.43;.6;.7;.85;1"
-    path="M1007 268 L1007 252 Q1010 225 1030 220 Q1070 218 1100 189 L1112 171"/>
-</g>
-
-<!-- O2: SCREENER, THEN ROLL -->
-<g fill="#6dead5" font-family="Arial"
-   font-size="27" font-weight="bold"
-   text-anchor="middle">
-  <text x="0" y="0">O</text>
-  <animateMotion dur="10s" repeatCount="indefinite"
-    calcMode="linear"
-    keyPoints="0;.38;.38;.38;.75;1;1"
-    keyTimes="0;.18;.25;.4;.65;.83;1"
-    path="M1108 262 Q1070 232 1050 214 L1050 194 Q1050 163 1052 128"/>
-</g>
-
-<!-- X1: GETS CAUGHT ON SCREEN -->
-<g fill="#ffb17f" font-family="Arial"
-   font-size="27" font-weight="bold"
-   text-anchor="middle">
-  <text x="0" y="0">X</text>
-  <animateMotion dur="10s" repeatCount="indefinite"
-    calcMode="linear"
-    keyPoints="0;.15;.15;.15;.5;.75;1"
-    keyTimes="0;.15;.28;.45;.65;.85;1"
-    path="M1007 244 L1027 225 Q1030 213 1040 207 Q1070 197 1090 179"/>
-</g>
-
-<!-- X2: HEDGE / HELP DEFENSE -->
-<g fill="#ffb17f" font-family="Arial"
-   font-size="27" font-weight="bold"
-   text-anchor="middle">
-  <text x="0" y="0">X</text>
-  <animateMotion dur="10s" repeatCount="indefinite"
-    calcMode="linear"
-    keyPoints="0;.15;.4;.7;1"
-    keyTimes="0;.25;.48;.75;1"
-    path="M1074 185 Q1087 196 1100 195 Q1107 174 1080 150"/>
-</g>
-
-<!-- BASKETBALL: DRIBBLE, THEN PASS TO ROLLER -->
-<circle r="5.5" fill="#ffc778">
-  <animateMotion dur="10s" repeatCount="indefinite"
-    calcMode="linear"
-    keyPoints="0;.1;.1;.35;.55;.65;.65;1"
-    keyTimes="0;.12;.25;.43;.6;.7;.85;1"
-    path="M1007 268 L1007 252 Q1010 225 1030 220 Q1070 218 1100 189 L1112 171"/>
-  <animate attributeName="opacity"
-    values="1;1;0;0;1"
-    keyTimes="0;.65;.66;.99;1"
-    dur="10s" repeatCount="indefinite"/>
-</circle>
-
-<!-- PASS FROM O1 TO O2 -->
-<circle r="5.5" fill="#ffc778" opacity="0">
-  <animate attributeName="opacity"
-    values="0;0;1;1;0;0"
-    keyTimes="0;.65;.66;.8;.81;1"
-    dur="10s" repeatCount="indefinite"/>
-  <animateMotion dur="10s" repeatCount="indefinite"
-    calcMode="linear"
-    keyPoints="0;0;1;1"
-    keyTimes="0;.65;.8;1"
-    path="M1112 171 Q1070 145 1052 128"/>
-</circle>
-
-<!-- SCREEN LABEL -->
-<text x="1050" y="190" text-anchor="middle"
-      font-family="Arial,sans-serif"
-      font-size="10" font-weight="bold"
-      fill="#ffc778" opacity="0">
-  SCREEN
-  <animate attributeName="opacity"
-    values="0;0;1;1;0;0"
-    keyTimes="0;.18;.25;.39;.5;1"
-    dur="10s" repeatCount="indefinite"/>
-</text>
 
 <!-- BOTTOM ACCENT -->
 <path d="M0 322Q300 312 600 322T1200 322V340H0Z"
-      fill="#49a9b3" opacity=".35"/>
+      fill="#49a9b3"
+      opacity=".28"/>
 
 </svg>
