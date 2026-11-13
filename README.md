@@ -66,105 +66,55 @@ Improved customer identification, data quality, and operational reporting throug
 | Inconsistent customer information complicated reporting | Standardized customer names, addresses, and account relationships | Improved data reliability and reduced manual matching effort |
 
 ---
-
 ## 🚀 Featured Analytics Projects
 
 ### 🏀 01 | NBA Four-Factor Modeling & Team Performance Analytics
-
 **Analyzing the statistical factors that influence basketball performance.**
-
 Applied Dean Oliver's Four Factors framework to examine shooting efficiency, turnovers, offensive rebounding, and free-throw production, identifying performance differences between teams.
-
 **Tools:** Python · Pandas · Statistical Analysis · Predictive Modeling
-
 **[Explore NBA Four-Factor Modeling](https://github.com/RobCameron3/nba-four-factor-modeling)**
 
 ---
-
 ### ⚙️ 02 | Python Customer Identification & Automation
-
 **Transforming fragmented customer records into reliable business intelligence.**
-
 <img src="assets/customer-matching.svg" width="100%" alt="Python customer matching workflow"/>
-
 Developed Python-based matching workflows to clean and standardize distributor records, identify potential CRM accounts, and improve customer identification efficiency.
-
 **Measured impact:** Increased customer identification from approximately **60% to 80–90%**.
-
 **Tools:** Python · Pandas · Fuzzy Matching · Data Cleaning · CRM Integration
 
 ---
-
 ### 🕵️ 03 | SQL Data Breach Investigation
-
 **Connecting fragmented evidence through relational analysis.**
-
 <img src="assets/sql-investigation.svg" width="100%" alt="SQL data investigation workflow"/>
-
 Investigated a simulated data breach using SQL joins, filtering, and relational analysis to identify connections between records and narrow potential matches.
-
 **Tools:** PostgreSQL · SQL · Joins · Data Investigation
-
 **[Explore SQL Investigation](https://github.com/RobCameron3/sql-data-breach-investigation)**
 
 ---
-
 ### 📊 04 | Power BI Operational Performance & Logistics
-
 **Turning operational data into actionable business KPIs.**
-
 <img src="assets/power-bi-performance.gif" width="100%" alt="Power BI operational dashboard"/>
-
 Developed an interactive dashboard analyzing revenue, operational KPIs, shipment trends, regional performance, and business activity.
-
 **Tools:** Power BI · Power Query · DAX · Data Visualization
-
 **[Explore Operational Logistics Dashboard](https://github.com/RobCameron3/power-bi-operational-logistics-dashboard)**
 
 ---
-
 ### 🌎 05 | Geographic Density & Trend Analytics
-
 **Identifying geographic concentrations and changing business patterns.**
-
 <img src="assets/geographic-density.gif" width="100%" alt="Geographic density analytics"/>
-
 Built a geographic analytics dashboard to compare regional activity, identify geographic concentrations, and examine trends over time.
-
 **Tools:** Power BI · Power Query · DAX · Geographic Analytics
-
 **[Explore Geographic Density Analytics](https://github.com/RobCameron3/power-bi-geographic-density-analytics)**
 
 ---
-
 ### 📉 06 | Telecommunications Customer Churn Prediction
-
 **Identifying customers at risk of leaving.**
-
 <img src="assets/customer-churn.gif" width="100%" alt="Telecommunications churn prediction"/>
-
 Developed a predictive classification model to analyze customer characteristics, identify churn risk, and evaluate retention-related patterns.
-
 **Tools:** Python · Pandas · Classification · Predictive Analytics
-
 **[Explore Telecom Churn Prediction](https://github.com/RobCameron3/Telco_Churn_Prediction)**
 
 ---
-
-### 🚗 07 | Used Car Price Prediction
-
-**Estimating vehicle prices through regression analysis.**
-
-<img src="assets/used-car-regression.gif" width="100%" alt="Used car price prediction"/>
-
-Developed a regression model examining how vehicle characteristics influence used-car prices, including predicted versus actual price evaluation.
-
-**Tools:** Python · Pandas · Regression · Predictive Modeling
-
-**[Explore Used Car Price Prediction](https://github.com/RobCameron3/Used_Car_Price_Prediction)**
-
----
-
 ## 🛠️ Technical Skills
 
 ### Business Intelligence & Reporting
