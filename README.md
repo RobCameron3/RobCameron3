@@ -52,11 +52,11 @@
 
 **Selected Professional Contributions**
 
-- **Python Automation & Efficiency:** Developed fuzzy-matching workflows that improved customer identification from approximately **60% to 80–90%**, reducing manual reconciliation requirements.
-- **Large-Scale Data Reconciliation:** Supported an extensive distributor data project, analyzing **877 records** and resolving **648 (73.9%)** through targeted matching and prioritization.
-- **Operational Efficiency:** Improved recurring data-processing workflows, reduced matching backlogs, and helped accelerate the preparation of reliable customer data for reporting.
-- **Data Integration & Reporting:** Consolidated and standardized **17 distributor workbooks**, strengthening cross-distributor visibility and data consistency.
-- **Project Collaboration:** Contributed to a substantial, multi-person data reconciliation initiative involving an estimated **$114,000 in combined staffing costs** based on a two-person, $57,000-per-person estimate.
+- **Python Automation & Efficiency:** Developed fuzzy-matching workflows that improved customer identification from approximately **60% to 80–90%**, streamlining data reconciliation and improving processing efficiency.
+- **Large-Scale Data Reconciliation:** Analyzed **877 distributor records**, successfully resolving **648 (73.9%)** through targeted matching and data validation.
+- **Operational Efficiency:** Optimized recurring data-processing workflows, eliminated reconciliation backlogs, and accelerated the delivery of accurate customer data for business reporting.
+- **Data Integration & Reporting:** Consolidated and standardized **17 distributor workbooks**, improving data consistency, reporting accuracy, and cross-distributor visibility.
+- **Project Collaboration:** Collaborated on a large-scale data reconciliation initiative, contributing to process improvements, data quality, and more efficient business operations.
 
 ## 🚀 Featured Analytics Projects
 
