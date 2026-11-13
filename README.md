@@ -1,7 +1,6 @@
-
 <div align="center">
 <img src="profile-banner.svg" width="100%" alt="Robert J. Cameron — Business Intelligence and Data Analytics"/>
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=16&duration=2600&pause=1100&color=20B8C3&center=true&vCenter=true&width=780&height=26&lines=I+build+business+intelligence+solutions.;I+improve+data+quality+and+efficiency.;I+turn+data+into+better+business+decisions.;I+transform+analytics+into+business+value." alt="Professional introduction"/>
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=16&duration=2600&pause=1100&color=20B8C3&center=true&vCenter=true&width=780&height=26&lines=Transforming+data+into+actionable+business+insights.;Building+business+intelligence+and+analytics+solutions.;Improving+operational+efficiency+through+automation.;Driving+better+business+decisions+through+data." alt="Professional introduction"/>
 </div>
 
 <table>
