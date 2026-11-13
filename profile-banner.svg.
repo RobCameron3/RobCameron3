@@ -1,0 +1,179 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="260" viewBox="0 0 1200 260">
+<defs>
+  <linearGradient id="bg" x2="1" y2="1">
+    <stop stop-color="#061421"/>
+    <stop offset=".6" stop-color="#12364F"/>
+    <stop offset="1" stop-color="#086A78"/>
+  </linearGradient>
+  <clipPath id="codeClip">
+    <rect x="30" y="64" width="275" height="139"/>
+  </clipPath>
+  <clipPath id="courtClip">
+    <rect x="925" y="48" width="251" height="160"/>
+  </clipPath>
+</defs>
+
+<rect width="1200" height="260" fill="url(#bg)"/>
+
+<!-- Animated code terminal -->
+<rect x="20" y="30" width="297" height="185" rx="10"
+ fill="#061421" stroke="#42C8D0"/>
+<circle cx="40" cy="47" r="4" fill="#F07575"/>
+<circle cx="54" cy="47" r="4" fill="#E6BE62"/>
+<circle cx="68" cy="47" r="4" fill="#55D5A1"/>
+<text x="165" y="51" text-anchor="middle"
+ font-family="monospace" font-size="11" fill="#B4DCE4">
+ analytics.py - executing
+</text>
+
+<g clip-path="url(#codeClip)" font-family="monospace" font-size="13">
+ <g>
+  <animateTransform attributeName="transform"
+   type="translate"
+   values="0 0;0 -22;0 -44;0 -66;0 -88;0 -110;0 -132;0 -154;0 -176;0 -198;0 -220"
+   dur="11s" repeatCount="indefinite" calcMode="discrete"/>
+  <text x="37" y="83" fill="#7DE0E5">import pandas as pd</text>
+  <text x="37" y="105" fill="#FFFFFF">df = load_data()</text>
+  <text x="37" y="127" fill="#77D6A8"># clean customer data</text>
+  <text x="37" y="149" fill="#FFFFFF">df.drop_duplicates()</text>
+  <text x="37" y="171" fill="#7DE0E5">SELECT team, wins</text>
+  <text x="37" y="193" fill="#FFFFFF">FROM nba_stats;</text>
+  <text x="37" y="215" fill="#E8C378">df.groupby('team')</text>
+  <text x="37" y="237" fill="#FFFFFF">model.fit(X, y)</text>
+  <text x="37" y="259" fill="#77D6A8"># update dashboard</text>
+  <text x="37" y="281" fill="#FFFFFF">report.to_csv('kpi.csv')</text>
+  <text x="37" y="303" fill="#7DE0E5">SELECT COUNT(*)</text>
+  <text x="37" y="325" fill="#FFFFFF">FROM customers;</text>
+  <text x="37" y="347" fill="#77D6A8"># run next query</text>
+  <text x="37" y="369" fill="#FFFFFF">print('complete')</text>
+ </g>
+</g>
+
+<rect x="38" y="195" width="7" height="12" fill="#6DE7D5">
+ <animate attributeName="opacity" values="1;0;1"
+  dur=".8s" repeatCount="indefinite"/>
+</rect>
+
+<!-- Basketball half court -->
+<rect x="920" y="27" width="263" height="190" rx="11"
+ fill="#061421" fill-opacity=".8"
+ stroke="#55CAD2"/>
+
+<text x="1051" y="43" text-anchor="middle"
+ font-family="monospace" font-size="10"
+ letter-spacing="1.5" fill="#9ADBE0">
+ HALF-COURT PLAYBOOK
+</text>
+
+<g clip-path="url(#courtClip)">
+ <g stroke="#A2DDE5" stroke-width="1.7"
+  fill="none" opacity=".8">
+  <rect x="930" y="49" width="242" height="154"/>
+  <path d="M1012 49V105H1090V49"/>
+  <path d="M1033 60H1069"/>
+  <circle cx="1051" cy="68" r="7"/>
+  <path d="M1030 105A21 21 0 0 0 1072 105"/>
+  <path d="M960 49V82A91 91 0 0 0 1142 82V49"/>
+ </g>
+
+ <!-- Offensive movement trails -->
+ <g stroke="#6DEAD5" stroke-width="2.2"
+  stroke-dasharray="5 6" fill="none">
+  <path d="M971 178Q1000 154 1016 125T1050 86">
+   <animate attributeName="stroke-dashoffset"
+    values="60;0;-60" dur="6s"
+    repeatCount="indefinite"/>
+  </path>
+  <path d="M1131 177Q1095 160 1080 130T1058 97">
+   <animate attributeName="stroke-dashoffset"
+    values="60;0;-60" dur="7s"
+    repeatCount="indefinite"/>
+  </path>
+ </g>
+
+ <!-- Animated ball pass -->
+ <path d="M971 178Q1050 122 1131 177"
+  stroke="#FFC778" stroke-width="2"
+  stroke-dasharray="5 5" fill="none">
+  <animate attributeName="stroke-dashoffset"
+   values="0;-70" dur="1.5s"
+   repeatCount="indefinite"/>
+ </path>
+
+ <!-- Offensive player one -->
+ <g fill="#6DEAD5" font-family="Arial"
+  font-size="25" font-weight="bold"
+  text-anchor="middle">
+  <text x="0" y="0">O</text>
+  <animateMotion dur="6s" repeatCount="indefinite"
+   path="M971 178Q1000 154 1016 125T1050 86"/>
+ </g>
+
+ <!-- Offensive player two -->
+ <g fill="#6DEAD5" font-family="Arial"
+  font-size="25" font-weight="bold"
+  text-anchor="middle">
+  <text x="0" y="0">O</text>
+  <animateMotion dur="7s" repeatCount="indefinite"
+   path="M1131 177Q1095 160 1080 130T1058 97"/>
+ </g>
+
+ <!-- Defensive player one -->
+ <g fill="#FFB17F" font-family="Arial"
+  font-size="25" font-weight="bold"
+  text-anchor="middle">
+  <text x="0" y="0">X</text>
+  <animateMotion dur="5s" repeatCount="indefinite"
+   path="M1008 149Q1026 124 1040 111T1008 149"/>
+ </g>
+
+ <!-- Defensive player two -->
+ <g fill="#FFB17F" font-family="Arial"
+  font-size="25" font-weight="bold"
+  text-anchor="middle">
+  <text x="0" y="0">X</text>
+  <animateMotion dur="6s" repeatCount="indefinite"
+   path="M1096 151Q1076 132 1064 110T1096 151"/>
+ </g>
+
+ <!-- Basketball -->
+ <circle r="5" fill="#FFC778">
+  <animateMotion dur="2.5s" repeatCount="indefinite"
+   path="M971 178Q1050 122 1131 177"/>
+ </circle>
+</g>
+
+<!-- Center professional headline -->
+<rect x="331" y="68" width="578" height="120" rx="13"
+ fill="#061421" fill-opacity=".95"
+ stroke="#55C5D0"/>
+
+<text x="620" y="108" text-anchor="middle"
+ font-family="Arial" font-size="34"
+ font-weight="bold" fill="#FFFFFF">
+ Robert J. Cameron
+</text>
+
+<text x="620" y="140" text-anchor="middle"
+ font-family="Arial" font-size="17"
+ font-weight="bold" fill="#8BE0E5">
+ Business Intelligence | Data Analytics | Data Integration
+</text>
+
+<text x="620" y="166" text-anchor="middle"
+ font-family="monospace" font-size="14"
+ fill="#C0E4EB">
+ SQL | Python | Power BI | Advanced Excel
+</text>
+
+<!-- Animated bottom wave -->
+<path d="M0 226C210 250 350 212 580 232S960 250 1200 220V260H0Z"
+ fill="#55C0C9" opacity=".55">
+ <animate attributeName="d"
+  values="M0 226C210 250 350 212 580 232S960 250 1200 220V260H0Z;
+          M0 235C210 210 350 248 580 228S960 215 1200 234V260H0Z;
+          M0 226C210 250 350 212 580 232S960 250 1200 220V260H0Z"
+  dur="7s" repeatCount="indefinite"/>
+</path>
+</svg>
