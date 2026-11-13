@@ -1,3 +1,4 @@
+
 <div align="center">
 <img src="profile-banner.svg" width="100%" alt="Robert J. Cameron — Business Intelligence and Data Analytics"/>
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=16&duration=2600&pause=1100&color=20B8C3&center=true&vCenter=true&width=780&height=26&lines=I+build+business+intelligence+solutions.;I+improve+data+quality+and+efficiency.;I+turn+data+into+better+business+decisions.;I+transform+analytics+into+business+value." alt="Professional introduction"/>
@@ -15,7 +16,7 @@
 <h2>Robert J. Cameron</h2>
 <strong>Business Intelligence &amp; Data Analyst</strong>
 <p>Business intelligence professional with nearly three years of experience in data integration, reporting, operational analytics, and workflow automation.</p>
-<p>I transform fragmented datasets into reliable insights that improve efficiency, strengthen decision-making, and generate measurable business value.</p>
+<p>I transform data into reliable insights that improve efficiency, strengthen decision-making, and generate measurable business value.</p>
 <a href="https://www.linkedin.com/in/robertjcameron-/"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
 <a href="https://github.com/RobCameron3"><img src="https://img.shields.io/badge/GitHub-Portfolio-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub"/></a>
 </td>
@@ -67,12 +68,12 @@ Applied Dean Oliver's Four Factors framework to evaluate shooting efficiency, tu
 [Explore NBA Four-Factor Modeling](https://github.com/RobCameron3/nba-four-factor-modeling)
 
 ### ⚙️ 02 | Python Customer Identification & Automation
-**Transforming fragmented customer records into reliable business intelligence.**  
+**Transforming customer records into reliable business intelligence.**  
 Developed Python fuzzy-matching workflows to clean distributor data, standardize customer records, and improve CRM account identification from **60% to 80–90%**.  
 **Tools:** Python · Pandas · Fuzzy Matching · Data Cleaning · CRM Integration
 
 ### 🕵️ 03 | SQL Data Breach Investigation
-**Connecting fragmented evidence through relational analysis.**  
+**Connecting evidence through relational analysis.**  
 Investigated a simulated data breach using SQL joins, filtering, and relational analysis to identify connections between records.  
 **Tools:** PostgreSQL · SQL · Joins · Data Investigation  
 [Explore SQL Investigation](https://github.com/RobCameron3/sql-data-breach-investigation)
