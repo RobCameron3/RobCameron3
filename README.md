@@ -27,7 +27,7 @@
 
 <table>
 <tr>
-<td width="32%" align="center" valign="top">
+<td width="32%" align="center" valign="middle">
 <img src="https://img.shields.io/badge/PROFESSIONAL-EXPERIENCE-123C57?style=for-the-badge" alt="Professional Experience"/>
 <h3>SOLMETEX</h3>
 <strong>BUSINESS OPERATIONS ANALYST</strong>
