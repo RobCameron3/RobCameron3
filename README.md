@@ -98,8 +98,11 @@
 </div>
 
 <br>
+
 ---
+
 <div align="center">
+
 <h2>🛠️ Technical Skills</h2>
 
 <p><em>Business intelligence, programming, data integration, and analytical technologies.</em></p>
