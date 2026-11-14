@@ -59,7 +59,7 @@
 <p align="center"><em>Translating analytics and automation into measurable performance improvements, operational efficiency, and strategic business value.</em></p>
 
 <div align="center">
-<img src="recruiter-outreach-clear.svg" width="100%" alt="Animated customer identification optimization: 60% to 90% identification, 50% higher rate, actionable CRM data, targeted outreach, revenue opportunities, and estimated annual savings"/>
+<img src="business-impact-recruiter-outreach-clear.svg" width="100%" alt="Animated customer identification optimization: 60% to 90% identification, 50% higher rate, actionable CRM data, targeted outreach, revenue opportunities, and estimated annual savings"/>
 </div>
 
 <h2 align="center">🛠️ Technical Skills</h2>
