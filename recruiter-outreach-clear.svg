@@ -1,0 +1,338 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="365" viewBox="0 0 1000 365" role="img" aria-label="Customer identification optimization and business impact">
+<style>
+text{font-family:Arial,Helvetica,sans-serif}
+.title{font-size:18px;font-weight:800;fill:#202b37}
+.small{font-size:12px;fill:#526678}
+.label{font-size:12px;font-weight:800;fill:#21475b}
+.card{fill:#fff;stroke:#cddae4;stroke-width:1.5}
+
+.bluebar,.greenbar{
+  transform-box:fill-box;
+  transform-origin:left center;
+}
+.bluebar{animation:grow60 8s infinite}
+.greenbar{animation:grow90 8s infinite}
+
+@keyframes grow60{
+  0%{transform:scaleX(0)}
+  12%,94%{transform:scaleX(1)}
+  100%{transform:scaleX(0)}
+}
+@keyframes grow90{
+  0%,12%{transform:scaleX(0)}
+  27%,94%{transform:scaleX(1)}
+  100%{transform:scaleX(0)}
+}
+
+@keyframes p0{
+  0%,14%{opacity:0}
+  18%,94%{opacity:1}
+  100%{opacity:0}
+}
+@keyframes p1{
+  0%,19%{opacity:0}
+  23%,94%{opacity:1}
+  100%{opacity:0}
+}
+@keyframes p2{
+  0%,24%{opacity:0}
+  28%,94%{opacity:1}
+  100%{opacity:0}
+}
+
+@keyframes val0{
+  0%{opacity:0}
+  .1%,10%{opacity:1}
+  10.1%,100%{opacity:0}
+}
+@keyframes val1{
+  0%,9.9%{opacity:0}
+  10.1%,17%{opacity:1}
+  17.1%,100%{opacity:0}
+}
+@keyframes val2{
+  0%,16.9%{opacity:0}
+  17.1%,24%{opacity:1}
+  24.1%,100%{opacity:0}
+}
+@keyframes val3{
+  0%,23.9%{opacity:0}
+  24.1%,31%{opacity:1}
+  31.1%,100%{opacity:0}
+}
+@keyframes val4{
+  0%,30.9%{opacity:0}
+  31.1%,94%{opacity:1}
+  94.1%,100%{opacity:0}
+}
+
+@keyframes cash1{
+  0%,10%{opacity:0}
+  12%,94%{opacity:1}
+  100%{opacity:0}
+}
+@keyframes cash2{
+  0%,16%{opacity:0}
+  19%,94%{opacity:1}
+  100%{opacity:0}
+}
+@keyframes cash3{
+  0%,22%{opacity:0}
+  27%,94%{opacity:1}
+  100%{opacity:0}
+}
+@keyframes cash4{
+  0%,28%{opacity:0}
+  34%,94%{opacity:1}
+  100%{opacity:0}
+}
+
+.bill{
+  fill:#168c68;
+  stroke:#08684e;
+  stroke-width:1;
+}
+.bill-detail{
+  fill:none;
+  stroke:#b8e5cd;
+  stroke-width:.7;
+}
+.bill-symbol{
+  font-size:9px;
+  font-weight:bold;
+  fill:white;
+  text-anchor:middle;
+}
+</style>
+
+<defs>
+  <g id="bill">
+    <rect width="29" height="14" rx="2" class="bill"/>
+    <rect x="3" y="2" width="23" height="10" rx="2" class="bill-detail"/>
+    <text x="14.5" y="10.5" class="bill-symbol">$</text>
+  </g>
+</defs>
+
+<!-- BACKGROUND -->
+<rect width="1000" height="365" rx="13" fill="#fff"/>
+<rect x="9" y="9" width="982" height="347" rx="12"
+      fill="#fff" stroke="#d3dfe8"/>
+
+<!-- HEADER -->
+<text x="28" y="38" class="title">
+CUSTOMER IDENTIFICATION OPTIMIZATION
+</text>
+<text x="28" y="57" class="small">
+From cleaner customer data to actionable sales opportunities
+</text>
+
+<!-- IDENTIFICATION CARD -->
+<rect x="25" y="72" width="580" height="110" rx="10" class="card"/>
+
+<text x="41" y="94" class="label">IDENTIFICATION RATE</text>
+
+<text x="41" y="118" class="small">Before</text>
+<text x="108" y="118" font-size="14" font-weight="bold" fill="#397ba4">60%</text>
+
+<rect x="155" y="106" width="245" height="13" rx="6" fill="#e6edf2"/>
+<rect class="bluebar" x="155" y="106" width="147" height="13" rx="6" fill="#5ca4cf"/>
+
+<text x="41" y="145" class="small">After</text>
+<text x="108" y="145" font-size="14" font-weight="bold" fill="#0b956e">90%</text>
+
+<rect x="155" y="133" width="245" height="13" rx="6" fill="#e6edf2"/>
+<rect class="greenbar" x="155" y="133" width="220.5" height="13" rx="6" fill="#20a27d"/>
+
+<!-- +50% IMPROVEMENT -->
+<rect x="418" y="91" width="167" height="72" rx="9" fill="#e9f7f0"/>
+
+<text x="501" y="123" font-size="31" font-weight="bold"
+      fill="#07865d" text-anchor="middle">+50%</text>
+
+<text x="501" y="142" font-size="11" font-weight="bold"
+      fill="#21674e" text-anchor="middle">HIGHER RATE</text>
+
+<text x="41" y="168" font-size="11" fill="#526678">
+60% → 90% = +30 percentage points (50% higher than before)
+</text>
+
+<!-- FINANCIAL CARD -->
+<rect x="618" y="72" width="357" height="110" rx="10" class="card"/>
+
+<text x="634" y="94" class="label">
+ESTIMATED ANNUAL COST SAVINGS
+</text>
+
+<!-- ANIMATED DOLLAR COUNTER -->
+<g font-size="30" font-weight="800" fill="#167b5c">
+  <text x="634" y="141" style="animation:val0 8s infinite;opacity:0">$0</text>
+  <text x="634" y="141" style="animation:val1 8s infinite;opacity:0">$28,500</text>
+  <text x="634" y="141" style="animation:val2 8s infinite;opacity:0">$57,000</text>
+  <text x="634" y="141" style="animation:val3 8s infinite;opacity:0">$85,500</text>
+  <text x="634" y="141" style="animation:val4 8s infinite;opacity:0">$114,000</text>
+</g>
+
+<!-- ASCENDING CASH STACKS -->
+<g style="animation:cash1 8s infinite;opacity:0">
+  <use href="#bill" x="825" y="155"/>
+</g>
+
+<g style="animation:cash2 8s infinite;opacity:0">
+  <use href="#bill" x="859" y="155"/>
+  <use href="#bill" x="859" y="138"/>
+</g>
+
+<g style="animation:cash3 8s infinite;opacity:0">
+  <use href="#bill" x="893" y="155"/>
+  <use href="#bill" x="893" y="138"/>
+  <use href="#bill" x="893" y="121"/>
+</g>
+
+<g style="animation:cash4 8s infinite;opacity:0">
+  <use href="#bill" x="927" y="155"/>
+  <use href="#bill" x="927" y="138"/>
+  <use href="#bill" x="927" y="121"/>
+  <use href="#bill" x="927" y="104"/>
+</g>
+
+<text x="634" y="168" font-size="10" fill="#607586">
+Estimated operational impact; not audited net savings
+</text>
+
+<!-- BUSINESS VALUE SECTION -->
+<text x="28" y="212" class="label">
+HOW BETTER CUSTOMER IDENTIFICATION CREATES BUSINESS VALUE
+</text>
+
+<!-- STAGE 1 -->
+<rect x="25" y="224" width="208" height="111" rx="9"
+      fill="#f8fbfd" stroke="#cbdde8"/>
+
+<text x="129" y="244" font-size="11" font-weight="bold"
+      fill="#286077" text-anchor="middle">
+CUSTOMER IDENTIFICATION
+</text>
+
+<text x="129" y="283" font-size="24" font-weight="bold"
+      fill="#0a936d" text-anchor="middle">
+60% → 90%
+</text>
+
+<text x="129" y="321" font-size="11" fill="#566b7b"
+      text-anchor="middle">
+More customers identified
+</text>
+
+<!-- ARROW -->
+<path d="M241 277 h15 m-6 -6 l6 6 -6 6"
+      fill="none" stroke="#0b9caf" stroke-width="2.5"/>
+
+<!-- STAGE 2 -->
+<rect x="264" y="224" width="219" height="111" rx="9"
+      fill="#f8fbfd" stroke="#cbdde8"/>
+
+<text x="373.5" y="244" font-size="11" font-weight="bold"
+      fill="#286077" text-anchor="middle">
+ACTIONABLE CRM DATA
+</text>
+
+<!-- THREE PEOPLE APPEARING ONE AT A TIME -->
+<g style="animation:p0 8s infinite;opacity:0">
+  <circle cx="328" cy="271" r="7" fill="#2d9dbe"/>
+  <path d="M317 297 Q317 282 328 282 Q339 282 339 297Z"
+        fill="#2d9dbe"/>
+</g>
+
+<g style="animation:p1 8s infinite;opacity:0">
+  <circle cx="373" cy="271" r="7" fill="#2d9dbe"/>
+  <path d="M362 297 Q362 282 373 282 Q384 282 384 297Z"
+        fill="#2d9dbe"/>
+</g>
+
+<g style="animation:p2 8s infinite;opacity:0">
+  <circle cx="418" cy="271" r="7" fill="#2d9dbe"/>
+  <path d="M407 297 Q407 282 418 282 Q429 282 429 297Z"
+        fill="#2d9dbe"/>
+</g>
+
+<text x="373.5" y="321" font-size="11" fill="#566b7b"
+      text-anchor="middle">
+More identifiable accounts
+</text>
+
+<!-- ARROW -->
+<path d="M491 277 h15 m-6 -6 l6 6 -6 6"
+      fill="none" stroke="#0b9caf" stroke-width="2.5"/>
+
+<!-- STAGE 3 -->
+<rect x="503" y="224" width="219" height="111" rx="9"
+      fill="#f8fbfd" stroke="#cbdde8"/>
+
+<text x="612.5" y="244" font-size="11" font-weight="bold"
+      fill="#286077" text-anchor="middle">
+TARGETED OUTREACH
+</text>
+
+<!-- LARGE EMAIL ICON -->
+<g stroke="#087fa4" stroke-width="3"
+   fill="none" stroke-linejoin="round" stroke-linecap="round">
+  <rect x="548" y="256" width="51" height="34" rx="5" fill="#e0f4fa"/>
+  <path d="M551 260 L573.5 277 L596 260"/>
+</g>
+
+<!-- LARGE TARGETING ICON -->
+<g stroke="#087fa4" stroke-width="3"
+   fill="none" stroke-linejoin="round" stroke-linecap="round">
+  <circle cx="654" cy="272" r="20" fill="#e0f4fa"/>
+  <circle cx="654" cy="272" r="11"/>
+  <circle cx="654" cy="272" r="3.5" fill="#087fa4" stroke="none"/>
+  <path d="M654 272 L672 254 M664 254 H672 V262"
+        stroke="#168a65" stroke-width="3.5"/>
+</g>
+
+<text x="573.5" y="310" font-size="11.5" font-weight="bold"
+      fill="#23566c" text-anchor="middle">EMAIL</text>
+
+<text x="654" y="310" font-size="11.5" font-weight="bold"
+      fill="#23566c" text-anchor="middle">TARGETING</text>
+
+<text x="612.5" y="325" font-size="10.5" fill="#566b7b"
+      text-anchor="middle">
+More targeted customer outreach
+</text>
+
+<!-- ARROW -->
+<path d="M730 277 h15 m-6 -6 l6 6 -6 6"
+      fill="none" stroke="#0b9caf" stroke-width="2.5"/>
+
+<!-- STAGE 4 -->
+<rect x="742" y="224" width="233" height="111" rx="9"
+      fill="#eaf8f2" stroke="#93cfb5"/>
+
+<text x="858.5" y="244" font-size="11" font-weight="bold"
+      fill="#167b59" text-anchor="middle">
+REVENUE OPPORTUNITIES
+</text>
+
+<!-- ANIMATED UPWARD TREND -->
+<path d="M786 297 L822 283 L854 287 L890 266 L921 256"
+      fill="none" stroke="#15966b" stroke-width="4"
+      stroke-linecap="round"
+      stroke-dasharray="200" stroke-dashoffset="200">
+  <animate attributeName="stroke-dashoffset"
+           values="200;200;0;0;200"
+           keyTimes="0;.24;.42;.94;1"
+           dur="8s"
+           repeatCount="indefinite"/>
+</path>
+
+<path d="M911 255 L922 255 L919 266"
+      fill="none" stroke="#15966b" stroke-width="3"/>
+
+<text x="858.5" y="321" font-size="11" fill="#566b7b"
+      text-anchor="middle">
+Potential repeat sales
+</text>
+
+</svg>
