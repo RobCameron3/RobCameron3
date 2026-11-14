@@ -42,7 +42,9 @@
 
 <br>
 
-## 💼 Professional Experience & Business Impact
+<div align="center">
+<h2>💼 Professional Experience &amp; Business Impact</h2>
+</div>
 
 <table>
 <tr>
@@ -81,7 +83,7 @@
 
 <br>
 
-<div align="left">
+<div align="center">
 
 <h2>📈 Data-Driven Business Impact</h2>
 
