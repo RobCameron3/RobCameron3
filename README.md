@@ -99,8 +99,6 @@
 
 <br>
 
----
-
 <div align="center">
 
 <h2>🛠️ Technical Skills</h2>
@@ -175,8 +173,6 @@
 </table>
 
 <br>
-
----
 
 <div align="center">
 
@@ -272,8 +268,6 @@
 </table>
 
 <br>
-
----
 
 <div align="center">
 
