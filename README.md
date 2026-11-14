@@ -81,7 +81,7 @@
 
 <br>
 
-<div align="center">
+<div align="left">
 
 <h2>📈 Data-Driven Business Impact</h2>
 
