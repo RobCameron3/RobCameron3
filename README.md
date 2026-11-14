@@ -80,7 +80,7 @@
 
 <div align="center">
 
-<h3>📈 Measurable Results at Solmetex</h3>
+<h2>📈 Measurable Results at Solmetex</h2>
 
 <p><em>Customer identification optimization, operational efficiency, and expanded sales opportunities through data automation.</em></p>
 
